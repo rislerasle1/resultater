@@ -186,8 +186,7 @@ const KAMPFELT = {
   hjemme:    [/^(hometeam|hometeamname|home_?team|home|hjemmelag)$/i],
   borte:     [/^(awayteam|awayteamname|away_?team|away|visitingteam|bortelag)$/i],
   hjemmeMal: [/^(homegoals|homescore|homeresult|hometeamgoals|goalshome|malhjemme)$/i],
-  borteMal:  [/^(awaygoals|awayscore|awayresult|awayteamgoals|goalsaway|malborte)$/i],
-  arena:     [/^(venue|arena|rink|location|facility|hall|bane)$/i]
+  borteMal:  [/^(awaygoals|awayscore|awayresult|awayteamgoals|goalsaway|malborte)$/i]
 };
 
 function kartleggKamp(rad) {
@@ -206,6 +205,45 @@ function navnAv(v) {
   return "";
 }
 
+/* Klokkeslettet ligger ofte i et eget felt, mens datofeltet har T00:00:00.
+   Vi leter derfor paa verdi, ikke bare paa feltnavn. */
+function finnTid(rad, fraDato) {
+  if (fraDato && fraDato !== "00:00") return fraDato;
+
+  const klokke = v => String(v ?? "").match(/^(\d{1,2}):(\d{2})(?::\d{2})?$/);
+
+  // Felt som heter noe med tid eller start
+  for (const [k, v] of Object.entries(rad)) {
+    const m = klokke(v);
+    if (m && /time|start|kl/i.test(k)) return `${m[1].padStart(2, "0")}:${m[2]}`;
+  }
+  // Ellers: hvilken som helst verdi som ser ut som et klokkeslett
+  for (const v of Object.values(rad)) {
+    const m = klokke(v);
+    if (m) return `${m[1].padStart(2, "0")}:${m[2]}`;
+  }
+  // Til slutt: en ISO-dato med tidspunkt som ikke er midnatt
+  for (const v of Object.values(rad)) {
+    const m = String(v ?? "").match(/\d{4}-\d{2}-\d{2}[T ](\d{2}:\d{2})/);
+    if (m && m[1] !== "00:00") return m[1];
+  }
+  return "";
+}
+
+/* Arenafeltet heter gjerne venueName, arenaName eller lignende, saa her
+   matcher vi paa del av navnet - ikke hele. */
+function finnArena(rad) {
+  for (const [k, v] of Object.entries(rad)) {
+    if (!/venue|arena|rink|hall|location|facility|bane|sted/i.test(k)) continue;
+    if (typeof v === "string" && v.trim() && !/^\d+$/.test(v.trim())) return v.trim();
+    if (v && typeof v === "object") {
+      const n = v.name || v.venueName || v.arenaName || v.title;
+      if (typeof n === "string" && n.trim()) return n.trim();
+    }
+  }
+  return "";
+}
+
 /* Finn foerste dato-lignende verdi hvis feltnavnet ikke ble gjenkjent */
 function finnDato(rad, noekkel) {
   const kandidat = noekkel ? rad[noekkel] : null;
@@ -217,8 +255,11 @@ function finnDato(rad, noekkel) {
   return null;
 }
 
-/* Klubben, pluss eventuelle ekstralag definert for denne serien */
+/* Klubben, pluss eventuelle ekstralag definert for denne serien.
+   alleLag: true beholder samtlige kamper - brukes for EHL, der skjermen
+   viser de siste resultatene i hele ligaen. */
 function lagFilter(t) {
+  if (t.alleLag) return /./;
   if (!t.ekstraLag) return KLUBB;
   try {
     return new RegExp(`${KLUBB.source}|${t.ekstraLag}`, "i");
@@ -237,6 +278,7 @@ async function hentKamper(t, foerste) {
   if (foerste) {
     console.log(`    kampfelt: ${Object.keys(rader[0]).join(", ")}`);
     console.log(`    gjenkjent: ${JSON.stringify(kart)}`);
+    console.log(`    eksempelrad: ${JSON.stringify(rader[0])}`);
   }
 
   const passer = lagFilter(t);
@@ -252,10 +294,10 @@ async function hentKamper(t, foerste) {
 
     ut.push({
       dato: naar.dato,
-      tid: naar.tid,
+      tid: finnTid(r, naar.tid),
       hjemme,
       borte,
-      arena: kart.arena ? String(r[kart.arena] ?? "") : "",
+      arena: finnArena(r),
       divisjon: t.navn,
       hjemmeMal: tall(kart.hjemmeMal ? r[kart.hjemmeMal] : null),
       borteMal: tall(kart.borteMal ? r[kart.borteMal] : null)
@@ -301,7 +343,7 @@ async function main() {
       const k = await hentKamper(t, foerste);
       foerste = false;
       kamper = kamper.concat(k);
-      console.log(`    ${t.navn}: ${k.length} kamper` + (t.ekstraLag ? " (inkl. ekstralag)" : ""));
+      console.log(`    ${t.navn}: ${k.length} kamper` + (t.alleLag ? " (hele serien)" : t.ekstraLag ? " (inkl. ekstralag)" : ""));
     } catch (err) {
       console.error(`    ${t.navn}: FEIL - ${err.message}`);
     }
