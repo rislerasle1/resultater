@@ -36,130 +36,7 @@
     position: absolute; inset: 0;
     display: flex; flex-direction: column;
     background: linear-gradient(160deg, #dff2ff 0%, #f7fbff 45%, #ffffff 100%);
-    opacity: 0; pointer-events: none;
-    transition: opacity 0.7s ease;
   }
-  .slide.active { opacity: 1; pointer-events: auto; }
-
-  /* ---- Velkomst- og klokke-slide ---- */
-  .intro-center {
-    flex: 1; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; text-align: center;
-    padding: 2vw;
-  }
-  .intro-heading {
-    font-family: 'Public Sans', 'Segoe UI', sans-serif;
-    font-weight: 800; font-size: 5.6vw; color: var(--deep-blue);
-    line-height: 1.2; letter-spacing: -0.01em;
-  }
-  .intro-clock {
-    font-family: 'Public Sans', 'Segoe UI', sans-serif;
-    font-weight: 800; font-size: 7vw; color: var(--deep-blue);
-    font-variant-numeric: tabular-nums; letter-spacing: 0.02em;
-  }
-  .intro-clock-date {
-    font-family: 'Public Sans', 'Segoe UI', sans-serif;
-    font-weight: 600; font-size: 1.6vw; color: #4a6a86;
-    text-transform: capitalize; margin-top: 0.6vw;
-  }
-  .intro-logos {
-    flex-shrink: 0;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 0 4vw 3vw; opacity: 0.8;
-  }
-  .intro-logos img.logo-hasle { max-height: 6.4vw; max-width: 30vw; object-fit: contain; }
-  .intro-logos img.logo-oslo { max-height: 12.8vw; max-width: 60vw; object-fit: contain; }
-
-  /* ---- Infoside (kolonne G i arket) ---- */
-  @keyframes infoGradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  @keyframes infoGlow {
-    0%, 100% { box-shadow: 0 0 2vw rgba(255,209,102,0.25), 0 1vw 2.5vw rgba(0,0,0,0.25); }
-    50% { box-shadow: 0 0 3.5vw rgba(255,209,102,0.5), 0 1vw 2.5vw rgba(0,0,0,0.25); }
-  }
-  @keyframes infoIconPulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.12); }
-  }
-  #slideInfo {
-    background-image: linear-gradient(135deg, #0d1b3d, #1a2a6c, #3a1c71, #0d3b66);
-    background-size: 300% 300%;
-    animation: infoGradient 14s ease infinite;
-  }
-  .info-badge {
-    display: inline-flex; align-items: center; gap: 0.5vw;
-    background: rgba(255,255,255,0.12); border: 1px solid rgba(255,209,102,0.5);
-    color: #ffd166; font-weight: 800; font-size: 1vw; letter-spacing: 0.1em;
-    text-transform: uppercase; padding: 0.5vw 1.5vw; border-radius: 999px;
-    margin-bottom: 1.8vw;
-  }
-  .info-card {
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.18);
-    border-radius: 1.6vw;
-    padding: 3vw 4vw;
-    max-width: 78%;
-    animation: infoGlow 3.2s ease-in-out infinite;
-    backdrop-filter: blur(6px);
-  }
-  .info-icon {
-    font-size: 4.6vw; margin-bottom: 1.2vw;
-    animation: infoIconPulse 1.6s ease-in-out infinite;
-    filter: drop-shadow(0 0 1vw rgba(255,209,102,0.55));
-  }
-  .info-text {
-    font-family: 'Public Sans', 'Segoe UI', sans-serif;
-    font-weight: 700; font-size: 2.4vw; color: #ffffff;
-    line-height: 1.5; white-space: pre-line;
-    text-shadow: 0 0.2vw 0.5vw rgba(0,0,0,0.3);
-  }
-
-  /* ---- Lekne barne-slides (torsdager 17-18) ---- */
-  @keyframes funGradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  @keyframes bounceEmoji {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-1.1vw); }
-  }
-  #slideSHS, #slideReminder {
-    background-size: 300% 300%;
-    animation: funGradient 10s ease infinite;
-  }
-  #slideSHS {
-    background-image: linear-gradient(135deg, #ffd166, #ef476f, #06d6a0, #118ab2);
-  }
-  #slideReminder {
-    background-image: linear-gradient(135deg, #118ab2, #ffd166, #ef476f, #06d6a0);
-  }
-  .fun-center {
-    flex: 1; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; text-align: center;
-    gap: 1.6vw; padding: 2vw;
-  }
-  .fun-heading {
-    font-family: 'Public Sans', 'Segoe UI', sans-serif;
-    font-weight: 800; font-size: 4.4vw; color: #ffffff;
-    text-shadow: 0 0.3vw 0.5vw rgba(0,0,0,0.25);
-    line-height: 1.25;
-  }
-  .fun-sub {
-    font-family: 'Public Sans', 'Segoe UI', sans-serif;
-    font-weight: 700; font-size: 2.6vw; color: #ffffff;
-    text-shadow: 0 0.2vw 0.4vw rgba(0,0,0,0.2);
-  }
-  .fun-arrow-row {
-    display: flex; align-items: center; gap: 1vw;
-    font-family: 'Public Sans', 'Segoe UI', sans-serif;
-    font-size: 3vw; font-weight: 800; color: #ffffff;
-    text-shadow: 0 0.2vw 0.4vw rgba(0,0,0,0.2);
-  }
-  .fun-emoji-bounce { display: inline-block; animation: bounceEmoji 1.2s ease-in-out infinite; }
 
   .content { flex: 1; display: flex; flex-direction: column; padding: 1.8vw 2.8vw 0.6vw; min-height: 0; }
 
@@ -290,49 +167,6 @@
 <body>
 <div class="stage-wrapper" id="stageWrapper">
 
-  <!-- SLIDE 1: Velkomst -->
-  <div class="slide slide-welcome active" id="slideWelcome">
-    <div class="intro-center">
-      <div class="intro-heading">Velkommen til<br>Løren ishall</div>
-    </div>
-    <div class="intro-logos">
-      <img class="logo-hasle" src="https://cdn-bloc.no/background/200000195/7987/2026/4/23/hl_logo.png" alt="Hasle/Løren logo">
-      <img class="logo-oslo" src="https://oslobyleksikon.no/images/thumb/2/28/Oslo-logo-sort-RGB.jpg/800px-Oslo-logo-sort-RGB.jpg?20191008125845" alt="Oslo kommune logo">
-    </div>
-  </div>
-
-  <!-- SLIDE 2: Klokke -->
-  <div class="slide slide-clock" id="slideClock">
-    <div class="intro-center">
-      <div class="intro-clock" id="introClockTime">–</div>
-      <div class="intro-clock-date" id="introClockDate">–</div>
-    </div>
-    <div class="intro-logos">
-      <img class="logo-hasle" src="https://cdn-bloc.no/background/200000195/7987/2026/4/23/hl_logo.png" alt="Hasle/Løren logo">
-      <img class="logo-oslo" src="https://oslobyleksikon.no/images/thumb/2/28/Oslo-logo-sort-RGB.jpg/800px-Oslo-logo-sort-RGB.jpg?20191008125845" alt="Oslo kommune logo">
-    </div>
-  </div>
-
-  <!-- SLIDE (torsdager 17-18): SHS-velkomst -->
-  <div class="slide" id="slideSHS">
-    <div class="fun-center">
-      <div class="fun-heading"><span class="fun-emoji-bounce">🎉</span> Velkommen til<br>Løren Ishall! <span class="fun-emoji-bounce">⛸️</span></div>
-      <div class="fun-sub">Gratis Skøyte- og Hockeyskole (SHS) 🏒</div>
-    </div>
-    <div class="intro-logos" style="opacity:0.9; justify-content:center;">
-      <img class="logo-hasle" src="https://cdn-bloc.no/background/200000195/7987/2026/4/23/hl_logo.png" alt="Hasle/Løren logo">
-    </div>
-  </div>
-
-  <!-- SLIDE (torsdager 17-18): Påminnelse om registrering/vaffelkort -->
-  <div class="slide" id="slideReminder">
-    <div class="fun-center">
-      <div class="fun-heading">🧇 Husk å registrere deg!</div>
-      <div class="fun-sub">...og bruk vaffelkortet 😋</div>
-      <div class="fun-arrow-row"><span class="fun-emoji-bounce">⬅️</span> Bruk garderobe <b>4</b> og <b>5</b></div>
-    </div>
-  </div>
-
   <!-- SLIDE 3: Istider (hovedinnhold) -->
   <div class="slide slide-schedule" id="slideSchedule">
   <div class="content">
@@ -385,17 +219,6 @@
     <div class="kiosk-status" id="kioskStatus">–</div>
     <div class="kiosk-meta">Kilde: Istider Lørenhallen (Google Regneark) · tinyurl.com/istider</div>
   </div>
-  </div>
-
-  <!-- SLIDE: Info fra regnearket (kolonne G) - vises kun når det er fylt ut, 7 sek etter istider -->
-  <div class="slide" id="slideInfo">
-    <div class="intro-center">
-      <div class="info-card">
-        <div class="info-badge">📢 Informasjon</div>
-        <div class="info-icon">📣</div>
-        <div class="info-text" id="infoText"></div>
-      </div>
-    </div>
   </div>
 
 </div>
@@ -595,12 +418,6 @@ function tick() {
   document.getElementById("clockDate").textContent =
     now.toLocaleDateString("nb-NO", { weekday: "long", day: "numeric", month: "long" });
 
-  // Storklokke-sliden (samme klokkeslett, egen visning)
-  document.getElementById("introClockTime").textContent =
-    pad(now.getHours()) + ":" + pad(now.getMinutes()) + ":" + pad(now.getSeconds());
-  document.getElementById("introClockDate").textContent =
-    now.toLocaleDateString("nb-NO", { weekday: "long", day: "numeric", month: "long" });
-
   // Kiosk-status nederst
   const status = kioskStatus(now);
   const statusEl2 = document.getElementById("kioskStatus");
@@ -688,7 +505,6 @@ async function refreshData() {
     lastError = e.message || String(e);
     // behold forrige gyldige data i tilfelle midlertidig nettverksfeil
   }
-  document.getElementById("infoText").textContent = cachedInfoNotes.join("\n\n");
   tick();
 }
 
@@ -696,68 +512,6 @@ refreshData();
 setInterval(refreshData, REFRESH_DATA_MS);
 setInterval(tick, REFRESH_CLOCK_MS);
 
-/* ============ SLIDE-KARUSELL ============ */
-const ALL_SLIDE_IDS = ["slideWelcome", "slideClock", "slideSchedule", "slideSHS", "slideReminder", "slideInfo"];
-
-// Vanlig rotasjon
-const NORMAL_SLIDES = [
-  { id: "slideWelcome", duration: 3000 },
-  { id: "slideClock",   duration: 2000 },
-  { id: "slideSchedule", duration: 10000 },
-];
-
-// Torsdager 17:00-18:00: egen leken rotasjon for SHS
-const THURSDAY_HAPPY_SLIDES = [
-  { id: "slideSHS", duration: 5000 },
-  { id: "slideReminder", duration: 5000 },
-  { id: "slideSchedule", duration: 5000 },
-];
-
-function isThursdayHappyHour(date) {
-  const nowMin = date.getHours() * 60 + date.getMinutes();
-  return date.getDay() === 4 && nowMin >= 17 * 60 && nowMin < 18 * 60; // 4 = torsdag
-}
-
-// Setter inn "slideInfo" (7 sek) rett etter "slideSchedule", men kun når
-// kolonne G faktisk inneholder noe for dagens dato.
-function currentSlideList() {
-  const base = isThursdayHappyHour(new Date()) ? THURSDAY_HAPPY_SLIDES : NORMAL_SLIDES;
-  if (!cachedInfoNotes.length) return base;
-
-  const withInfo = [];
-  base.forEach(item => {
-    withInfo.push(item);
-    if (item.id === "slideSchedule") {
-      withInfo.push({ id: "slideInfo", duration: 7000 });
-    }
-  });
-  return withInfo;
-}
-
-let slideIndex = 0;
-let slideTimer = null;
-
-function showSlide(id) {
-  ALL_SLIDE_IDS.forEach(sid => {
-    document.getElementById(sid).classList.toggle("active", sid === id);
-  });
-}
-
-function advanceSlide() {
-  // Sjekkes på nytt hver gang, slik at bytte inn/ut av torsdags-vinduet skjer automatisk
-  const list = currentSlideList();
-  if (slideIndex >= list.length) slideIndex = 0;
-  const current = list[slideIndex];
-  showSlide(current.id);
-
-  clearTimeout(slideTimer);
-  slideTimer = setTimeout(() => {
-    slideIndex = (slideIndex + 1) % list.length;
-    advanceSlide();
-  }, current.duration);
-}
-
-advanceSlide();
 </script>
 </body>
 </html>
