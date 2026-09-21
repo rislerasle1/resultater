@@ -19,6 +19,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const KONFIG = join(ROOT, "data", "tabeller.json");
 const UT = join(ROOT, "data", "standings.json");
 const UT_KAMPER = join(ROOT, "data", "kamper.json");
+const UT_DEBUG = join(ROOT, "data", "_debug.json");
 
 const API = "https://sf34-terminlister-prod-app.azurewebsites.net";
 const HENT_LOGOER = process.env.HENT_LOGOER !== "0";
@@ -199,16 +200,37 @@ function finnMal(rad) {
   };
 
   let h = null, b = null;
-  for (const [k, v] of Object.entries(rad)) {
+
+  // Flat ut objektet, saa { result: { home: 4, away: 1 } } blir result.home / result.away
+  const flat = {};
+  (function grav(node, prefiks, dybde) {
+    if (dybde > 3 || !node || typeof node !== "object") return;
+    for (const [k, v] of Object.entries(node)) {
+      const noekkel = prefiks ? `${prefiks}.${k}` : k;
+      if (v && typeof v === "object") grav(v, noekkel, dybde + 1);
+      else flat[noekkel] = v;
+    }
+  })(rad, "", 0);
+
+  for (const [k, v] of Object.entries(flat)) {
     if (/id$/i.test(k)) continue;                       // homeTeamId er ikke et maal
     if (!/(goal|score|result|m[åa]l)/i.test(k)) continue;
     if (/home|hjemme/i.test(k)) { if (h === null) h = tall(v); }
     else if (/away|visit|borte/i.test(k)) { if (b === null) b = tall(v); }
   }
+
+  // Nestet uten home/away i navnet: { score: { "0": 4, "1": 1 } } eller [4, 1]
+  if (h === null || b === null) {
+    for (const [k, v] of Object.entries(rad)) {
+      if (!/(goal|score|result|m[åa]l)/i.test(k) || !v || typeof v !== "object") continue;
+      const verdier = Object.values(v).map(tall).filter(x => x !== null);
+      if (verdier.length === 2) return { hjemmeMal: verdier[0], borteMal: verdier[1] };
+    }
+  }
   if (h !== null && b !== null) return { hjemmeMal: h, borteMal: b };
 
   // Samlefelt: "4-1"
-  for (const [k, v] of Object.entries(rad)) {
+  for (const [k, v] of Object.entries(flat)) {
     if (!/result|score|m[åa]l/i.test(k)) continue;
     const m = String(v ?? "").match(/^(\d{1,3})\s*[-–:]\s*(\d{1,3})$/);
     if (m) return { hjemmeMal: +m[1], borteMal: +m[2] };
@@ -298,10 +320,23 @@ function lagFilter(t) {
 
 const iDag = new Date().toISOString().slice(0, 10);
 
+const debug = { _les: "Raa svar fra TA, kun til feilsoeking. Trygg aa slette." };
+
 async function hentKamper(t, foerste) {
   const sti = `/ta/TournamentMatches/?tournamentId=${t.tournamentId}`;
-  const rader = finnRader(await api(sti));
-  if (!rader) throw new Error("fant ingen kamper i svaret");
+  const svar = await api(sti);
+  const rader = finnRader(svar);
+  if (!rader) {
+    debug[t.navn] = { feil: "fant ingen rader", toppnivaa: Array.isArray(svar) ? "array" : Object.keys(svar) };
+    throw new Error("fant ingen kamper i svaret");
+  }
+
+  // Ta vare paa to raa rader: en tidlig og en sen, saa vi ser bade spilt og kommende
+  debug[t.navn] = {
+    antallRader: rader.length,
+    foerste: rader[0],
+    siste: rader[rader.length - 1]
+  };
 
   const kart = kartleggKamp(rader[0]);
   if (foerste) {
@@ -405,6 +440,11 @@ async function main() {
   } else {
     console.warn("Ingen kamper funnet - data/kamper.json er ikke roert.");
   }
+
+  try {
+    await writeFile(UT_DEBUG, JSON.stringify(debug, null, 2) + "\n", "utf8");
+    console.log("Skrev data/_debug.json (raa svar fra TA).");
+  } catch { /* ikke kritisk */ }
 
   if (!ut.length) {
     console.error("\nIngen tabeller hentet. data/standings.json er ikke roert,");
