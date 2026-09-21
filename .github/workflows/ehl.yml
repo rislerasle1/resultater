@@ -2,7 +2,7 @@ name: Oppdater EHL-tabell
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # hvert halvtime
+    - cron: "*/30 * * * *"   # hver halvtime
   workflow_dispatch:
 
 permissions:
@@ -23,13 +23,8 @@ jobs:
           node-version: "22"
           package-manager-cache: false
 
-      - name: Installer Playwright
-        run: |
-          npm install playwright@1.49.1
-          npx playwright install --with-deps chromium
-
       - name: Hent tabellen
-        run: node scripts/fetch-ehl.mjs
+        run: node scripts/fetch-ehl-api.mjs
 
       - name: Commit endringer
         run: |
