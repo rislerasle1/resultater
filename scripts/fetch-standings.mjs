@@ -18,6 +18,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const KONFIG = join(ROOT, "data", "tabeller.json");
 const UT = join(ROOT, "data", "standings.json");
+const UT_KAMPER = join(ROOT, "data", "kamper.json");
 
 const API = "https://sf34-terminlister-prod-app.azurewebsites.net";
 const HENT_LOGOER = process.env.HENT_LOGOER !== "0";
@@ -171,6 +172,86 @@ async function hentTabell(t, logoCache) {
   return { navn: t.navn, tournamentId: t.tournamentId, kilde: API + sti, lag };
 }
 
+
+/* ---------- Kamper ---------------------------------------------------------
+   Endepunkt: /ta/TournamentMatches/?tournamentId=<id>
+   Vi vet ikke hva feltene heter, saa de gjenkjennes paa navn - som i tabellen.
+   Bare kamper der klubben deltar tas med.
+*/
+
+const KLUBB = /hasle\s*[-/ ]?\s*l(ø|o)ren/i;
+
+const KAMPFELT = {
+  start:     [/^(matchstarttime|starttime|start|matchdate|date|datetime|playdate|time)$/i],
+  hjemme:    [/^(hometeam|hometeamname|home_?team|home|hjemmelag)$/i],
+  borte:     [/^(awayteam|awayteamname|away_?team|away|visitingteam|bortelag)$/i],
+  hjemmeMal: [/^(homegoals|homescore|homeresult|hometeamgoals|goalshome|malhjemme)$/i],
+  borteMal:  [/^(awaygoals|awayscore|awayresult|awayteamgoals|goalsaway|malborte)$/i],
+  arena:     [/^(venue|arena|rink|location|facility|hall|bane)$/i]
+};
+
+function kartleggKamp(rad) {
+  const noekler = Object.keys(rad);
+  const kart = {};
+  for (const [felt, moenstre] of Object.entries(KAMPFELT)) {
+    kart[felt] = noekler.find(k => moenstre.some(re => re.test(k))) || null;
+  }
+  return kart;
+}
+
+/* Lagnavn kan vaere streng eller { name: "..." } */
+function navnAv(v) {
+  if (typeof v === "string") return v.trim();
+  if (v && typeof v === "object") return String(v.name || v.teamName || v.title || "").trim();
+  return "";
+}
+
+/* Finn foerste dato-lignende verdi hvis feltnavnet ikke ble gjenkjent */
+function finnDato(rad, noekkel) {
+  const kandidat = noekkel ? rad[noekkel] : null;
+  const verdier = kandidat != null ? [kandidat] : Object.values(rad);
+  for (const v of verdier) {
+    const m = String(v ?? "").match(/(\d{4})-(\d{2})-(\d{2})[T ]?(\d{2}:\d{2})?/);
+    if (m) return { dato: `${m[1]}-${m[2]}-${m[3]}`, tid: m[4] || "" };
+  }
+  return null;
+}
+
+async function hentKamper(t, foerste) {
+  const sti = `/ta/TournamentMatches/?tournamentId=${t.tournamentId}`;
+  const rader = finnRader(await api(sti));
+  if (!rader) throw new Error("fant ingen kamper i svaret");
+
+  const kart = kartleggKamp(rader[0]);
+  if (foerste) {
+    console.log(`    kampfelt: ${Object.keys(rader[0]).join(", ")}`);
+    console.log(`    gjenkjent: ${JSON.stringify(kart)}`);
+  }
+
+  const ut = [];
+  for (const r of rader) {
+    const hjemme = navnAv(kart.hjemme ? r[kart.hjemme] : null);
+    const borte = navnAv(kart.borte ? r[kart.borte] : null);
+    if (!hjemme || !borte) continue;
+    if (!KLUBB.test(hjemme) && !KLUBB.test(borte)) continue;
+
+    const naar = finnDato(r, kart.start);
+    if (!naar) continue;
+
+    ut.push({
+      dato: naar.dato,
+      tid: naar.tid,
+      hjemme,
+      borte,
+      arena: kart.arena ? String(r[kart.arena] ?? "") : "",
+      divisjon: t.navn,
+      hjemmeMal: tall(kart.hjemmeMal ? r[kart.hjemmeMal] : null),
+      borteMal: tall(kart.borteMal ? r[kart.borteMal] : null)
+    });
+  }
+  return ut;
+}
+
 /* ---------- Kjoering ------------------------------------------------------ */
 
 async function main() {
@@ -197,6 +278,43 @@ async function main() {
       console.error(`    FEIL: ${err.message}`);
       feil++;
     }
+  }
+
+  // Kamper for de samme seriene
+  console.log("\nKamper:");
+  let kamper = [];
+  let foerste = true;
+  for (const t of oenskede) {
+    try {
+      const k = await hentKamper(t, foerste);
+      foerste = false;
+      kamper = kamper.concat(k);
+      console.log(`    ${t.navn}: ${k.length} kamper med Hasle/Løren`);
+    } catch (err) {
+      console.error(`    ${t.navn}: FEIL - ${err.message}`);
+    }
+  }
+
+  // Samme kamp kan ligge i to serier
+  const sett = new Set();
+  kamper = kamper
+    .filter(k => {
+      const id = `${k.dato}|${k.tid}|${k.hjemme}|${k.borte}`;
+      if (sett.has(id)) return false;
+      sett.add(id);
+      return true;
+    })
+    .sort((a, b) => a.dato.localeCompare(b.dato) || a.tid.localeCompare(b.tid));
+
+  if (kamper.length) {
+    await mkdir(dirname(UT_KAMPER), { recursive: true });
+    await writeFile(UT_KAMPER, JSON.stringify({
+      oppdatert: stamp(),
+      kamper
+    }, null, 2) + "\n", "utf8");
+    console.log(`Skrev data/kamper.json med ${kamper.length} kamper.`);
+  } else {
+    console.warn("Ingen kamper funnet - data/kamper.json er ikke roert.");
   }
 
   if (!ut.length) {
