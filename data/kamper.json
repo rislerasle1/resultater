@@ -1,0 +1,1155 @@
+{
+  "oppdatert": "21.09.2026, 15:24",
+  "kamper": [
+    {
+      "dato": "2026-10-04",
+      "tid": "00:00",
+      "hjemme": "Tønsberg og Omegn Ishockeyklubb - MEN 1",
+      "borte": "Hasle-Løren Elite - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-04",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U15 1",
+      "borte": "Tromsø Ishockeyklubb - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-06",
+      "tid": "00:00",
+      "hjemme": "Furuset Ishockey IF - U20 1",
+      "borte": "Hasle-Løren IL - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-09",
+      "tid": "00:00",
+      "hjemme": "Frisk Asker AIL, IF - U15 2",
+      "borte": "Hasle-Løren IL - Ishockey - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-10",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Elite - MEN 1",
+      "borte": "Sparta Sarpsborg, IHK - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-10",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Idrettslag - JU14 1",
+      "borte": "Storhamar IL Ishockey yngres - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-10",
+      "tid": "00:00",
+      "hjemme": "Stjernen Hockey - U14 2",
+      "borte": "Hasle-Løren IL - Ishockey - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-11",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - U20 1",
+      "borte": "Skedsmo Ishockeyklubb - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-11",
+      "tid": "00:00",
+      "hjemme": "Ski IL Ishockey - JU14 1",
+      "borte": "Hasle-Løren Idrettslag - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-11",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U14 1",
+      "borte": "Kongsvinger IL - Ishockey - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-15",
+      "tid": "00:00",
+      "hjemme": "Sparta Sarpsborg, IHK - MEN 1",
+      "borte": "Hasle-Løren Elite - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-17",
+      "tid": "00:00",
+      "hjemme": "Kristiansand Ishockeyklubb - U15 1",
+      "borte": "Hasle-Løren IL - Ishockey - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-18",
+      "tid": "00:00",
+      "hjemme": "Furuset Ishockey IF - MEN 1",
+      "borte": "Hasle-Løren Elite - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-18",
+      "tid": "00:00",
+      "hjemme": "Kristiansand Ishockeyklubb - U15 1",
+      "borte": "Hasle-Løren IL - Ishockey - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-20",
+      "tid": "00:00",
+      "hjemme": "Jar Idrettslag - U20 1",
+      "borte": "Hasle-Løren IL - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-21",
+      "tid": "00:00",
+      "hjemme": "Kongsberg IF - U15 1",
+      "borte": "Hasle-Løren IL - Ishockey - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-25",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Elite - MEN 1",
+      "borte": "Furuset Ishockey IF - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-25",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - U20 1",
+      "borte": "Ishockeyklubben Comet Halden - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-25",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Idrettslag - JU14 1",
+      "borte": "Lillehammer Ishockeyklubb - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-25",
+      "tid": "00:00",
+      "hjemme": "Ullensaker Issportklubb - U14 1",
+      "borte": "Hasle-Løren IL - Ishockey - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-28",
+      "tid": "00:00",
+      "hjemme": "Jordal IHK - MEN 1",
+      "borte": "Hasle/Løren IL - Ishockey - MEN 2",
+      "arena": "",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-30",
+      "tid": "00:00",
+      "hjemme": "Skedsmo Ishockeyklubb - U20 1",
+      "borte": "Hasle-Løren IL - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-30",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U15 1",
+      "borte": "Sparta Sarpsborg, IHK - U15 2",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-31",
+      "tid": "00:00",
+      "hjemme": "Viking Turn og Idrettsforening - MEN 1",
+      "borte": "Hasle-Løren Elite - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-01",
+      "tid": "00:00",
+      "hjemme": "Viking Turn og Idrettsforening - MEN 1",
+      "borte": "Hasle-Løren Elite - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-03",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - U20 1",
+      "borte": "Furuset Ishockey IF - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-04",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Idrettslag - JU14 1",
+      "borte": "Idrettslaget Jutul - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-07",
+      "tid": "00:00",
+      "hjemme": "Kongsberg Idrettsforening - JU14 1",
+      "borte": "Hasle-Løren Idrettslag - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-07",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U14 1",
+      "borte": "Tønsberg og Omegn Ishockeyklubb - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-08",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Elite - MEN 1",
+      "borte": "Tønsberg og Omegn Ishockeyklubb - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-08",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U14 1",
+      "borte": "Comet Halden, Ishockeyklubben - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-10",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - U20 1",
+      "borte": "Jar Idrettslag - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-12",
+      "tid": "00:00",
+      "hjemme": "Grüner Ishockey IL 3 - MEN 3",
+      "borte": "Hasle/Løren IL - Ishockey - MEN 2",
+      "arena": "",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-13",
+      "tid": "00:00",
+      "hjemme": "Nes Ishockeyklubb - U15 1",
+      "borte": "Hasle-Løren IL - Ishockey - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-17",
+      "tid": "00:00",
+      "hjemme": "Ishockeyklubben Comet Halden - U20 1",
+      "borte": "Hasle-Løren IL - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-19",
+      "tid": "00:00",
+      "hjemme": "Ski IL Ishockey - U14 1",
+      "borte": "Hasle-Løren IL - Ishockey - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-22",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - U20 1",
+      "borte": "Skedsmo Ishockeyklubb - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-22",
+      "tid": "00:00",
+      "hjemme": "Furuset Ishockey IF - JU14 1",
+      "borte": "Hasle-Løren Idrettslag - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-22",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U15 1",
+      "borte": "Skien Ishockeyklubb - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-22",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U14 1",
+      "borte": "Storhamar Ishockey - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-25",
+      "tid": "00:00",
+      "hjemme": "Hasle/Løren IL - Ishockey - MEN 2",
+      "borte": "Bøler Ishockey Klubb - MEN 1",
+      "arena": "",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-28",
+      "tid": "00:00",
+      "hjemme": "Åsane Ishockeyklubb - MEN 1",
+      "borte": "Hasle-Løren Elite - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-28",
+      "tid": "00:00",
+      "hjemme": "Furuset Ishockey IF - U20 1",
+      "borte": "Hasle-Løren IL - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-29",
+      "tid": "00:00",
+      "hjemme": "Åsane Ishockeyklubb - MEN 1",
+      "borte": "Hasle-Løren Elite - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-29",
+      "tid": "00:00",
+      "hjemme": "Hasle/Løren IL - Ishockey - MEN 2",
+      "borte": "Ringerike Ishockeyklubb - MEN 2",
+      "arena": "",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-01",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U15 1",
+      "borte": "Frisk Asker AIL, IF - U15 2",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-06",
+      "tid": "00:00",
+      "hjemme": "Jar Idrettslag - U20 1",
+      "borte": "Hasle-Løren IL - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-06",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Idrettslag - JU14 1",
+      "borte": "If Frisk Asker Ail - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-06",
+      "tid": "00:00",
+      "hjemme": "Jutul, IL - Ishockey - MEN 1",
+      "borte": "Hasle/Løren IL - Ishockey - MEN 2",
+      "arena": "",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-08",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - U20 1",
+      "borte": "Ishockeyklubben Comet Halden - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-09",
+      "tid": "00:00",
+      "hjemme": "Hasle/Løren IL - Ishockey - MEN 2",
+      "borte": "Ullensaker Issportklubb A-lag - MEN 1",
+      "arena": "",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-12",
+      "tid": "00:00",
+      "hjemme": "Rosenborg Ishockeyklubb 1 - MEN 1",
+      "borte": "Hasle-Løren Elite - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-12",
+      "tid": "00:00",
+      "hjemme": "Vålerenga Ishockey - JU14 1",
+      "borte": "Hasle-Løren Idrettslag - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-12",
+      "tid": "00:00",
+      "hjemme": "Ringerike Ishockeyklubb - U14 1",
+      "borte": "Hasle-Løren IL - Ishockey - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-13",
+      "tid": "00:00",
+      "hjemme": "Rosenborg Ishockeyklubb 1 - MEN 1",
+      "borte": "Hasle-Løren Elite - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-13",
+      "tid": "00:00",
+      "hjemme": "Skedsmo Ishockeyklubb - U20 1",
+      "borte": "Hasle-Løren IL - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-13",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Idrettslag - JU14 1",
+      "borte": "Ski IL Ishockey - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-13",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U14 1",
+      "borte": "Furuset Ishockey IF - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-19",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U15 1",
+      "borte": "Kongsberg IF - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-05",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - U20 1",
+      "borte": "Furuset Ishockey IF - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-06",
+      "tid": "00:00",
+      "hjemme": "Gamle Oslo Ishockeyklubb - MEN 1",
+      "borte": "Hasle/Løren IL - Ishockey - MEN 2",
+      "arena": "",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-08",
+      "tid": "00:00",
+      "hjemme": "Sparta Sarpsborg, IHK - U15 2",
+      "borte": "Hasle-Løren IL - Ishockey - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-09",
+      "tid": "00:00",
+      "hjemme": "Sparta Sarpsborg, IHK - MEN 1",
+      "borte": "Hasle-Løren Elite - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-09",
+      "tid": "00:00",
+      "hjemme": "Kongsvinger IL - Ishockey - U14 1",
+      "borte": "Hasle-Løren IL - Ishockey - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-10",
+      "tid": "00:00",
+      "hjemme": "Lillehammer Ishockeyklubb - JU14 1",
+      "borte": "Hasle-Løren Idrettslag - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-10",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U14 1",
+      "borte": "Stjernen Hockey - U14 2",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-13",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Elite - MEN 1",
+      "borte": "Sparta Sarpsborg, IHK - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-15",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U14 1",
+      "borte": "Ullensaker Issportklubb - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-16",
+      "tid": "00:00",
+      "hjemme": "Tromsø Ishockeyklubb - U15 1",
+      "borte": "Hasle-Løren IL - Ishockey - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-17",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Elite - MEN 1",
+      "borte": "Tønsberg og Omegn Ishockeyklubb - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-17",
+      "tid": "00:00",
+      "hjemme": "Tromsø Ishockeyklubb - U15 1",
+      "borte": "Hasle-Løren IL - Ishockey - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-17",
+      "tid": "00:00",
+      "hjemme": "Hasle/Løren IL - Ishockey - MEN 2",
+      "borte": "Stange Sportsklubb - MEN 1",
+      "arena": "",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-19",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - U20 1",
+      "borte": "Jar Idrettslag - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-20",
+      "tid": "00:00",
+      "hjemme": "Furuset Ishockey IF - MEN 1",
+      "borte": "Hasle-Løren Elite - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-21",
+      "tid": "00:00",
+      "hjemme": "Aker Ishockeyklubb - MEN 1",
+      "borte": "Hasle/Løren IL - Ishockey - MEN 2",
+      "arena": "",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-22",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U15 1",
+      "borte": "Nes Ishockeyklubb - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-24",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Elite - MEN 1",
+      "borte": "Furuset Ishockey IF - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-24",
+      "tid": "00:00",
+      "hjemme": "Ishockeyklubben Comet Halden - U20 1",
+      "borte": "Hasle-Løren IL - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-24",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Idrettslag - JU14 1",
+      "borte": "Kongsberg Idrettsforening - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-24",
+      "tid": "00:00",
+      "hjemme": "Skien Ishockeyklubb - U15 1",
+      "borte": "Hasle-Løren IL - Ishockey - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-24",
+      "tid": "00:00",
+      "hjemme": "Tønsberg og Omegn Ishockeyklubb - U14 1",
+      "borte": "Hasle-Løren IL - Ishockey - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-26",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - U20 1",
+      "borte": "Skedsmo Ishockeyklubb - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-30",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Elite - MEN 1",
+      "borte": "Viking Turn og Idrettsforening - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-31",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Elite - MEN 1",
+      "borte": "Viking Turn og Idrettsforening - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-02",
+      "tid": "00:00",
+      "hjemme": "Furuset Ishockey IF - U20 1",
+      "borte": "Hasle-Løren IL - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-06",
+      "tid": "00:00",
+      "hjemme": "Idrettslaget Jutul - JU14 1",
+      "borte": "Hasle-Løren Idrettslag - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-06",
+      "tid": "00:00",
+      "hjemme": "Comet Halden, Ishockeyklubben - U14 1",
+      "borte": "Hasle-Løren IL - Ishockey - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-07",
+      "tid": "00:00",
+      "hjemme": "Tønsberg og Omegn Ishockeyklubb - MEN 1",
+      "borte": "Hasle-Løren Elite - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-07",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U15 1",
+      "borte": "Kristiansand Ishockeyklubb - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-07",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U14 1",
+      "borte": "Ski IL Ishockey - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-07",
+      "tid": "00:00",
+      "hjemme": "Hasle/Løren IL - Ishockey - MEN 2",
+      "borte": "Tønsberg og Omegn Ishockeyklubb - MEN 2",
+      "arena": "",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-12",
+      "tid": "00:00",
+      "hjemme": "Nesøya IL - Ishockey - MEN 2",
+      "borte": "Hasle/Løren IL - Ishockey - MEN 2",
+      "arena": "",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-14",
+      "tid": "00:00",
+      "hjemme": "Jar Idrettslag - U20 1",
+      "borte": "Hasle-Løren IL - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-16",
+      "tid": "00:00",
+      "hjemme": "Frisk Asker AIL, IF - U15 2",
+      "borte": "Hasle-Løren IL - Ishockey - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-17",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - U20 1",
+      "borte": "Ishockeyklubben Comet Halden - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-20",
+      "tid": "00:00",
+      "hjemme": "Storhamar IL Ishockey yngres - JU14 1",
+      "borte": "Hasle-Løren Idrettslag - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-21",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Idrettslag - JU14 1",
+      "borte": "Furuset Ishockey IF - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-21",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U15 1",
+      "borte": "Sparta Sarpsborg, IHK - U15 2",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-21",
+      "tid": "00:00",
+      "hjemme": "Storhamar Ishockey - U14 1",
+      "borte": "Hasle-Løren IL - Ishockey - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-21",
+      "tid": "00:00",
+      "hjemme": "Hasle/Løren IL - Ishockey - MEN 2",
+      "borte": "Kråkene, IL - Ishockey 2 - MEN 2",
+      "arena": "",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-26",
+      "tid": "00:00",
+      "hjemme": "Skedsmo Ishockeyklubb - U20 1",
+      "borte": "Hasle-Løren IL - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-27",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Elite - MEN 1",
+      "borte": "Åsane Ishockeyklubb - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-28",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Elite - MEN 1",
+      "borte": "Åsane Ishockeyklubb - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-28",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - U20 1",
+      "borte": "Furuset Ishockey IF - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-03-06",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Elite - MEN 1",
+      "borte": "Rosenborg Ishockeyklubb 1 - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-03-06",
+      "tid": "00:00",
+      "hjemme": "If Frisk Asker Ail - JU14 1",
+      "borte": "Hasle-Løren Idrettslag - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-03-06",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U14 1",
+      "borte": "Ringerike Ishockeyklubb - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-03-07",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Elite - MEN 1",
+      "borte": "Rosenborg Ishockeyklubb 1 - MEN 1",
+      "arena": "",
+      "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-03-07",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren Idrettslag - JU14 1",
+      "borte": "Vålerenga Ishockey - JU14 1",
+      "arena": "",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-03-07",
+      "tid": "00:00",
+      "hjemme": "Nes Ishockeyklubb - U15 1",
+      "borte": "Hasle-Løren IL - Ishockey - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-03-07",
+      "tid": "00:00",
+      "hjemme": "Furuset Ishockey IF - U14 1",
+      "borte": "Hasle-Løren IL - Ishockey - U14 1",
+      "arena": "",
+      "divisjon": "U14B",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-03-09",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - U20 1",
+      "borte": "Jar Idrettslag - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-03-12",
+      "tid": "00:00",
+      "hjemme": "Hasle-Løren IL - Ishockey - U15 1",
+      "borte": "Skien Ishockeyklubb - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-03-14",
+      "tid": "00:00",
+      "hjemme": "Ishockeyklubben Comet Halden - U20 1",
+      "borte": "Hasle-Løren IL - U20 1",
+      "arena": "",
+      "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-03-14",
+      "tid": "00:00",
+      "hjemme": "Kongsberg IF - U15 1",
+      "borte": "Hasle-Løren IL - Ishockey - U15 1",
+      "arena": "",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    }
+  ]
+}
