@@ -1,0 +1,40 @@
+name: Oppdater istider
+
+on:
+  schedule:
+    # Kjører hvert 15. minutt (GitHub kan forsinke litt i travle perioder)
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}   # lar deg trigge manuelt fra "Actions"-fanen
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sjekk ut repo
+        uses: actions/checkout@v4
+
+      - name: Hent CSV fra Google Sheets
+        run: |
+          curl -sL -A "Mozilla/5.0" \
+            "https://docs.google.com/spreadsheets/d/1u-Uobmn4ogPwt9qcqFG272O6tlxlRR_oZ2cjh2VpCYo/export?format=csv&gid=1742117620" \
+            -o data/schedule.csv
+          echo "Hentet fil:"
+          wc -l data/schedule.csv
+          head -n 5 data/schedule.csv
+
+      - name: Commit og push hvis endret
+        run: |
+          git config user.name "istider-bot"
+          git config user.email "istider-bot@users.noreply.github.com"
+          if git diff --quiet -- data/schedule.csv; then
+            echo "Ingen endringer i dataene."
+          else
+            git add data/schedule.csv
+            git commit -m "Oppdater istider ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi
