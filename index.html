@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Istider Lørenhallen – i dag</title>
+<title>Hasle/Løren – Tabeller for våre lag</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -36,7 +36,10 @@
     position: absolute; inset: 0;
     display: flex; flex-direction: column;
     background: linear-gradient(160deg, #dff2ff 0%, #f7fbff 45%, #ffffff 100%);
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.7s ease;
   }
+  .slide.active { opacity: 1; pointer-events: auto; }
 
   .content { flex: 1; display: flex; flex-direction: column; padding: 1.8vw 2.8vw 0.6vw; min-height: 0; }
 
@@ -184,6 +187,74 @@
 
   footer { text-align: center; margin-top: 0.8vw; font-size: 0.7vw; color: #90a9bd; }
 
+  /* ---- Side 2: kamper ---- */
+  .kamp-panel {
+    flex: 1; min-width: 0; min-height: 0;
+    display: flex; flex-direction: column;
+    background: white;
+    border: 1px solid #e1edf7; border-radius: 1.1vw;
+    box-shadow: 0 0.4vw 1.4vw rgba(13, 59, 102, 0.06);
+    overflow: hidden;
+  }
+  .kamp-panel-head {
+    flex-shrink: 0;
+    display: flex; align-items: baseline; justify-content: space-between;
+    padding: 0.75vw 1.1vw;
+    background: #f4f9fd; border-bottom: 1px solid #e6f0f8;
+    font-size: 0.85vw; font-weight: 800;
+    text-transform: uppercase; letter-spacing: 0.08em; color: var(--deep-blue);
+  }
+  .kamp-panel-head .antall {
+    font-size: 0.75vw; font-weight: 700; color: #90a9bd;
+    text-transform: none; letter-spacing: 0;
+  }
+  .kamp-liste { flex: 1; min-height: 0; overflow-y: auto; }
+
+  .kamp {
+    display: flex; align-items: center; gap: 0.8vw;
+    padding: 0.55vw 1.1vw 0.55vw 0.85vw;
+    border-left: 0.25vw solid transparent;
+    border-bottom: 1px solid #f1f7fc;
+  }
+  .kamp:last-child { border-bottom: none; }
+  .kamp.hjemme { border-left-color: var(--deep-blue); background: #fbfdff; }
+
+  .kamp-dato {
+    flex-shrink: 0; width: 4.6vw;
+    font-size: 0.82vw; font-weight: 800; color: var(--deep-blue); line-height: 1.25;
+  }
+  .kamp-dato small { display: block; font-size: 0.7vw; font-weight: 600; color: #90a9bd; }
+  .kamp-lag {
+    flex: 1; min-width: 0;
+    font-size: 0.98vw; font-weight: 700; color: var(--text); line-height: 1.3;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .kamp-meta {
+    font-size: 0.7vw; font-weight: 600; color: #90a9bd; margin-top: 0.1vw;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .kamp-res {
+    flex-shrink: 0; font-size: 1.15vw; font-weight: 800;
+    color: var(--deep-blue); font-variant-numeric: tabular-nums;
+  }
+  .kamp-res.tap { color: #b0413e; }
+  .kamp-res.seier { color: #1a8a58; }
+  .kamp-hb {
+    flex-shrink: 0; padding: 0.25vw 0.6vw; border-radius: 0.45vw;
+    font-size: 0.72vw; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  .kamp-hb.h { background: var(--deep-blue); color: white; }
+  .kamp-hb.b { background: #eef5fb; color: #7592ab; }
+
+  .kamp-tom { padding: 1.6vw 1.1vw; text-align: center; color: #90a9bd; font-weight: 600; font-size: 0.9vw; }
+
+  .source-bar {
+    flex-shrink: 0;
+    background: linear-gradient(90deg, var(--deep-blue), var(--next-blue));
+    padding: 0.9vw 2.8vw; text-align: center;
+    font-size: 0.78vw; font-weight: 600; color: rgba(255,255,255,0.85);
+  }
+
   .kiosk-bar {
     flex-shrink: 0;
     background: linear-gradient(90deg, var(--deep-blue), var(--next-blue));
@@ -206,7 +277,7 @@
 <div class="stage-wrapper" id="stageWrapper">
 
   <!-- SLIDE 3: Istider (hovedinnhold) -->
-  <div class="slide slide-schedule" id="slideSchedule">
+  <div class="slide slide-schedule active" id="slideSchedule">
   <div class="content">
     <header>
       <div class="header-side left">
@@ -218,7 +289,7 @@
 
       <div class="header-center">
         <span class="icon">🏒</span>
-        <h1>Istider i Lørenhallen</h1>
+        <h1>Hasle/Løren – Tabeller for våre lag</h1>
       </div>
 
       <div class="header-side right">
@@ -275,10 +346,56 @@
   </div>
   </div>
 
+
+  <!-- SIDE 2: Kamper siste og neste 7 dager -->
+  <div class="slide" id="slideKamper">
+  <div class="content">
+    <header>
+      <div class="header-side left">
+        <div class="clock-block">
+          <div class="clock-time">–</div>
+          <div class="clock-date">–</div>
+        </div>
+      </div>
+
+      <div class="header-center">
+        <span class="icon">🥅</span>
+        <h1>Hasle/Løren – Kamper</h1>
+      </div>
+
+      <div class="header-side right">
+        <div class="logo-block"><img src="https://cdn-bloc.no/background/200000195/7987/2026/4/23/hl_logo.png" alt="Hasle/Løren"></div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="kamp-panel">
+        <div class="kamp-panel-head">
+          Siste 7 dager <span class="antall" id="antallSpilt"></span>
+        </div>
+        <div class="kamp-liste" id="kamperSpilt"></div>
+      </div>
+      <div class="kamp-panel">
+        <div class="kamp-panel-head">
+          Neste 7 dager <span class="antall" id="antallKommende"></span>
+        </div>
+        <div class="kamp-liste" id="kamperKommende"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="source-bar" id="kampKilde">Kilde: hockey.no</div>
+  </div>
+
 </div>
 
 <script>
 /* ============ OPPSETT ============ */
+/* Klokken finnes paa begge sider, saa den settes via klasse, ikke id */
+function setAlle(selektor, tekst) {
+  document.querySelectorAll(selektor).forEach(el => { el.textContent = tekst; });
+}
+
 // Data hentes IKKE direkte fra Google (CORS blokkerer det fra GitHub Pages).
 // I stedet henter en GitHub Action CSV-en server-side hvert 15. min og
 // lagrer den i repoet på denne relative stien, som denne siden leser
@@ -467,10 +584,10 @@ function tick() {
   const nowMin = now.getHours() * 60 + now.getMinutes();
 
   // Klokke og dato øverst til venstre
-  document.getElementById("clockTime").textContent =
-    pad(now.getHours()) + ":" + pad(now.getMinutes()) + ":" + pad(now.getSeconds());
-  document.getElementById("clockDate").textContent =
-    now.toLocaleDateString("nb-NO", { weekday: "long", day: "numeric", month: "long" });
+  setAlle(".clock-time",
+    pad(now.getHours()) + ":" + pad(now.getMinutes()) + ":" + pad(now.getSeconds()));
+  setAlle(".clock-date",
+    now.toLocaleDateString("nb-NO", { weekday: "long", day: "numeric", month: "long" }));
 
   // Kiosk-status nederst
   const status = kioskStatus(now);
@@ -678,6 +795,163 @@ async function refreshTabeller() {
 
 refreshTabeller();
 setInterval(refreshTabeller, TABELL_REFRESH_MS);
+
+/* ============ SIDE 2: KAMPER ============
+   data/kamper.json skrives av scripts/fetch-standings.mjs.
+   Bare kamper der Hasle/Løren, Hasle/Løren 2 eller Hasle/Løren Elite deltar.
+*/
+const KAMP_URL = "data/kamper.json";
+const KAMP_REFRESH_MS = 15 * 60 * 1000;
+
+function kampDato(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(iso || ""));
+  return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null;
+}
+
+/* Alt vises fra Hasle/Løren sitt staasted: motstander, ikke begge lagene. */
+function kampSett(k) {
+  const vaartHjemme = CLUB_PATTERN.test(k.hjemme);
+  const vaartBorte = CLUB_PATTERN.test(k.borte);
+  const hjemme = vaartHjemme;                  // intern kamp: hjemmelaget regnes som vaart
+  return {
+    hjemme,
+    intern: vaartHjemme && vaartBorte,
+    vaartLag: hjemme ? k.hjemme : k.borte,
+    motstander: hjemme ? k.borte : k.hjemme,
+    vaareMal: hjemme ? k.hjemmeMal : k.borteMal,
+    motMal: hjemme ? k.borteMal : k.hjemmeMal
+  };
+}
+
+function datoBoks(k, medTid) {
+  const d = kampDato(k.dato);
+  return `
+    <div class="kamp-dato">
+      ${d ? `${NB_WEEKDAYS[d.getDay()]} ${d.getDate()}.${d.getMonth() + 1}.` : ""}
+      ${medTid ? `<small>${escapeHtml(k.tid || "")}</small>` : ""}
+    </div>`;
+}
+
+/* Spilt kamp: motstander, serie og resultat */
+function tegnSpilt(k) {
+  const v = kampSett(k);
+  let utfall = "";
+  if (v.vaareMal != null && v.motMal != null && !v.intern) {
+    if (v.vaareMal > v.motMal) utfall = "seier";
+    else if (v.vaareMal < v.motMal) utfall = "tap";
+  }
+  return `
+    <div class="kamp ${v.hjemme ? "hjemme" : ""}">
+      ${datoBoks(k, false)}
+      <div class="kamp-lag">
+        ${escapeHtml(v.motstander)}
+        <div class="kamp-meta">${escapeHtml([v.vaartLag, k.divisjon].filter(Boolean).join(" · "))}</div>
+      </div>
+      <div class="kamp-res ${utfall}">${
+        v.vaareMal != null ? `${v.vaareMal}–${v.motMal}` : "–"
+      }</div>
+    </div>`;
+}
+
+/* Kommende kamp: motstander, hjemme eller borte, sted, dato og klokkeslett */
+function tegnKommende(k) {
+  const v = kampSett(k);
+  return `
+    <div class="kamp ${v.hjemme ? "hjemme" : ""}">
+      ${datoBoks(k, true)}
+      <div class="kamp-lag">
+        ${escapeHtml(v.motstander)}
+        <div class="kamp-meta">${escapeHtml([v.vaartLag, k.arena].filter(Boolean).join(" · "))}</div>
+      </div>
+      <div class="kamp-hb ${v.hjemme ? "h" : "b"}">${v.hjemme ? "Hjemme" : "Borte"}</div>
+    </div>`;
+}
+
+function tomListe(tekst) {
+  return `<div class="kamp-tom">${escapeHtml(tekst)}</div>`;
+}
+
+let kampData = null;
+
+function tegnKamper() {
+  const kamper = kampData?.kamper || [];
+  const iDag = new Date(); iDag.setHours(0, 0, 0, 0);
+  const iso = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+
+  const fra = new Date(iDag); fra.setDate(fra.getDate() - 7);
+  const til = new Date(iDag); til.setDate(til.getDate() + 7);
+
+  const spilt = kamper
+    .filter(k => k.dato >= iso(fra) && k.dato <= iso(iDag) && k.hjemmeMal != null)
+    .sort((a, b) => b.dato.localeCompare(a.dato));
+
+  const kommende = kamper
+    .filter(k => k.dato >= iso(iDag) && k.dato <= iso(til) && k.hjemmeMal == null)
+    .sort((a, b) => a.dato.localeCompare(b.dato) || (a.tid || "").localeCompare(b.tid || ""));
+
+  document.getElementById("antallSpilt").textContent = spilt.length || "";
+  document.getElementById("antallKommende").textContent = kommende.length || "";
+
+  document.getElementById("kamperSpilt").innerHTML =
+    spilt.length ? spilt.map(tegnSpilt).join("") : tomListe("Ingen spilte kamper");
+  document.getElementById("kamperKommende").innerHTML =
+    kommende.length ? kommende.map(tegnKommende).join("") : tomListe("Ingen kamper satt opp");
+
+  document.getElementById("kampKilde").textContent =
+    "Kilde: hockey.no" + (kampData?.oppdatert ? " · oppdatert " + kampData.oppdatert : "");
+}
+
+async function refreshKamper() {
+  try {
+    const res = await fetch(KAMP_URL + "?t=" + Date.now(), { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    kampData = await res.json();
+  } catch {
+    // Behold forrige gyldige data
+    if (!kampData) kampData = { kamper: [] };
+  }
+  tegnKamper();
+}
+
+refreshKamper();
+setInterval(refreshKamper, KAMP_REFRESH_MS);
+
+
+/* ============ VEKSLING MELLOM SIDENE ============
+   Side 1 vises saa lenge det tar aa gaa gjennom alle tabellene en gang.
+   Side 2 staar i 20 sekunder.
+*/
+const KAMPSIDE_MS = 20000;
+let sideIndex = 0;
+let sideTimer = null;
+
+function varighetSide1() {
+  return Math.max(1, tabeller.length) * TABELL_BYTTE_MS;
+}
+
+function visSide(n) {
+  sideIndex = n;
+  const paaSide1 = n === 0;
+
+  document.getElementById("slideSchedule").classList.toggle("active", paaSide1);
+  document.getElementById("slideKamper").classList.toggle("active", !paaSide1);
+
+  if (paaSide1) {
+    // Start tabellrunden forfra hver gang side 1 kommer opp
+    tabellIndex = 0;
+    visTabell(0, false);
+    startRotasjon();
+  } else {
+    clearInterval(byttTimer);
+  }
+
+  clearTimeout(sideTimer);
+  sideTimer = setTimeout(() => visSide(paaSide1 ? 1 : 0),
+                         paaSide1 ? varighetSide1() : KAMPSIDE_MS);
+}
+
+visSide(0);
+
 </script>
 </body>
 </html>
