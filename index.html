@@ -808,10 +808,14 @@ function kampDato(iso) {
   return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null;
 }
 
-/* Alt vises fra Hasle/Løren sitt staasted: motstander, ikke begge lagene. */
+/* Lagene kamplistene sees fra. CLUB_PATTERN styrer fortsatt roedmerking
+   i tabellene - dette gjelder bare hvem som regnes som "vaart lag". */
+const OSS_PATTERN = /hasle\s*[-/ ]?\s*l(ø|o)ren|v[åa]lerenga|\bvif\b/i;
+
+/* Alt vises fra vaart staasted: motstander, ikke begge lagene. */
 function kampSett(k) {
-  const vaartHjemme = CLUB_PATTERN.test(k.hjemme);
-  const vaartBorte = CLUB_PATTERN.test(k.borte);
+  const vaartHjemme = OSS_PATTERN.test(k.hjemme);
+  const vaartBorte = OSS_PATTERN.test(k.borte);
   const hjemme = vaartHjemme;                  // intern kamp: hjemmelaget regnes som vaart
   return {
     hjemme,
