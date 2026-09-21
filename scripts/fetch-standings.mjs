@@ -189,6 +189,33 @@ const KAMPFELT = {
   borteMal:  [/^(awaygoals|awayscore|awayresult|awayteamgoals|goalsaway|malborte)$/i]
 };
 
+/* Maalene finnes paa del av feltnavnet, ikke hele - TA kan kalle dem
+   homeScore, homeTeamScore, scoreHome, homeGoals eller et samlefelt "4-1". */
+function finnMal(rad) {
+  const tall = v => {
+    if (typeof v === "number") return Number.isFinite(v) ? v : null;
+    const s = String(v ?? "").trim();
+    return /^\d{1,3}$/.test(s) ? +s : null;
+  };
+
+  let h = null, b = null;
+  for (const [k, v] of Object.entries(rad)) {
+    if (/id$/i.test(k)) continue;                       // homeTeamId er ikke et maal
+    if (!/(goal|score|result|m[åa]l)/i.test(k)) continue;
+    if (/home|hjemme/i.test(k)) { if (h === null) h = tall(v); }
+    else if (/away|visit|borte/i.test(k)) { if (b === null) b = tall(v); }
+  }
+  if (h !== null && b !== null) return { hjemmeMal: h, borteMal: b };
+
+  // Samlefelt: "4-1"
+  for (const [k, v] of Object.entries(rad)) {
+    if (!/result|score|m[åa]l/i.test(k)) continue;
+    const m = String(v ?? "").match(/^(\d{1,3})\s*[-–:]\s*(\d{1,3})$/);
+    if (m) return { hjemmeMal: +m[1], borteMal: +m[2] };
+  }
+  return { hjemmeMal: h, borteMal: b };
+}
+
 function kartleggKamp(rad) {
   const noekler = Object.keys(rad);
   const kart = {};
@@ -269,6 +296,8 @@ function lagFilter(t) {
   }
 }
 
+const iDag = new Date().toISOString().slice(0, 10);
+
 async function hentKamper(t, foerste) {
   const sti = `/ta/TournamentMatches/?tournamentId=${t.tournamentId}`;
   const rader = finnRader(await api(sti));
@@ -292,6 +321,13 @@ async function hentKamper(t, foerste) {
     const naar = finnDato(r, kart.start);
     if (!naar) continue;
 
+    const maal = finnMal(r);
+    // En kamp fram i tid med 0-0 er ikke spilt, den er bare ikke fylt ut
+    if (naar.dato > iDag && maal.hjemmeMal === 0 && maal.borteMal === 0) {
+      maal.hjemmeMal = null;
+      maal.borteMal = null;
+    }
+
     ut.push({
       dato: naar.dato,
       tid: finnTid(r, naar.tid),
@@ -299,8 +335,7 @@ async function hentKamper(t, foerste) {
       borte,
       arena: finnArena(r),
       divisjon: t.navn,
-      hjemmeMal: tall(kart.hjemmeMal ? r[kart.hjemmeMal] : null),
-      borteMal: tall(kart.borteMal ? r[kart.borteMal] : null)
+      ...maal
     });
   }
   return ut;
@@ -343,7 +378,7 @@ async function main() {
       const k = await hentKamper(t, foerste);
       foerste = false;
       kamper = kamper.concat(k);
-      console.log(`    ${t.navn}: ${k.length} kamper` + (t.alleLag ? " (hele serien)" : t.ekstraLag ? " (inkl. ekstralag)" : ""));
+      console.log(`    ${t.navn}: ${k.length} kamper, ${k.filter(x => x.hjemmeMal != null).length} med resultat` + (t.alleLag ? " (hele serien)" : t.ekstraLag ? " (inkl. ekstralag)" : ""));
     } catch (err) {
       console.error(`    ${t.navn}: FEIL - ${err.message}`);
     }
