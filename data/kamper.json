@@ -1,5 +1,5 @@
 {
-  "oppdatert": "21.09.2026, 21:13",
+  "oppdatert": "21.09.2026, 21:29",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -8,8 +8,8 @@
       "borte": "Stavanger Ishockeyklubb - MEN 1",
       "arena": "",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 0
     },
     {
       "dato": "2026-09-17",
@@ -18,8 +18,8 @@
       "borte": "Stjernen Hockey Fredrikstad Elite - MEN 1",
       "arena": "",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 7
     },
     {
       "dato": "2026-09-17",
@@ -28,8 +28,8 @@
       "borte": "IF Frisk Asker Hockey - MEN 1",
       "arena": "",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 1
     },
     {
       "dato": "2026-09-17",
@@ -38,8 +38,8 @@
       "borte": "Ringerike IHK - MEN 1",
       "arena": "",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 3
     },
     {
       "dato": "2026-09-19",
@@ -48,8 +48,8 @@
       "borte": "Lillehammer Ishockeyklubb Elite - MEN 1",
       "arena": "",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 3
     },
     {
       "dato": "2026-09-19",
@@ -58,8 +58,8 @@
       "borte": "Vålerenga Ishockey Elite - MEN 1",
       "arena": "",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 1,
+      "borteMal": 4
     },
     {
       "dato": "2026-09-19",
@@ -68,8 +68,8 @@
       "borte": "Narvik Ishockeyklubb - MEN 1",
       "arena": "",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 4,
+      "borteMal": 1
     },
     {
       "dato": "2026-09-19",
@@ -78,8 +78,8 @@
       "borte": "Nidaros Ishockeyklubb - MEN 1",
       "arena": "",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 6
     },
     {
       "dato": "2026-09-24",
