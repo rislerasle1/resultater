@@ -257,6 +257,22 @@ function navnAv(v) {
 /* Klokkeslettet ligger ofte i et eget felt, mens datofeltet har T00:00:00.
    Vi leter derfor paa verdi, ikke bare paa feltnavn. */
 function finnTid(rad, fraDato) {
+  // TA: matchStartTime er et tall, 1830 betyr 18:30
+  const fraTall = v => {
+    const n = typeof v === "number" ? v : (/^\d{3,4}$/.test(String(v ?? "").trim()) ? +v : null);
+    if (n === null || n < 0 || n > 2359) return null;
+    const t = Math.floor(n / 100), m = n % 100;
+    return m > 59 ? null : `${String(t).padStart(2, "0")}:${String(m).padStart(2, "0")}`;
+  };
+  const direkte = fraTall(rad.matchStartTime);
+  if (direkte) return direkte;
+
+  for (const [k, v] of Object.entries(rad)) {
+    if (!/starttime|kamptid/i.test(k)) continue;
+    const t = fraTall(v);
+    if (t) return t;
+  }
+
   if (fraDato && fraDato !== "00:00") return fraDato;
 
   const klokke = v => String(v ?? "").match(/^(\d{1,2}):(\d{2})(?::\d{2})?$/);
@@ -282,8 +298,11 @@ function finnTid(rad, fraDato) {
 /* Arenafeltet heter gjerne venueName, arenaName eller lignende, saa her
    matcher vi paa del av navnet - ikke hele. */
 function finnArena(rad) {
+  if (typeof rad.activityAreaName === "string" && rad.activityAreaName.trim()) {
+    return rad.activityAreaName.trim();
+  }
   for (const [k, v] of Object.entries(rad)) {
-    if (!/venue|arena|rink|hall|location|facility|bane|sted/i.test(k)) continue;
+    if (!/activityarea|areaname|venue|arena|rink|hall|location|facility|bane|sted/i.test(k)) continue;
     if (typeof v === "string" && v.trim() && !/^\d+$/.test(v.trim())) return v.trim();
     if (v && typeof v === "object") {
       const n = v.name || v.venueName || v.arenaName || v.title;
@@ -347,17 +366,24 @@ async function hentKamper(t, foerste) {
 
   const passer = lagFilter(t);
   const ut = [];
+
   for (const r of rader) {
-    const hjemme = navnAv(kart.hjemme ? r[kart.hjemme] : null);
-    const borte = navnAv(kart.borte ? r[kart.borte] : null);
+    // TA leverer tre navn per lag. OverriddenName er kortnavnet klubben
+    // selv har satt - "Hasle-Løren", "Frisk Asker" - og er det vi vil ha.
+    const lagNavn = (side) => {
+      const v = r[`${side}OverriddenName`] || r[`${side}OrgName`] || r[side];
+      return typeof v === "string" ? v.trim() : navnAv(v);
+    };
+
+    const hjemme = lagNavn("hometeam") || navnAv(kart.hjemme ? r[kart.hjemme] : null);
+    const borte = lagNavn("awayteam") || navnAv(kart.borte ? r[kart.borte] : null);
     if (!hjemme || !borte) continue;
     if (!passer.test(hjemme) && !passer.test(borte)) continue;
 
-    const naar = finnDato(r, kart.start);
+    const naar = finnDato(r, kart.start || "matchDate");
     if (!naar) continue;
 
     const maal = finnMal(r);
-    // En kamp fram i tid med 0-0 er ikke spilt, den er bare ikke fylt ut
     if (naar.dato > iDag && maal.hjemmeMal === 0 && maal.borteMal === 0) {
       maal.hjemmeMal = null;
       maal.borteMal = null;
