@@ -1,0 +1,17 @@
+{
+  "_kommentar": "EKSEMPELDATA. Kilde: https://live.hockey.no/standings?seasonId=201071&tournamentId=448981 - erstatt tallene med de virkelige. Feltet logo er valgfritt; uten det tegnes en sirkel med lagets initialer.",
+  "navn": "Elitehockeyligaen",
+  "oppdatert": "EKSEMPELDATA",
+  "lag": [
+    { "plass": 1,  "lag": "Storhamar",        "logo": "", "gp": 8, "pts": 21, "gf": 34, "ga": 18 },
+    { "plass": 2,  "lag": "Stavanger Oilers", "logo": "", "gp": 8, "pts": 19, "gf": 31, "ga": 20 },
+    { "plass": 3,  "lag": "Vålerenga",        "logo": "", "gp": 8, "pts": 18, "gf": 29, "ga": 19 },
+    { "plass": 4,  "lag": "Frisk Asker",      "logo": "", "gp": 8, "pts": 15, "gf": 26, "ga": 22 },
+    { "plass": 5,  "lag": "Sparta Sarpsborg", "logo": "", "gp": 8, "pts": 13, "gf": 24, "ga": 23 },
+    { "plass": 6,  "lag": "Lillehammer",      "logo": "", "gp": 8, "pts": 10, "gf": 22, "ga": 25 },
+    { "plass": 7,  "lag": "Stjernen",         "logo": "", "gp": 8, "pts": 9,  "gf": 20, "ga": 27 },
+    { "plass": 8,  "lag": "Manglerud Star",   "logo": "", "gp": 8, "pts": 7,  "gf": 19, "ga": 28 },
+    { "plass": 9,  "lag": "Narvik",           "logo": "", "gp": 8, "pts": 6,  "gf": 17, "ga": 30 },
+    { "plass": 10, "lag": "Ringerike",        "logo": "", "gp": 8, "pts": 3,  "gf": 15, "ga": 33 }
+  ]
+}
