@@ -1,0 +1,34 @@
+{
+  "_kommentar": "Tabellene som roterer paa skjermen, i den rekkefoelgen de vises. Legg til en ny ved aa lime inn navn og tournamentId fra live.hockey.no. Tom tournamentId hoppes over.",
+  "seasonId": 201071,
+  "tabeller": [
+    {
+      "navn": "Elitehockeyligaen",
+      "tournamentId": 448981
+    },
+    {
+      "navn": "2. divisjon menn",
+      "tournamentId": 448978
+    },
+    {
+      "navn": "U20 1. divisjon",
+      "tournamentId": 449696
+    },
+    {
+      "navn": "JU14",
+      "tournamentId": 450050
+    },
+    {
+      "navn": "U15C",
+      "tournamentId": 449807
+    },
+    {
+      "navn": "U14B",
+      "tournamentId": 449850
+    },
+    {
+      "navn": "5. divisjon menn",
+      "tournamentId": 449995
+    }
+  ]
+}
