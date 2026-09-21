@@ -1,0 +1,194 @@
+/* =========================================================================
+   fetch-ehl.mjs
+
+   Henter EHL-tabellen fra TurneringsAdmin og skriver data/ehl.json.
+   Kjoeres av GitHub Actions.
+
+   Endepunktet ble funnet ved aa logge nettverkskallene live.hockey.no
+   gjoer. Ingen nettleser trengs lenger - dette er et rett JSON-kall.
+
+   Lokalt:  node scripts/fetch-ehl.mjs
+   ========================================================================= */
+
+import { writeFile, mkdir } from "node:fs/promises";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+const UT = join(ROOT, "data", "ehl.json");
+
+const API = "https://sf34-terminlister-prod-app.azurewebsites.net";
+const TOURNAMENT_ID = process.env.TOURNAMENT_ID || "448981";
+const TITTEL = process.env.TITTEL || "Elitehockeyligaen";
+const HENT_LOGOER = process.env.HENT_LOGOER !== "0";
+
+const stamp = () => new Date().toLocaleString("nb-NO", {
+  dateStyle: "short", timeStyle: "short", timeZone: "Europe/Oslo"
+});
+
+async function api(sti) {
+  const res = await fetch(API + sti, {
+    headers: { Accept: "application/json", "User-Agent": "lorenhallen-infoskjerm" }
+  });
+  if (!res.ok) throw new Error(`${res.status} ${res.statusText} for ${sti}`);
+  return res.json();
+}
+
+/* ---------- Finn tabellrekkene uansett hvordan svaret er pakket ---------- */
+
+function erTabellrad(o) {
+  if (!o || typeof o !== "object" || Array.isArray(o)) return false;
+  const n = Object.keys(o).length;
+  return n >= 4 && Object.values(o).some(v => typeof v === "string" && /[a-zæøå]{3}/i.test(v));
+}
+
+function finnRader(node, dybde = 0) {
+  if (dybde > 6 || !node || typeof node !== "object") return null;
+  if (Array.isArray(node)) {
+    return node.length >= 2 && node.every(erTabellrad) ? node : null;
+  }
+  for (const v of Object.values(node)) {
+    const treff = finnRader(v, dybde + 1);
+    if (treff) return treff;
+  }
+  return null;
+}
+
+/* ---------- Finn feltnavn uten aa vite dem paa forhaand ------------------ */
+
+const FELT = {
+  plass:  [/^(rank|position|pos|placement|plass|no|nr)$/i],
+  lag:    [/^(teamname|team_?name|name|team|club|clubname|lag|lagnavn|title)$/i],
+  gp:     [/^(gp|gamesplayed|games_?played|played|matches|kamper|spilt)$/i],
+  pts:    [/^(pts|points|point|poeng)$/i],
+  gf:     [/^(gf|goalsfor|goals_?for|scored|goalsscored|malfor|scoret)$/i],
+  ga:     [/^(ga|goalsagainst|goals_?against|conceded|malmot|innsluppet)$/i],
+  orgId:  [/^(orgid|organisationid|organizationid|clubid|teamid)$/i],
+  logo:   [/logo|emblem|crest|badge|image|picture/i]
+};
+
+function kartlegg(rad) {
+  const noekler = Object.keys(rad);
+  const kart = {};
+  for (const [felt, moenstre] of Object.entries(FELT)) {
+    kart[felt] = noekler.find(k => moenstre.some(re => re.test(k))) || null;
+  }
+  return kart;
+}
+
+const tall = v => {
+  if (typeof v === "number") return v;
+  const m = String(v ?? "").match(/-?\d+/);
+  return m ? parseInt(m[0], 10) : null;
+};
+
+/* Lagnavn kan ligge nestet: { team: { name: "..." } } */
+function lesNavn(rad, noekkel) {
+  const v = noekkel ? rad[noekkel] : null;
+  if (typeof v === "string" && v.trim()) return v.trim();
+  for (const val of Object.values(rad)) {
+    if (val && typeof val === "object" && typeof val.name === "string") return val.name;
+  }
+  for (const val of Object.values(rad)) {
+    if (typeof val === "string" && /[a-zæøå]{3}/i.test(val) && !/^https?:/i.test(val)) return val.trim();
+  }
+  return "";
+}
+
+/* ---------- Logoer via organisasjons-oppslaget --------------------------- */
+
+function finnUrl(node, dybde = 0) {
+  if (dybde > 5 || !node) return null;
+  if (typeof node === "string") {
+    return /^https?:\/\/.+\.(png|jpe?g|svg|webp)/i.test(node) ? node : null;
+  }
+  if (typeof node !== "object") return null;
+  for (const [k, v] of Object.entries(node)) {
+    if (FELT.logo.some(re => re.test(k))) {
+      const u = finnUrl(v, dybde + 1);
+      if (u) return u;
+    }
+  }
+  for (const v of Object.values(node)) {
+    const u = finnUrl(v, dybde + 1);
+    if (u) return u;
+  }
+  return null;
+}
+
+async function hentLogo(orgId) {
+  try {
+    return finnUrl(await api(`/org/Organisation?orgIds=${orgId}`)) || "";
+  } catch {
+    return "";
+  }
+}
+
+/* ---------- Kjoering ------------------------------------------------------ */
+
+async function main() {
+  const sti = `/ta/TournamentStandings/?tournamentId=${TOURNAMENT_ID}`;
+  console.log("Henter", API + sti);
+
+  const svar = await api(sti);
+  const rader = finnRader(svar);
+
+  if (!rader) {
+    console.error("Fant ingen tabellrekker i svaret. Toppnivaa:",
+      Array.isArray(svar) ? "array" : Object.keys(svar).join(", "));
+    console.error("data/ehl.json er ikke roert.");
+    process.exit(1);
+  }
+
+  const kart = kartlegg(rader[0]);
+  console.log("Feltnavn i svaret:", Object.keys(rader[0]).join(", "));
+  console.log("Gjenkjente felt:", JSON.stringify(kart));
+
+  const lag = rader.map((r, i) => ({
+    plass: tall(kart.plass ? r[kart.plass] : null) ?? i + 1,
+    lag: lesNavn(r, kart.lag),
+    logo: (kart.logo && typeof r[kart.logo] === "string" ? r[kart.logo] : "") || "",
+    orgId: kart.orgId ? r[kart.orgId] : null,
+    gp: tall(kart.gp ? r[kart.gp] : null),
+    pts: tall(kart.pts ? r[kart.pts] : null),
+    gf: tall(kart.gf ? r[kart.gf] : null),
+    ga: tall(kart.ga ? r[kart.ga] : null)
+  })).filter(r => r.lag);
+
+  if (!lag.length) {
+    console.error("Fikk ingen lagnavn ut av svaret. Foerste rad saa slik ut:");
+    console.error(JSON.stringify(rader[0], null, 2));
+    process.exit(1);
+  }
+
+  if (HENT_LOGOER) {
+    for (const r of lag) {
+      if (!r.logo && r.orgId) r.logo = await hentLogo(r.orgId);
+    }
+    const antall = lag.filter(r => r.logo).length;
+    console.log(`Logoer funnet: ${antall} av ${lag.length}`);
+  }
+
+  lag.forEach(r => delete r.orgId);
+
+  await mkdir(dirname(UT), { recursive: true });
+  await writeFile(UT, JSON.stringify({
+    _kilde: API + sti,
+    navn: TITTEL,
+    oppdatert: stamp(),
+    lag
+  }, null, 2) + "\n", "utf8");
+
+  console.log(`Skrev data/ehl.json med ${lag.length} lag.`);
+
+  const tomme = ["gp", "pts", "gf", "ga"].filter(f => lag.every(r => r[f] === null));
+  if (tomme.length) {
+    console.warn("Tomme kolonner:", tomme.join(", "));
+    console.warn("Feltnavn i foerste rad:", JSON.stringify(rader[0]));
+  }
+}
+
+main().catch(err => {
+  console.error("Feilet:", err.message);
+  process.exit(1);
+});
