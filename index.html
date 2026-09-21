@@ -371,13 +371,13 @@
     <div class="main">
       <div class="kamp-panel">
         <div class="kamp-panel-head">
-          Siste 7 dager <span class="antall" id="antallSpilt"></span>
+          <span id="tittelSpilt">Siste 7 dager</span> <span class="antall" id="antallSpilt"></span>
         </div>
         <div class="kamp-liste" id="kamperSpilt"></div>
       </div>
       <div class="kamp-panel">
         <div class="kamp-panel-head">
-          Neste 7 dager <span class="antall" id="antallKommende"></span>
+          <span id="tittelKommende">Neste 7 dager</span> <span class="antall" id="antallKommende"></span>
         </div>
         <div class="kamp-liste" id="kamperKommende"></div>
       </div>
@@ -803,6 +803,19 @@ setInterval(refreshTabeller, TABELL_REFRESH_MS);
 const KAMP_URL = "data/kamper.json";
 const KAMP_REFRESH_MS = 15 * 60 * 1000;
 
+/* hockey.no bruker de formelle navnene: "Tønsberg og Omegn Ishockeyklubb - MEN 1".
+   Vi korter dem ned til noe som er lesbart paa avstand. */
+function kortNavn(n) {
+  let s = String(n || "").trim();
+  s = s.replace(/\s*-\s*(MEN|WOMEN|WOM|U\s*-?\d+|JU\s*-?\d+|J\s*-?\d+)\s*\d*\s*$/i, "");
+  s = s.split(" - ")[0];
+  s = s.replace(/,?\s*\b(Ishockeyklubben|Ishockeyklubb|Issportklubb|Idrettsforeningen|Idrettsforening|Idrettslaget|Idrettslag|Sportsklubb|Turn og Idrettsforening|Ishockey|Hockey|IHK|AIL|IL|IF)\b/gi, " ");
+  return s.replace(/\s{2,}/g, " ").replace(/\s*,\s*$/, "").trim() || String(n || "");
+}
+
+/* API-et gir ofte bare dato. Da skal det ikke staa 00:00 paa skjermen. */
+function harTid(k) { return !!k.tid && k.tid !== "00:00"; }
+
 function kampDato(iso) {
   const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(iso || ""));
   return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null;
@@ -820,8 +833,8 @@ function kampSett(k) {
   return {
     hjemme,
     intern: vaartHjemme && vaartBorte,
-    vaartLag: hjemme ? k.hjemme : k.borte,
-    motstander: hjemme ? k.borte : k.hjemme,
+    vaartLag: kortNavn(hjemme ? k.hjemme : k.borte),
+    motstander: kortNavn(hjemme ? k.borte : k.hjemme),
     vaareMal: hjemme ? k.hjemmeMal : k.borteMal,
     motMal: hjemme ? k.borteMal : k.hjemmeMal
   };
@@ -832,7 +845,7 @@ function datoBoks(k, medTid) {
   return `
     <div class="kamp-dato">
       ${d ? `${NB_WEEKDAYS[d.getDay()]} ${d.getDate()}.${d.getMonth() + 1}.` : ""}
-      ${medTid ? `<small>${escapeHtml(k.tid || "")}</small>` : ""}
+      ${medTid && harTid(k) ? `<small>${escapeHtml(k.tid)}</small>` : ""}
     </div>`;
 }
 
@@ -865,7 +878,7 @@ function tegnKommende(k) {
       ${datoBoks(k, true)}
       <div class="kamp-lag">
         ${escapeHtml(v.motstander)}
-        <div class="kamp-meta">${escapeHtml([v.vaartLag, k.arena].filter(Boolean).join(" · "))}</div>
+        <div class="kamp-meta">${escapeHtml([v.vaartLag, k.arena || k.divisjon].filter(Boolean).join(" · "))}</div>
       </div>
       <div class="kamp-hb ${v.hjemme ? "h" : "b"}">${v.hjemme ? "Hjemme" : "Borte"}</div>
     </div>`;
@@ -885,14 +898,32 @@ function tegnKamper() {
   const fra = new Date(iDag); fra.setDate(fra.getDate() - 7);
   const til = new Date(iDag); til.setDate(til.getDate() + 7);
 
-  const spilt = kamper
-    .filter(k => k.dato >= iso(fra) && k.dato <= iso(iDag) && k.hjemmeMal != null)
+  const alleSpilte = kamper
+    .filter(k => k.hjemmeMal != null && k.dato <= iso(iDag))
     .sort((a, b) => b.dato.localeCompare(a.dato));
 
-  const kommende = kamper
-    .filter(k => k.dato >= iso(iDag) && k.dato <= iso(til) && k.hjemmeMal == null)
+  const alleKommende = kamper
+    .filter(k => k.hjemmeMal == null && k.dato >= iso(iDag))
     .sort((a, b) => a.dato.localeCompare(b.dato) || (a.tid || "").localeCompare(b.tid || ""));
 
+  // Foerst vinduet paa syv dager. Er det tomt - typisk foer sesongstart eller
+  // i en landslagspause - viser vi de naermeste kampene i stedet for ingenting.
+  let spilt = alleSpilte.filter(k => k.dato >= iso(fra));
+  let tittelSpilt = "Siste 7 dager";
+  if (!spilt.length && alleSpilte.length) {
+    spilt = alleSpilte.slice(0, 10);
+    tittelSpilt = "Sist spilte";
+  }
+
+  let kommende = alleKommende.filter(k => k.dato <= iso(til));
+  let tittelKommende = "Neste 7 dager";
+  if (!kommende.length && alleKommende.length) {
+    kommende = alleKommende.slice(0, 10);
+    tittelKommende = "Neste kamper";
+  }
+
+  document.getElementById("tittelSpilt").textContent = tittelSpilt;
+  document.getElementById("tittelKommende").textContent = tittelKommende;
   document.getElementById("antallSpilt").textContent = spilt.length || "";
   document.getElementById("antallKommende").textContent = kommende.length || "";
 
