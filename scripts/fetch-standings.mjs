@@ -217,6 +217,17 @@ function finnDato(rad, noekkel) {
   return null;
 }
 
+/* Klubben, pluss eventuelle ekstralag definert for denne serien */
+function lagFilter(t) {
+  if (!t.ekstraLag) return KLUBB;
+  try {
+    return new RegExp(`${KLUBB.source}|${t.ekstraLag}`, "i");
+  } catch {
+    console.warn(`    ugyldig ekstraLag for ${t.navn}, bruker bare klubben`);
+    return KLUBB;
+  }
+}
+
 async function hentKamper(t, foerste) {
   const sti = `/ta/TournamentMatches/?tournamentId=${t.tournamentId}`;
   const rader = finnRader(await api(sti));
@@ -228,12 +239,13 @@ async function hentKamper(t, foerste) {
     console.log(`    gjenkjent: ${JSON.stringify(kart)}`);
   }
 
+  const passer = lagFilter(t);
   const ut = [];
   for (const r of rader) {
     const hjemme = navnAv(kart.hjemme ? r[kart.hjemme] : null);
     const borte = navnAv(kart.borte ? r[kart.borte] : null);
     if (!hjemme || !borte) continue;
-    if (!KLUBB.test(hjemme) && !KLUBB.test(borte)) continue;
+    if (!passer.test(hjemme) && !passer.test(borte)) continue;
 
     const naar = finnDato(r, kart.start);
     if (!naar) continue;
@@ -289,7 +301,7 @@ async function main() {
       const k = await hentKamper(t, foerste);
       foerste = false;
       kamper = kamper.concat(k);
-      console.log(`    ${t.navn}: ${k.length} kamper med Hasle/Løren`);
+      console.log(`    ${t.navn}: ${k.length} kamper` + (t.ekstraLag ? " (inkl. ekstralag)" : ""));
     } catch (err) {
       console.error(`    ${t.navn}: FEIL - ${err.message}`);
     }
