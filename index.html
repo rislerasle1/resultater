@@ -139,8 +139,16 @@
   .slot-locker { font-size: 0.8vw; color: #6b88a3; margin-top: 0.1vw; }
   .slot-locker b { color: var(--deep-blue); }
 
-  /* ---- EHL-tabell ---- */
-  .table-wrap { flex: 1; min-height: 0; overflow-y: auto; }
+  /* ---- Tabellpanel ---- */
+  .list-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1vw; }
+  .tab-dots { display: flex; gap: 0.4vw; flex-shrink: 0; margin-bottom: 0.8vw; }
+  .tab-dots span {
+    width: 0.5vw; height: 0.5vw; border-radius: 50%;
+    background: #c7d9e8; transition: background 0.3s ease, transform 0.3s ease;
+  }
+  .tab-dots span.on { background: var(--deep-blue); transform: scale(1.3); }
+
+  .table-wrap { flex: 1; min-height: 0; overflow-y: auto; transition: opacity 0.35s ease; }
   table.ehl { width: 100%; border-collapse: separate; border-spacing: 0 0.35vw; }
   table.ehl th {
     font-size: 0.72vw; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
@@ -238,8 +246,11 @@
       </div>
 
       <div class="list-panel">
-        <div class="list-title" id="ehlTitle">Elitehockeyligaen</div>
-        <div class="table-wrap">
+        <div class="list-head">
+          <div class="list-title" id="tabellTittel">Tabell</div>
+          <div class="tab-dots" id="tabellDots"></div>
+        </div>
+        <div class="table-wrap" id="tabellWrap">
           <table class="ehl">
             <thead>
               <tr>
@@ -248,7 +259,7 @@
                 <th>GP</th><th>PTS</th><th>GF</th><th>GA</th>
               </tr>
             </thead>
-            <tbody id="ehlBody">
+            <tbody id="tabellBody">
               <tr><td colspan="6" style="text-align:center;color:#4a6a86;font-weight:600;">Laster …</td></tr>
             </tbody>
           </table>
@@ -533,17 +544,24 @@ setInterval(refreshData, REFRESH_DATA_MS);
 setInterval(tick, REFRESH_CLOCK_MS);
 
 
-/* ============ EHL-TABELL ============
-   Kilde: https://live.hockey.no/standings?seasonId=201071&tournamentId=448981
-   Dataene leses fra data/ehl.json i repoet. Nettleseren faar ikke lov til aa
-   kalle live.hockey.no direkte (CORS), saa fila maa fylles av en GitHub
-   Action eller redigeres for haand.
+/* ============ TABELLER SOM ROTERER ============
+   Kilde: TurneringsAdmin, via scripts/fetch-standings.mjs.
+   Nettleseren faar ikke kalle API-et direkte (CORS), saa en GitHub Action
+   henter dataene og skriver data/standings.json inn i repoet.
 */
-const EHL_URL = "data/ehl.json";
-const EHL_REFRESH_MS = 15 * 60 * 1000;
+const TABELL_URL = "data/standings.json";
+const TABELL_FALLBACK = "data/ehl.json";   // fra foer flertabell-versjonen
+const TABELL_REFRESH_MS = 15 * 60 * 1000;
+const TABELL_BYTTE_MS = 7000;
 
-/* Marker eget lag hvis det en dag dukker opp i tabellen */
+/* Marker klubbens egne lag */
 const CLUB_PATTERN = /hasle\s*[-/ ]?\s*l(ø|o)ren/i;
+
+function escapeHtml(s) {
+  return String(s ?? "").replace(/[&<>"']/g, c => (
+    { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
+  ));
+}
 
 function monogram(navn) {
   return (navn || "")
@@ -552,7 +570,7 @@ function monogram(navn) {
     .slice(0, 2).map(w => w[0]).join("").toUpperCase() || "?";
 }
 
-/* Taaler bade gp/pts/gf/ga og kamper/poeng/mal fra de andre datafilene */
+/* Taaler bade gp/pts/gf/ga og kamper/poeng/mal */
 function normalizeRow(r, i) {
   let gf = r.gf, ga = r.ga;
   if ((gf == null || ga == null) && typeof r.mal === "string") {
@@ -570,20 +588,12 @@ function normalizeRow(r, i) {
   };
 }
 
-function renderEhl(data, feil) {
-  const body = document.getElementById("ehlBody");
-  const rows = (data?.lag || data?.rows || []).map(normalizeRow);
+let tabeller = [];
+let tabellIndex = 0;
+let byttTimer = null;
 
-  if (data?.navn) document.getElementById("ehlTitle").textContent = data.navn;
-
-  if (!rows.length) {
-    body.innerHTML = `<tr><td colspan="6" style="text-align:center;color:#4a6a86;font-weight:600;">${
-      feil ? "Fikk ikke hentet tabellen" : "Ingen tabell tilgjengelig"
-    }</td></tr>`;
-    return;
-  }
-
-  body.innerHTML = rows.map(r => `
+function tegnRader(tabell) {
+  return (tabell.lag || []).map(normalizeRow).map(r => `
     <tr class="${CLUB_PATTERN.test(r.lag) ? "club" : ""}">
       <td class="logo-cell">${
         r.logo
@@ -598,28 +608,76 @@ function renderEhl(data, feil) {
     </tr>`).join("");
 }
 
-function escapeHtml(s) {
-  return String(s ?? "").replace(/[&<>"']/g, c => (
-    { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
-  ));
+function tegnPrikker() {
+  document.getElementById("tabellDots").innerHTML =
+    tabeller.length > 1
+      ? tabeller.map((_, n) => `<span class="${n === tabellIndex ? "on" : ""}"></span>`).join("")
+      : "";
 }
 
-let ehlData = null;
+function visTabell(n, mykt = true) {
+  const tabell = tabeller[n];
+  if (!tabell) return;
+  const wrap = document.getElementById("tabellWrap");
 
-async function refreshEhl() {
-  try {
-    const res = await fetch(EHL_URL + "?t=" + Date.now(), { cache: "no-store" });
-    if (!res.ok) throw new Error("HTTP " + res.status);
-    ehlData = await res.json();
-    renderEhl(ehlData, null);
-  } catch (e) {
-    // Behold forrige gyldige tabell hvis nettverket svikter
-    renderEhl(ehlData, e.message || String(e));
+  const bytt = () => {
+    document.getElementById("tabellTittel").textContent = tabell.navn || "Tabell";
+    document.getElementById("tabellBody").innerHTML = tegnRader(tabell);
+    wrap.scrollTop = 0;
+    tegnPrikker();
+    wrap.style.opacity = 1;
+  };
+
+  if (!mykt) { bytt(); return; }
+  wrap.style.opacity = 0;
+  setTimeout(bytt, 350);
+}
+
+function visFeil(melding) {
+  document.getElementById("tabellBody").innerHTML =
+    `<tr><td colspan="6" style="text-align:center;color:#4a6a86;font-weight:600;">${escapeHtml(melding)}</td></tr>`;
+}
+
+function startRotasjon() {
+  clearInterval(byttTimer);
+  if (tabeller.length < 2) return;
+  byttTimer = setInterval(() => {
+    tabellIndex = (tabellIndex + 1) % tabeller.length;
+    visTabell(tabellIndex);
+  }, TABELL_BYTTE_MS);
+}
+
+async function hentTabeller() {
+  // Prøv flertabell-fila først, fall tilbake paa den gamle EHL-fila
+  for (const url of [TABELL_URL, TABELL_FALLBACK]) {
+    try {
+      const res = await fetch(url + "?t=" + Date.now(), { cache: "no-store" });
+      if (!res.ok) continue;
+      const data = await res.json();
+      const nye = (data.tabeller || [data]).filter(t => (t.lag || []).length);
+      if (nye.length) return nye;
+    } catch { /* prøv neste */ }
   }
+  return null;
 }
 
-refreshEhl();
-setInterval(refreshEhl, EHL_REFRESH_MS);
+async function refreshTabeller() {
+  const nye = await hentTabeller();
+
+  if (!nye) {
+    // Behold forrige gyldige tabell hvis nettverket svikter
+    if (!tabeller.length) visFeil("Fikk ikke hentet tabellene");
+    return;
+  }
+
+  tabeller = nye;
+  if (tabellIndex >= tabeller.length) tabellIndex = 0;
+  visTabell(tabellIndex, false);
+  startRotasjon();
+}
+
+refreshTabeller();
+setInterval(refreshTabeller, TABELL_REFRESH_MS);
 </script>
 </body>
 </html>
