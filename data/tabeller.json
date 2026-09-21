@@ -1,34 +1,49 @@
 {
-  "_kommentar": "Tabellene som roterer paa skjermen, i den rekkefoelgen de vises. Legg til en ny ved aa lime inn navn og tournamentId fra live.hockey.no. Tom tournamentId hoppes over.",
+  "_kommentar": "Sidene paa skjermen, i den rekkefoelgen de vises. lag = etiketten i overskriften. type klubb gir tabell + spilte + kommende. type liga gir tabell + siste resultater.",
   "seasonId": 201071,
   "tabeller": [
     {
-      "navn": "Elitehockeyligaen",
-      "tournamentId": 448981
-    },
-    {
       "navn": "2. divisjon menn",
-      "tournamentId": 448978
+      "tournamentId": 448978,
+      "lag": "Elite",
+      "type": "klubb"
     },
     {
       "navn": "U20 1. divisjon",
-      "tournamentId": 449696
-    },
-    {
-      "navn": "JU14",
-      "tournamentId": 450050
+      "tournamentId": 449696,
+      "lag": "U20",
+      "type": "klubb"
     },
     {
       "navn": "U15C",
-      "tournamentId": 449807
+      "tournamentId": 449807,
+      "lag": "U15",
+      "type": "klubb"
     },
     {
       "navn": "U14B",
-      "tournamentId": 449850
+      "tournamentId": 449850,
+      "lag": "U14",
+      "type": "klubb"
+    },
+    {
+      "navn": "JU14",
+      "tournamentId": 450050,
+      "lag": "J14",
+      "type": "klubb"
     },
     {
       "navn": "5. divisjon menn",
-      "tournamentId": 449995
+      "tournamentId": 449995,
+      "lag": "2",
+      "type": "klubb"
+    },
+    {
+      "navn": "Elitehockeyligaen",
+      "tournamentId": 448981,
+      "type": "liga",
+      "alleLag": true,
+      "_kommentar": "alleLag: behold alle kamper i serien, ikke bare klubbens"
     }
   ]
 }
