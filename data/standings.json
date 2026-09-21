@@ -1,0 +1,621 @@
+{
+  "oppdatert": "21.09.2026, 13:00",
+  "tabeller": [
+    {
+      "navn": "Elitehockeyligaen",
+      "tournamentId": 448981,
+      "kilde": "https://sf34-terminlister-prod-app.azurewebsites.net/ta/TournamentStandings/?tournamentId=448981",
+      "lag": [
+        {
+          "plass": 1,
+          "lag": "Vålerenga Elite",
+          "logo": "",
+          "gp": 2,
+          "pts": null,
+          "gf": 6,
+          "ga": null
+        },
+        {
+          "plass": 2,
+          "lag": "Ringerike",
+          "logo": "",
+          "gp": 2,
+          "pts": null,
+          "gf": 7,
+          "ga": null
+        },
+        {
+          "plass": 3,
+          "lag": "Stjernen Elite",
+          "logo": "",
+          "gp": 2,
+          "pts": null,
+          "gf": 9,
+          "ga": null
+        },
+        {
+          "plass": 4,
+          "lag": "Nidaros",
+          "logo": "",
+          "gp": 1,
+          "pts": null,
+          "gf": 6,
+          "ga": null
+        },
+        {
+          "plass": 5,
+          "lag": "Storhamar Elite",
+          "logo": "",
+          "gp": 1,
+          "pts": null,
+          "gf": 2,
+          "ga": null
+        },
+        {
+          "plass": 6,
+          "lag": "Frisk Asker Elite",
+          "logo": "",
+          "gp": 2,
+          "pts": null,
+          "gf": 2,
+          "ga": null
+        },
+        {
+          "plass": 7,
+          "lag": "Lillehammer Elite",
+          "logo": "",
+          "gp": 2,
+          "pts": null,
+          "gf": 5,
+          "ga": null
+        },
+        {
+          "plass": 8,
+          "lag": "Stavanger Oilers",
+          "logo": "",
+          "gp": 2,
+          "pts": null,
+          "gf": 3,
+          "ga": null
+        },
+        {
+          "plass": 9,
+          "lag": "Narvik",
+          "logo": "",
+          "gp": 2,
+          "pts": null,
+          "gf": 3,
+          "ga": null
+        },
+        {
+          "plass": 10,
+          "lag": "Sparta Elite",
+          "logo": "",
+          "gp": null,
+          "pts": null,
+          "gf": null,
+          "ga": null
+        }
+      ]
+    },
+    {
+      "navn": "2. divisjon menn",
+      "tournamentId": 448978,
+      "kilde": "https://sf34-terminlister-prod-app.azurewebsites.net/ta/TournamentStandings/?tournamentId=448978",
+      "lag": [
+        {
+          "plass": 1,
+          "lag": "Rosenborg",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 2,
+          "lag": "Furuset",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 3,
+          "lag": "IHK Sparta Sarp",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 4,
+          "lag": "Tønsberg",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 5,
+          "lag": "TIF Viking/Bergen",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 6,
+          "lag": "Hasle-Løren Elite",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 7,
+          "lag": "Åsane",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        }
+      ]
+    },
+    {
+      "navn": "U20 1. divisjon",
+      "tournamentId": 449696,
+      "kilde": "https://sf34-terminlister-prod-app.azurewebsites.net/ta/TournamentStandings/?tournamentId=449696",
+      "lag": [
+        {
+          "plass": 1,
+          "lag": "Skedsmo",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 2,
+          "lag": "Furuset",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 3,
+          "lag": "Comet Halden",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 4,
+          "lag": "Jar/Holmen",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 5,
+          "lag": "Hasle-Løren",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        }
+      ]
+    },
+    {
+      "navn": "JU14",
+      "tournamentId": 450050,
+      "kilde": "https://sf34-terminlister-prod-app.azurewebsites.net/ta/TournamentStandings/?tournamentId=450050",
+      "lag": [
+        {
+          "plass": 1,
+          "lag": "Vålerenga",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 2,
+          "lag": "Frisk Asker",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 3,
+          "lag": "Furuset",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 4,
+          "lag": "Storhamar/Ullensaker",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 5,
+          "lag": "Ski",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 6,
+          "lag": "Hasle-Løren",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 7,
+          "lag": "Lillehammer",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 8,
+          "lag": "Kongsberg",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 9,
+          "lag": "Jutul/Jar",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        }
+      ]
+    },
+    {
+      "navn": "U15C",
+      "tournamentId": 449807,
+      "kilde": "https://sf34-terminlister-prod-app.azurewebsites.net/ta/TournamentStandings/?tournamentId=449807",
+      "lag": [
+        {
+          "plass": 1,
+          "lag": "Frisk Asker/Jutul 2",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 2,
+          "lag": "Hasle-Løren",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 3,
+          "lag": "Kristiansand/Idda",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 4,
+          "lag": "Kongsberg",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 5,
+          "lag": "Skien",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 6,
+          "lag": "Nes",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 7,
+          "lag": "Sparta Sarp 2",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 8,
+          "lag": "Tromsø",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 9,
+          "lag": "Ullensaker",
+          "logo": "",
+          "gp": null,
+          "pts": null,
+          "gf": null,
+          "ga": null
+        }
+      ]
+    },
+    {
+      "navn": "U14B",
+      "tournamentId": 449850,
+      "kilde": "https://sf34-terminlister-prod-app.azurewebsites.net/ta/TournamentStandings/?tournamentId=449850",
+      "lag": [
+        {
+          "plass": 1,
+          "lag": "Ullensaker",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 2,
+          "lag": "Kongsvinger",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 3,
+          "lag": "Stjernen 2",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 4,
+          "lag": "Furuset/Lørenskog 2",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 5,
+          "lag": "Ringerike",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 6,
+          "lag": "Storhamar",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 7,
+          "lag": "Ski",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 8,
+          "lag": "Hasle Løren",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 9,
+          "lag": "Tønsberg",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 10,
+          "lag": "Comet",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        }
+      ]
+    },
+    {
+      "navn": "5. divisjon menn",
+      "tournamentId": 449995,
+      "kilde": "https://sf34-terminlister-prod-app.azurewebsites.net/ta/TournamentStandings/?tournamentId=449995",
+      "lag": [
+        {
+          "plass": 1,
+          "lag": "Gamle Oslo",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 2,
+          "lag": "Ullensaker",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 3,
+          "lag": "Jutul",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 4,
+          "lag": "Bøler",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 5,
+          "lag": "Grüner 3",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 6,
+          "lag": "Ringerike 2",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 7,
+          "lag": "Jordal",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 8,
+          "lag": "Hasle/Løren 2",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 9,
+          "lag": "Kråkene Moss 2",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 10,
+          "lag": "Nesøya 2",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 11,
+          "lag": "Tønsberg 2",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 12,
+          "lag": "Aker",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 13,
+          "lag": "Stange Sportsklubb",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        }
+      ]
+    }
+  ]
+}
