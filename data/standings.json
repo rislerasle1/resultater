@@ -1,103 +1,6 @@
 {
-  "oppdatert": "21.09.2026, 20:41",
+  "oppdatert": "21.09.2026, 21:02",
   "tabeller": [
-    {
-      "navn": "Elitehockeyligaen",
-      "tournamentId": 448981,
-      "kilde": "https://sf34-terminlister-prod-app.azurewebsites.net/ta/TournamentStandings/?tournamentId=448981",
-      "lag": [
-        {
-          "plass": 1,
-          "lag": "Vålerenga Elite",
-          "logo": "",
-          "gp": 2,
-          "pts": null,
-          "gf": 6,
-          "ga": null
-        },
-        {
-          "plass": 2,
-          "lag": "Ringerike",
-          "logo": "",
-          "gp": 2,
-          "pts": null,
-          "gf": 7,
-          "ga": null
-        },
-        {
-          "plass": 3,
-          "lag": "Stjernen Elite",
-          "logo": "",
-          "gp": 2,
-          "pts": null,
-          "gf": 9,
-          "ga": null
-        },
-        {
-          "plass": 4,
-          "lag": "Nidaros",
-          "logo": "",
-          "gp": 1,
-          "pts": null,
-          "gf": 6,
-          "ga": null
-        },
-        {
-          "plass": 5,
-          "lag": "Storhamar Elite",
-          "logo": "",
-          "gp": 1,
-          "pts": null,
-          "gf": 2,
-          "ga": null
-        },
-        {
-          "plass": 6,
-          "lag": "Frisk Asker Elite",
-          "logo": "",
-          "gp": 2,
-          "pts": null,
-          "gf": 2,
-          "ga": null
-        },
-        {
-          "plass": 7,
-          "lag": "Lillehammer Elite",
-          "logo": "",
-          "gp": 2,
-          "pts": null,
-          "gf": 5,
-          "ga": null
-        },
-        {
-          "plass": 8,
-          "lag": "Stavanger Oilers",
-          "logo": "",
-          "gp": 2,
-          "pts": null,
-          "gf": 3,
-          "ga": null
-        },
-        {
-          "plass": 9,
-          "lag": "Narvik",
-          "logo": "",
-          "gp": 2,
-          "pts": null,
-          "gf": 3,
-          "ga": null
-        },
-        {
-          "plass": 10,
-          "lag": "Sparta Elite",
-          "logo": "",
-          "gp": null,
-          "pts": null,
-          "gf": null,
-          "ga": null
-        }
-      ]
-    },
     {
       "navn": "2. divisjon menn",
       "tournamentId": 448978,
@@ -212,94 +115,6 @@
         {
           "plass": 5,
           "lag": "Hasle-Løren",
-          "logo": "",
-          "gp": 0,
-          "pts": null,
-          "gf": 0,
-          "ga": null
-        }
-      ]
-    },
-    {
-      "navn": "JU14",
-      "tournamentId": 450050,
-      "kilde": "https://sf34-terminlister-prod-app.azurewebsites.net/ta/TournamentStandings/?tournamentId=450050",
-      "lag": [
-        {
-          "plass": 1,
-          "lag": "Vålerenga",
-          "logo": "",
-          "gp": 0,
-          "pts": null,
-          "gf": 0,
-          "ga": null
-        },
-        {
-          "plass": 2,
-          "lag": "Frisk Asker",
-          "logo": "",
-          "gp": 0,
-          "pts": null,
-          "gf": 0,
-          "ga": null
-        },
-        {
-          "plass": 3,
-          "lag": "Furuset",
-          "logo": "",
-          "gp": 0,
-          "pts": null,
-          "gf": 0,
-          "ga": null
-        },
-        {
-          "plass": 4,
-          "lag": "Storhamar/Ullensaker",
-          "logo": "",
-          "gp": 0,
-          "pts": null,
-          "gf": 0,
-          "ga": null
-        },
-        {
-          "plass": 5,
-          "lag": "Ski",
-          "logo": "",
-          "gp": 0,
-          "pts": null,
-          "gf": 0,
-          "ga": null
-        },
-        {
-          "plass": 6,
-          "lag": "Hasle-Løren",
-          "logo": "",
-          "gp": 0,
-          "pts": null,
-          "gf": 0,
-          "ga": null
-        },
-        {
-          "plass": 7,
-          "lag": "Lillehammer",
-          "logo": "",
-          "gp": 0,
-          "pts": null,
-          "gf": 0,
-          "ga": null
-        },
-        {
-          "plass": 8,
-          "lag": "Kongsberg",
-          "logo": "",
-          "gp": 0,
-          "pts": null,
-          "gf": 0,
-          "ga": null
-        },
-        {
-          "plass": 9,
-          "lag": "Jutul/Jar",
           "logo": "",
           "gp": 0,
           "pts": null,
@@ -494,6 +309,94 @@
       ]
     },
     {
+      "navn": "JU14",
+      "tournamentId": 450050,
+      "kilde": "https://sf34-terminlister-prod-app.azurewebsites.net/ta/TournamentStandings/?tournamentId=450050",
+      "lag": [
+        {
+          "plass": 1,
+          "lag": "Vålerenga",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 2,
+          "lag": "Frisk Asker",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 3,
+          "lag": "Furuset",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 4,
+          "lag": "Storhamar/Ullensaker",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 5,
+          "lag": "Ski",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 6,
+          "lag": "Hasle-Løren",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 7,
+          "lag": "Lillehammer",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 8,
+          "lag": "Kongsberg",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        },
+        {
+          "plass": 9,
+          "lag": "Jutul/Jar",
+          "logo": "",
+          "gp": 0,
+          "pts": null,
+          "gf": 0,
+          "ga": null
+        }
+      ]
+    },
+    {
       "navn": "5. divisjon menn",
       "tournamentId": 449995,
       "kilde": "https://sf34-terminlister-prod-app.azurewebsites.net/ta/TournamentStandings/?tournamentId=449995",
@@ -613,6 +516,103 @@
           "gp": 0,
           "pts": null,
           "gf": 0,
+          "ga": null
+        }
+      ]
+    },
+    {
+      "navn": "Elitehockeyligaen",
+      "tournamentId": 448981,
+      "kilde": "https://sf34-terminlister-prod-app.azurewebsites.net/ta/TournamentStandings/?tournamentId=448981",
+      "lag": [
+        {
+          "plass": 1,
+          "lag": "Vålerenga Elite",
+          "logo": "",
+          "gp": 2,
+          "pts": null,
+          "gf": 6,
+          "ga": null
+        },
+        {
+          "plass": 2,
+          "lag": "Ringerike",
+          "logo": "",
+          "gp": 2,
+          "pts": null,
+          "gf": 7,
+          "ga": null
+        },
+        {
+          "plass": 3,
+          "lag": "Stjernen Elite",
+          "logo": "",
+          "gp": 2,
+          "pts": null,
+          "gf": 9,
+          "ga": null
+        },
+        {
+          "plass": 4,
+          "lag": "Nidaros",
+          "logo": "",
+          "gp": 1,
+          "pts": null,
+          "gf": 6,
+          "ga": null
+        },
+        {
+          "plass": 5,
+          "lag": "Storhamar Elite",
+          "logo": "",
+          "gp": 1,
+          "pts": null,
+          "gf": 2,
+          "ga": null
+        },
+        {
+          "plass": 6,
+          "lag": "Frisk Asker Elite",
+          "logo": "",
+          "gp": 2,
+          "pts": null,
+          "gf": 2,
+          "ga": null
+        },
+        {
+          "plass": 7,
+          "lag": "Lillehammer Elite",
+          "logo": "",
+          "gp": 2,
+          "pts": null,
+          "gf": 5,
+          "ga": null
+        },
+        {
+          "plass": 8,
+          "lag": "Stavanger Oilers",
+          "logo": "",
+          "gp": 2,
+          "pts": null,
+          "gf": 3,
+          "ga": null
+        },
+        {
+          "plass": 9,
+          "lag": "Narvik",
+          "logo": "",
+          "gp": 2,
+          "pts": null,
+          "gf": 3,
+          "ga": null
+        },
+        {
+          "plass": 10,
+          "lag": "Sparta Elite",
+          "logo": "",
+          "gp": null,
+          "pts": null,
+          "gf": null,
           "ga": null
         }
       ]
