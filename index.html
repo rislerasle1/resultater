@@ -112,12 +112,18 @@
     padding: 0.42vw 0.5vw; border-bottom: 1px solid var(--line-soft);
     font-variant-numeric: tabular-nums;
   }
-  td.pos { color: var(--muted); font-weight: 800; width: 2vw; text-align: center; }
+  td.pos { width: 2.6vw; text-align: center; padding: 0.3vw 0.3vw; }
+  td.pos b {
+    display: block; background: #e7eff7; color: var(--deep);
+    font-size: 0.82vw; font-weight: 900; padding: 0.3vw 0; line-height: 1.2;
+  }
   td.crest { width: 2.4vw; text-align: center; padding: 0.2vw; }
   td.lag { text-align: left; font-weight: 700; }
   td.pts { color: var(--deep); font-weight: 900; }
   tr.oss td { background: #fdf0ee; color: var(--red); }
-  tr.oss td.pos, tr.oss td.pts { color: var(--red); }
+  tr.oss td.pts { color: var(--red); }
+  tr.oss td.pos b { background: var(--red); color: white; }
+  tr.oss td.lag { font-weight: 900; }
 
   .crest span {
     display: inline-flex; align-items: center; justify-content: center;
@@ -134,12 +140,19 @@
     border-bottom: 1px solid var(--line-soft);
     border-left: 0.22vw solid transparent;
   }
-  .kamp.hjemme { border-left-color: var(--deep); }
+  .kamp.hjemme { border-left-color: var(--deep); background: #fbfcfe; }
   .kamp .dato {
-    width: 4.3vw; flex-shrink: 0;
-    font-size: 0.78vw; font-weight: 800; color: var(--deep); line-height: 1.2;
+    width: 5vw; flex-shrink: 0; text-align: center;
+    background: #e7eff7; color: var(--deep);
+    font-size: 0.78vw; font-weight: 900; line-height: 1.25;
+    padding: 0.32vw 0.2vw;
   }
-  .kamp .dato small { display: block; font-size: 0.68vw; font-weight: 600; color: var(--muted); }
+  .kamp .dato small {
+    display: block; font-size: 0.7vw; font-weight: 700;
+    color: var(--deep-2); opacity: 0.8;
+  }
+  .kamp.hjemme .dato { background: var(--deep); color: white; }
+  .kamp.hjemme .dato small { color: white; opacity: 0.75; }
   .kamp .mot {
     flex: 1; min-width: 0;
     font-size: 0.95vw; font-weight: 700;
@@ -150,11 +163,13 @@
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
   .kamp .res {
-    flex-shrink: 0; font-size: 1.05vw; font-weight: 900;
-    font-variant-numeric: tabular-nums; color: var(--deep);
+    flex-shrink: 0; min-width: 3.4vw; text-align: center;
+    font-size: 1.05vw; font-weight: 900;
+    font-variant-numeric: tabular-nums;
+    background: #e7eff7; color: var(--deep); padding: 0.28vw 0.5vw;
   }
-  .kamp .res.s { color: #157a4c; }
-  .kamp .res.t { color: #a6342a; }
+  .kamp .res.s { background: #157a4c; color: white; }
+  .kamp .res.t { background: #a6342a; color: white; }
   .hb {
     flex-shrink: 0; font-size: 0.65vw; font-weight: 900;
     letter-spacing: 0.08em; text-transform: uppercase;
@@ -214,6 +229,12 @@
   .ice.tom { background: var(--deep); }
   .ice.tom .ice-fill { display: none; }
 
+  .page.banner { background: #0a1622; }
+  .page.banner img {
+    width: 100%; height: 100%;
+    object-fit: contain; display: block;
+  }
+
   .laster {
     position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
     font-size: 1.4vw; font-weight: 800; color: var(--muted); background: var(--ice); z-index: 30;
@@ -247,7 +268,14 @@
 
 const LOGO = "https://cdn-bloc.no/background/200000195/7987/2026/4/23/hl_logo.png";
 
-const SIDE_MS = 10000;               // hvor lenge hver side staar
+const SIDE_MS = 10000;               // hvor lenge hver lagside staar
+
+/* Fullskjermbanner. Raa-adressen, ikke github.com/.../blob/... - den siste
+   er en nettside, ikke et bilde. Best: kopier bildet inn i dette repoet og
+   sett BANNER til "bilder/banner.png", saa er du ikke avhengig av et annet repo. */
+const BANNER = "https://raw.githubusercontent.com/rislerasle1/iceice/main/banner%20sk%C3%B8yte%20og%20hockeyskolen.png";
+const BANNER_MS = 5000;              // hvor lenge banneret staar
+const BANNER_ETTER = [1, 4];         // vises etter disse sidene, nullbasert
 const DATA_REFRESH_MS = 15 * 60 * 1000;
 const IS_REFRESH_MS = 5 * 60 * 1000;
 
@@ -398,7 +426,7 @@ function tabellHtml(tabell) {
     <tbody>${rader.map((r, i) => {
       const navn = kortNavn(r.lag);
       return `<tr class="${OSS.test(r.lag) ? "oss" : ""}">
-        <td class="pos">${r.plass ?? i + 1}</td>
+        <td class="pos"><b>${r.plass ?? i + 1}</b></td>
         <td class="crest">${r.logo
           ? `<img src="${esc(r.logo)}" style="width:1.7vw;height:1.7vw;object-fit:contain">`
           : `<span>${esc(monogram(navn))}</span>`}</td>
@@ -546,12 +574,28 @@ function bygg() {
   }
   document.getElementById("laster").style.display = "none";
 
+  const leggTilBanner = () => {
+    if (!BANNER) return;
+    const el = document.createElement("div");
+    el.className = "page banner";
+    el.dataset.ms = BANNER_MS;
+    const img = document.createElement("img");
+    img.alt = "";
+    // Naar bildet ikke lar seg laste, hoppes siden over i stedet for
+    // aa staa svart i fem sekunder
+    img.onerror = () => { el.dataset.hopp = "1"; };
+    img.src = BANNER;
+    el.appendChild(img);
+    stage.appendChild(el);
+  };
+
   aktuelle.forEach((def, n) => {
     const tabell = tabeller.find(t => t.navn === def.navn);
     const el = document.createElement("div");
     el.className = "page";
     el.innerHTML = sideHtml(def, tabell, n, aktuelle.length);
     stage.appendChild(el);
+    if (BANNER_ETTER.includes(n)) leggTilBanner();
   });
 
   if (sideIndex >= aktuelle.length) sideIndex = 0;
@@ -562,11 +606,19 @@ function bygg() {
 function visSide(n) {
   const alle = stage.querySelectorAll(".page");
   if (!alle.length) return;
-  sideIndex = n % alle.length;
-  alle.forEach((el, i) => el.classList.toggle("on", i === sideIndex));
+
+  // Hopp over sider som har meldt seg ut, f.eks. et banner som ikke lastet
+  let i = n % alle.length;
+  for (let forsoek = 0; forsoek < alle.length && alle[i].dataset.hopp; forsoek++) {
+    i = (i + 1) % alle.length;
+  }
+
+  sideIndex = i;
+  alle.forEach((el, k) => el.classList.toggle("on", k === sideIndex));
 
   clearTimeout(sideTimer);
-  sideTimer = setTimeout(() => visSide(sideIndex + 1), SIDE_MS);
+  sideTimer = setTimeout(() => visSide(sideIndex + 1),
+                         +alle[sideIndex].dataset.ms || SIDE_MS);
 }
 
 /* ---------- Klokke og isstripe ---------- */
