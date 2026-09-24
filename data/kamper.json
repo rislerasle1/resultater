@@ -1,5 +1,5 @@
 {
-  "oppdatert": "25.09.2026, 00:09",
+  "oppdatert": "25.09.2026, 00:37",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -682,6 +682,16 @@
       "borteMal": null
     },
     {
+      "dato": "2026-10-28",
+      "tid": "20:30",
+      "hjemme": "Jordal IHK",
+      "borte": "Hasle/Løren IL - Ishockey",
+      "arena": "Ungdomshallen Jordal",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
       "dato": "2026-10-29",
       "tid": "18:30",
       "hjemme": "IF Frisk Asker Hockey",
@@ -922,6 +932,16 @@
       "borteMal": null
     },
     {
+      "dato": "2026-11-12",
+      "tid": "20:30",
+      "hjemme": "Grüner Ishockey IL 3",
+      "borte": "Hasle/Løren IL - Ishockey",
+      "arena": "Grunerhallen",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
       "dato": "2026-11-13",
       "tid": "20:00",
       "hjemme": "Nes Ishockeyklubb",
@@ -1152,6 +1172,16 @@
       "borteMal": null
     },
     {
+      "dato": "2026-11-25",
+      "tid": "20:30",
+      "hjemme": "Hasle/Løren IL - Ishockey",
+      "borte": "Bøler Ishockey Klubb",
+      "arena": "Løren hallen",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
       "dato": "2026-11-26",
       "tid": "18:30",
       "hjemme": "Lillehammer Ishockeyklubb Elite",
@@ -1248,6 +1278,16 @@
       "borte": "Hasle-Løren Elite",
       "arena": "Åsane Arena",
       "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-29",
+      "tid": "15:20",
+      "hjemme": "Hasle/Løren IL - Ishockey",
+      "borte": "Ringerike Ishockeyklubb",
+      "arena": "Løren hallen",
+      "divisjon": "5. divisjon menn",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -1362,12 +1402,32 @@
       "borteMal": null
     },
     {
+      "dato": "2026-12-06",
+      "tid": "17:45",
+      "hjemme": "Jutul, IL - Ishockey",
+      "borte": "Hasle/Løren IL - Ishockey",
+      "arena": "Bærum Ishall",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
       "dato": "2026-12-08",
       "tid": "19:00",
       "hjemme": "Hasle-Løren",
       "borte": "Ishockeyklubben Comet Halden",
       "arena": "Løren hallen",
       "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-09",
+      "tid": "20:30",
+      "hjemme": "Hasle/Løren IL - Ishockey",
+      "borte": "Ullensaker",
+      "arena": "Løren hallen",
+      "divisjon": "5. divisjon menn",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -1608,6 +1668,16 @@
       "borte": "Furuset Ishockey IF",
       "arena": "Løren hallen",
       "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-06",
+      "tid": "20:30",
+      "hjemme": "Gamle Oslo Ishockeyklubb",
+      "borte": "Hasle/Løren IL - Ishockey",
+      "arena": "Løren hallen",
+      "divisjon": "5. divisjon menn",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -1863,6 +1933,16 @@
     },
     {
       "dato": "2027-01-17",
+      "tid": "13:05",
+      "hjemme": "Hasle/Løren IL - Ishockey",
+      "borte": "Stange Sportsklubb",
+      "arena": "Løren hallen",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-17",
       "tid": "17:00",
       "hjemme": "Hasle-Løren Elite",
       "borte": "Tønsberg og Omegn Ishockeyklubb",
@@ -1928,6 +2008,16 @@
       "borte": "Lillehammer Ishockeyklubb Elite",
       "arena": "CC-Amfi",
       "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-21",
+      "tid": "20:30",
+      "hjemme": "Aker Ishockeyklubb",
+      "borte": "Hasle/Løren IL - Ishockey",
+      "arena": "Grunerhallen",
+      "divisjon": "5. divisjon menn",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -2282,6 +2372,26 @@
       "borteMal": null
     },
     {
+      "dato": "2027-02-07",
+      "tid": "18:30",
+      "hjemme": "Hasle/Løren IL - Ishockey",
+      "borte": "Tønsberg og Omegn Ishockeyklubb",
+      "arena": "Løren hallen",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-12",
+      "tid": "20:00",
+      "hjemme": "Nesøya IL - Ishockey",
+      "borte": "Hasle/Løren IL - Ishockey",
+      "arena": "Holmen Ishall",
+      "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
       "dato": "2027-02-14",
       "tid": "16:45",
       "hjemme": "Jar/Holmen",
@@ -2398,6 +2508,16 @@
       "borte": "IF Frisk Asker Hockey",
       "arena": "Jordal Amfi",
       "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-21",
+      "tid": "14:15",
+      "hjemme": "Hasle/Løren IL - Ishockey",
+      "borte": "Kråkene Moss 2",
+      "arena": "Løren hallen",
+      "divisjon": "5. divisjon menn",
       "hjemmeMal": null,
       "borteMal": null
     },
