@@ -1,5 +1,5 @@
 {
-  "oppdatert": "24.09.2026, 20:41",
+  "oppdatert": "24.09.2026, 21:07",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -527,6 +527,15 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Stjernen Elite",
+          "logo": "",
+          "gp": 3,
+          "pts": null,
+          "gf": 13,
+          "ga": null
+        },
+        {
+          "plass": 2,
           "lag": "Vålerenga Elite",
           "logo": "",
           "gp": 2,
@@ -535,17 +544,8 @@
           "ga": null
         },
         {
-          "plass": 2,
-          "lag": "Ringerike",
-          "logo": "",
-          "gp": 2,
-          "pts": null,
-          "gf": 7,
-          "ga": null
-        },
-        {
           "plass": 3,
-          "lag": "Stjernen Elite",
+          "lag": "Nidaros",
           "logo": "",
           "gp": 2,
           "pts": null,
@@ -554,20 +554,20 @@
         },
         {
           "plass": 4,
-          "lag": "Nidaros",
+          "lag": "Ringerike",
           "logo": "",
-          "gp": 1,
+          "gp": 3,
           "pts": null,
-          "gf": 6,
+          "gf": 7,
           "ga": null
         },
         {
           "plass": 5,
           "lag": "Storhamar Elite",
           "logo": "",
-          "gp": 1,
+          "gp": 2,
           "pts": null,
-          "gf": 2,
+          "gf": 10,
           "ga": null
         },
         {
@@ -583,18 +583,18 @@
           "plass": 7,
           "lag": "Lillehammer Elite",
           "logo": "",
-          "gp": 2,
+          "gp": 3,
           "pts": null,
-          "gf": 5,
+          "gf": 7,
           "ga": null
         },
         {
           "plass": 8,
           "lag": "Stavanger Oilers",
           "logo": "",
-          "gp": 2,
+          "gp": 3,
           "pts": null,
-          "gf": 3,
+          "gf": 4,
           "ga": null
         },
         {

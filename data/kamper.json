@@ -1,5 +1,5 @@
 {
-  "oppdatert": "24.09.2026, 20:41",
+  "oppdatert": "24.09.2026, 21:07",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -98,8 +98,8 @@
       "borte": "Nidaros Ishockeyklubb",
       "arena": "Eidsiva Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 3
     },
     {
       "dato": "2026-09-24",
@@ -108,8 +108,8 @@
       "borte": "Stavanger Ishockeyklubb",
       "arena": "Stjernehallen",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 4,
+      "borteMal": 1
     },
     {
       "dato": "2026-09-24",
@@ -118,8 +118,8 @@
       "borte": "Ringerike IHK",
       "arena": "CC-Amfi",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 8,
+      "borteMal": 0
     },
     {
       "dato": "2026-09-26",
