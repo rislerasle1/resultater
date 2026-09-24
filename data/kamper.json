@@ -1,5 +1,5 @@
 {
-  "oppdatert": "24.09.2026, 21:07",
+  "oppdatert": "24.09.2026, 21:36",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -88,8 +88,8 @@
       "borte": "Narvik Ishockeyklubb",
       "arena": "Varner Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 7,
+      "borteMal": 0
     },
     {
       "dato": "2026-09-24",

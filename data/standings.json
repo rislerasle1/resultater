@@ -1,5 +1,5 @@
 {
-  "oppdatert": "24.09.2026, 21:07",
+  "oppdatert": "24.09.2026, 21:36",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -574,9 +574,9 @@
           "plass": 6,
           "lag": "Frisk Asker Elite",
           "logo": "",
-          "gp": 2,
+          "gp": 3,
           "pts": null,
-          "gf": 2,
+          "gf": 9,
           "ga": null
         },
         {
@@ -601,7 +601,7 @@
           "plass": 9,
           "lag": "Narvik",
           "logo": "",
-          "gp": 2,
+          "gp": 3,
           "pts": null,
           "gf": 3,
           "ga": null
