@@ -1,5 +1,5 @@
 {
-  "oppdatert": "26.09.2026, 18:07",
+  "oppdatert": "26.09.2026, 18:39",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -128,8 +128,8 @@
       "borte": "Stjernen Hockey Fredrikstad Elite",
       "arena": "Schjongshallen",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 5
     },
     {
       "dato": "2026-09-26",
@@ -148,8 +148,8 @@
       "borte": "Narvik Ishockeyklubb",
       "arena": "Jordal Amfi",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 6,
+      "borteMal": 2
     },
     {
       "dato": "2026-09-26",

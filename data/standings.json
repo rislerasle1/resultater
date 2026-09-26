@@ -1,5 +1,5 @@
 {
-  "oppdatert": "26.09.2026, 18:07",
+  "oppdatert": "26.09.2026, 18:39",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -529,18 +529,18 @@
           "plass": 1,
           "lag": "Stjernen Elite",
           "logo": "",
-          "gp": 3,
+          "gp": 4,
           "pts": null,
-          "gf": 13,
+          "gf": 18,
           "ga": null
         },
         {
           "plass": 2,
           "lag": "Vålerenga Elite",
           "logo": "",
-          "gp": 2,
+          "gp": 3,
           "pts": null,
-          "gf": 6,
+          "gf": 12,
           "ga": null
         },
         {
@@ -556,9 +556,9 @@
           "plass": 4,
           "lag": "Ringerike",
           "logo": "",
-          "gp": 3,
+          "gp": 4,
           "pts": null,
-          "gf": 7,
+          "gf": 9,
           "ga": null
         },
         {
@@ -601,9 +601,9 @@
           "plass": 9,
           "lag": "Narvik",
           "logo": "",
-          "gp": 3,
+          "gp": 4,
           "pts": null,
-          "gf": 3,
+          "gf": 5,
           "ga": null
         },
         {
