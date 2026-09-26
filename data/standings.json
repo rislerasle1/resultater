@@ -1,5 +1,5 @@
 {
-  "oppdatert": "26.09.2026, 18:39",
+  "oppdatert": "26.09.2026, 19:06",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -545,15 +545,24 @@
         },
         {
           "plass": 3,
-          "lag": "Nidaros",
+          "lag": "Frisk Asker Elite",
           "logo": "",
-          "gp": 2,
+          "gp": 4,
           "pts": null,
-          "gf": 9,
+          "gf": 15,
           "ga": null
         },
         {
           "plass": 4,
+          "lag": "Nidaros",
+          "logo": "",
+          "gp": 3,
+          "pts": null,
+          "gf": 11,
+          "ga": null
+        },
+        {
+          "plass": 5,
           "lag": "Ringerike",
           "logo": "",
           "gp": 4,
@@ -562,21 +571,12 @@
           "ga": null
         },
         {
-          "plass": 5,
+          "plass": 6,
           "lag": "Storhamar Elite",
           "logo": "",
           "gp": 2,
           "pts": null,
           "gf": 10,
-          "ga": null
-        },
-        {
-          "plass": 6,
-          "lag": "Frisk Asker Elite",
-          "logo": "",
-          "gp": 3,
-          "pts": null,
-          "gf": 9,
           "ga": null
         },
         {
