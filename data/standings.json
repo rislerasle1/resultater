@@ -1,5 +1,5 @@
 {
-  "oppdatert": "26.09.2026, 21:06",
+  "oppdatert": "26.09.2026, 21:35",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -574,27 +574,27 @@
           "plass": 6,
           "lag": "Storhamar Elite",
           "logo": "",
-          "gp": 2,
+          "gp": 3,
           "pts": null,
-          "gf": 10,
+          "gf": 12,
           "ga": null
         },
         {
           "plass": 7,
-          "lag": "Lillehammer Elite",
+          "lag": "Stavanger Oilers",
           "logo": "",
-          "gp": 3,
+          "gp": 4,
           "pts": null,
           "gf": 7,
           "ga": null
         },
         {
           "plass": 8,
-          "lag": "Stavanger Oilers",
+          "lag": "Lillehammer Elite",
           "logo": "",
           "gp": 3,
           "pts": null,
-          "gf": 4,
+          "gf": 7,
           "ga": null
         },
         {
