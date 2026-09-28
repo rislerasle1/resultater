@@ -132,6 +132,7 @@
     font-size: 0.62vw; font-weight: 900;
   }
   tr.oss .crest span { background: var(--red); }
+  .crest img { width: 1.7vw; height: 1.7vw; object-fit: contain; display: block; margin: 0 auto; }
 
   /* ---------- Kamper ---------- */
   .kamp {
@@ -421,18 +422,22 @@ function tabellHtml(tabell) {
 
   return `<table>
     <thead><tr>
-      <th></th><th></th><th class="lag">Lag</th><th>GP</th><th>PTS</th><th>GF</th><th>GA</th>
+      <th></th><th></th><th class="lag">Lag</th><th>GP</th><th>+/−</th><th>PTS</th>
     </tr></thead>
     <tbody>${rader.map((r, i) => {
       const navn = kortNavn(r.lag);
-      return `<tr class="${OSS.test(r.lag) ? "oss" : ""}">
+      const oss = OSS.test(r.lag);
+      // Hasle-Løren har ingen logo registrert i NIF - bruk vaar egen
+      const logo = r.logo || (oss ? LOGO : "");
+      const diff = r.diff ?? (r.gf != null && r.ga != null ? r.gf - r.ga : null);
+      const diffTekst = diff == null ? "–" : diff > 0 ? `+${diff}` : String(diff).replace("-", "−");
+      return `<tr class="${oss ? "oss" : ""}">
         <td class="pos"><b>${r.plass ?? i + 1}</b></td>
-        <td class="crest">${r.logo
-          ? `<img src="${esc(r.logo)}" style="width:1.7vw;height:1.7vw;object-fit:contain">`
+        <td class="crest">${logo
+          ? `<img src="${esc(logo)}" alt="" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'${esc(monogram(navn))}'}))">`
           : `<span>${esc(monogram(navn))}</span>`}</td>
         <td class="lag">${esc(navn)}</td>
-        <td>${r.gp ?? "–"}</td><td class="pts">${r.pts ?? "–"}</td>
-        <td>${r.gf ?? "–"}</td><td>${r.ga ?? "–"}</td>
+        <td>${r.gp ?? "–"}</td><td>${diffTekst}</td><td class="pts">${r.pts ?? "–"}</td>
       </tr>`;
     }).join("")}</tbody>
   </table>`;

@@ -62,9 +62,11 @@ const FELT = {
   plass:  [/^(rank|position|pos|placement|plass|no|nr)$/i],
   lag:    [/^(teamname|team_?name|name|team|club|clubname|lag|lagnavn|title)$/i],
   gp:     [/^(gp|gamesplayed|games_?played|played|matches|kamper|spilt)$/i],
-  pts:    [/^(pts|points|point|poeng)$/i],
+  // TA: totalPoints, goalsScored, goalsConceeded (sic), goalDifference
+  pts:    [/^(pts|points|point|poeng|totalpoints)$/i],
   gf:     [/^(gf|goalsfor|goals_?for|scored|goalsscored|malfor|scoret)$/i],
-  ga:     [/^(ga|goalsagainst|goals_?against|conceded|malmot|innsluppet)$/i],
+  ga:     [/^(ga|goalsagainst|goals_?against|conceded|goalsconc?ee?ded|malmot|innsluppet)$/i],
+  diff:   [/^(diff|gd|goaldifference|goal_?diff|malforskjell)$/i],
   orgId:  [/^(orgid|organisationid|organizationid|clubid|teamid)$/i],
   logo:   [/logo|emblem|crest|badge|image|picture/i]
 };
@@ -97,38 +99,61 @@ function lesNavn(rad, noekkel) {
   return "";
 }
 
-/* ---------- Logoer via organisasjons-oppslaget --------------------------- */
+/* ---------- Logoer via organisasjons-oppslaget ---------------------------
+   /org/Organisation leverer logoen som base64 i orgLogoBase64. Mange lag
+   (orgTypeId 7) mangler egen logo - da brukes klubbens (orgTypeId 5).
+   Koblingen lag -> klubb finnes bare i kampene (hometeamClubOrgId).
+   Logoene lagres som filer i data/logoer, saa standings.json holder seg liten. */
 
-function finnUrl(node, dybde = 0) {
-  if (dybde > 5 || !node) return null;
-  if (typeof node === "string") {
-    return /^https?:\/\/.+\.(png|jpe?g|svg|webp)/i.test(node) ? node : null;
-  }
-  if (typeof node !== "object") return null;
-  for (const [k, v] of Object.entries(node)) {
-    if (FELT.logo.some(re => re.test(k))) {
-      const u = finnUrl(v, dybde + 1);
-      if (u) return u;
-    }
-  }
-  for (const v of Object.values(node)) {
-    const u = finnUrl(v, dybde + 1);
-    if (u) return u;
-  }
+const LOGOMAPPE = join(ROOT, "data", "logoer");
+
+function bildeformat(buf) {
+  if (buf[0] === 0x89 && buf[1] === 0x50) return "png";
+  if (buf[0] === 0xff && buf[1] === 0xd8) return "jpg";
+  if (buf[0] === 0x47 && buf[1] === 0x49) return "gif";
+  if (buf.slice(0, 4).toString() === "RIFF") return "webp";
+  if (/<svg/i.test(buf.slice(0, 500).toString())) return "svg";
   return null;
 }
 
+/* Gir relativ sti til logofilen, eller "" hvis organisasjonen ikke har logo */
 async function hentLogo(orgId) {
   try {
-    return finnUrl(await api(`/org/Organisation?orgIds=${orgId}`)) || "";
+    const svar = await api(`/org/Organisation?orgIds=${orgId}`);
+    const b64 = (Array.isArray(svar) ? svar[0] : svar)?.orgLogoBase64;
+    if (!b64) return "";
+    const buf = Buffer.from(b64.replace(/^data:[^,]*,/, ""), "base64");
+    const ext = bildeformat(buf);
+    if (!ext) return "";
+    await mkdir(LOGOMAPPE, { recursive: true });
+    await writeFile(join(LOGOMAPPE, `${orgId}.${ext}`), buf);
+    return `data/logoer/${orgId}.${ext}`;
   } catch {
     return "";
   }
 }
 
+/* Lagets egen logo, ellers klubbens */
+async function settLogoer(tabeller, klubbAv) {
+  const cache = new Map();
+  const logo = async id => {
+    if (!id) return "";
+    if (!cache.has(id)) cache.set(id, await hentLogo(id));
+    return cache.get(id);
+  };
+  for (const t of tabeller) {
+    for (const r of t.lag) {
+      if (!r.logo) r.logo = (await logo(r.orgId)) || (await logo(klubbAv.get(r.orgId)));
+      delete r.orgId;
+    }
+  }
+  const unike = new Set([...cache.values()].filter(Boolean));
+  console.log(`Logoer: ${unike.size} filer i data/logoer`);
+}
+
 /* ---------- En enkelt tabell --------------------------------------------- */
 
-async function hentTabell(t, logoCache) {
+async function hentTabell(t) {
   const sti = `/ta/TournamentStandings/?tournamentId=${t.tournamentId}`;
   const svar = await api(sti);
   const rader = finnRader(svar);
@@ -151,24 +176,14 @@ async function hentTabell(t, logoCache) {
     gp: tall(kart.gp ? r[kart.gp] : null),
     pts: tall(kart.pts ? r[kart.pts] : null),
     gf: tall(kart.gf ? r[kart.gf] : null),
-    ga: tall(kart.ga ? r[kart.ga] : null)
+    ga: tall(kart.ga ? r[kart.ga] : null),
+    diff: tall(kart.diff ? r[kart.diff] : null)
   })).filter(r => r.lag);
 
   if (!lag.length) {
     console.error("    foerste rad:", JSON.stringify(rader[0]));
     throw new Error("fikk ingen lagnavn ut av svaret");
   }
-
-  if (HENT_LOGOER) {
-    for (const r of lag) {
-      if (r.logo || !r.orgId) continue;
-      // Samme klubb gaar igjen i flere tabeller - hent hver logo en gang
-      if (!logoCache.has(r.orgId)) logoCache.set(r.orgId, await hentLogo(r.orgId));
-      r.logo = logoCache.get(r.orgId);
-    }
-  }
-
-  lag.forEach(r => delete r.orgId);
 
   return { navn: t.navn, tournamentId: t.tournamentId, kilde: API + sti, lag };
 }
@@ -341,6 +356,9 @@ const iDag = new Date().toISOString().slice(0, 10);
 
 const debug = { _les: "Raa svar fra TA, kun til feilsoeking. Trygg aa slette." };
 
+/* lag-orgId -> klubb-orgId, fylles fra kampradene og brukes til logoene */
+const klubbAv = new Map();
+
 async function hentKamper(t, foerste) {
   const sti = `/ta/TournamentMatches/?tournamentId=${t.tournamentId}`;
   const svar = await api(sti);
@@ -368,6 +386,9 @@ async function hentKamper(t, foerste) {
   const ut = [];
 
   for (const r of rader) {
+    if (r.hometeamId && r.hometeamClubOrgId) klubbAv.set(r.hometeamId, r.hometeamClubOrgId);
+    if (r.awayteamId && r.awayteamClubOrgId) klubbAv.set(r.awayteamId, r.awayteamClubOrgId);
+
     // TA leverer tre navn per lag. OverriddenName er kortnavnet klubben
     // selv har satt - "Hasle-Løren", "Frisk Asker" - og er det vi vil ha.
     const lagNavn = (side) => {
@@ -413,17 +434,15 @@ async function main() {
     console.log("Uten tournamentId, hoppes over:", hoppet.map(t => t.navn).join(", "));
   }
 
-  const logoCache = new Map();
   const ut = [];
   let feil = 0;
 
   for (const t of oenskede) {
     console.log(`\n${t.navn} (${t.tournamentId})`);
     try {
-      const tabell = await hentTabell(t, logoCache);
+      const tabell = await hentTabell(t);
       ut.push(tabell);
-      const medLogo = tabell.lag.filter(r => r.logo).length;
-      console.log(`    ${tabell.lag.length} lag, ${medLogo} med logo`);
+      console.log(`    ${tabell.lag.length} lag`);
     } catch (err) {
       console.error(`    FEIL: ${err.message}`);
       feil++;
@@ -443,6 +462,13 @@ async function main() {
     } catch (err) {
       console.error(`    ${t.navn}: FEIL - ${err.message}`);
     }
+  }
+
+  if (HENT_LOGOER) {
+    console.log("");
+    await settLogoer(ut, klubbAv);
+  } else {
+    ut.forEach(t => t.lag.forEach(r => delete r.orgId));
   }
 
   // Samme kamp kan ligge i to serier
