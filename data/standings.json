@@ -1,5 +1,5 @@
 {
-  "oppdatert": "29.09.2026, 06:41",
+  "oppdatert": "29.09.2026, 07:07",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -661,7 +661,7 @@
         {
           "plass": 9,
           "lag": "Narvik",
-          "logo": "",
+          "logo": "data/logoer/27416.png",
           "gp": 4,
           "pts": 0,
           "gf": 5,
