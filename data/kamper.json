@@ -1,5 +1,5 @@
 {
-  "oppdatert": "01.10.2026, 09:42",
+  "oppdatert": "01.10.2026, 10:10",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -2034,16 +2034,6 @@
     {
       "dato": "2027-01-23",
       "tid": "16:00",
-      "hjemme": "Narvik Ishockeyklubb",
-      "borte": "Stjernen Hockey Fredrikstad Elite",
-      "arena": "Nordkraft Arena",
-      "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
-    },
-    {
-      "dato": "2027-01-23",
-      "tid": "16:00",
       "hjemme": "Nidaros Ishockeyklubb",
       "borte": "IF Frisk Asker Hockey",
       "arena": "Leangen Arena",
@@ -2067,6 +2057,16 @@
       "hjemme": "Vålerenga Ishockey Elite",
       "borte": "Ringerike IHK",
       "arena": "Jordal Amfi",
+      "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-23",
+      "tid": "18:30",
+      "hjemme": "Narvik Ishockeyklubb",
+      "borte": "Stjernen Hockey Fredrikstad Elite",
+      "arena": "Nordkraft Arena",
       "divisjon": "Elitehockeyligaen",
       "hjemmeMal": null,
       "borteMal": null
