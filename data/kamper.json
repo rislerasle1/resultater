@@ -1,5 +1,5 @@
 {
-  "oppdatert": "01.10.2026, 20:44",
+  "oppdatert": "01.10.2026, 21:08",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -168,8 +168,8 @@
       "borte": "Ringerike IHK",
       "arena": "DNB Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 6,
+      "borteMal": 2
     },
     {
       "dato": "2026-10-01",
@@ -178,8 +178,8 @@
       "borte": "Lillehammer Ishockeyklubb Elite",
       "arena": "Varner Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 2
     },
     {
       "dato": "2026-10-01",
@@ -198,8 +198,8 @@
       "borte": "Vålerenga Ishockey Elite",
       "arena": "Stjernehallen",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 0,
+      "borteMal": 8
     },
     {
       "dato": "2026-10-03",

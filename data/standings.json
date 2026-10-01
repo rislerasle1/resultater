@@ -1,5 +1,5 @@
 {
-  "oppdatert": "01.10.2026, 20:44",
+  "oppdatert": "01.10.2026, 21:08",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -580,33 +580,33 @@
       "lag": [
         {
           "plass": 1,
-          "lag": "Stjernen Elite",
-          "logo": "data/logoer/695363.png",
+          "lag": "Vålerenga Elite",
+          "logo": "data/logoer/527810.jpg",
           "gp": 4,
-          "pts": 9,
-          "gf": 18,
-          "ga": 8,
-          "diff": 10
+          "pts": 12,
+          "gf": 20,
+          "ga": 3,
+          "diff": 17
         },
         {
           "plass": 2,
-          "lag": "Vålerenga Elite",
-          "logo": "data/logoer/527810.jpg",
-          "gp": 3,
-          "pts": 9,
-          "gf": 12,
-          "ga": 3,
-          "diff": 9
+          "lag": "Frisk Asker Elite",
+          "logo": "data/logoer/695546.png",
+          "gp": 5,
+          "pts": 10,
+          "gf": 18,
+          "ga": 10,
+          "diff": 8
         },
         {
           "plass": 3,
-          "lag": "Frisk Asker Elite",
-          "logo": "data/logoer/695546.png",
-          "gp": 4,
-          "pts": 7,
-          "gf": 15,
-          "ga": 8,
-          "diff": 7
+          "lag": "Stjernen Elite",
+          "logo": "data/logoer/695363.png",
+          "gp": 5,
+          "pts": 9,
+          "gf": 18,
+          "ga": 16,
+          "diff": 2
         },
         {
           "plass": 4,
@@ -620,16 +620,26 @@
         },
         {
           "plass": 5,
-          "lag": "Ringerike",
-          "logo": "data/logoer/22629.png",
-          "gp": 4,
+          "lag": "Stavanger Oilers",
+          "logo": "data/logoer/220882.png",
+          "gp": 5,
           "pts": 6,
-          "gf": 9,
+          "gf": 13,
           "ga": 16,
-          "diff": -7
+          "diff": -3
         },
         {
           "plass": 6,
+          "lag": "Ringerike",
+          "logo": "data/logoer/22629.png",
+          "gp": 5,
+          "pts": 6,
+          "gf": 11,
+          "ga": 22,
+          "diff": -11
+        },
+        {
+          "plass": 7,
           "lag": "Storhamar Elite",
           "logo": "data/logoer/708311.png",
           "gp": 3,
@@ -639,24 +649,14 @@
           "diff": 8
         },
         {
-          "plass": 7,
-          "lag": "Stavanger Oilers",
-          "logo": "data/logoer/220882.png",
-          "gp": 4,
-          "pts": 3,
-          "gf": 7,
-          "ga": 14,
-          "diff": -7
-        },
-        {
           "plass": 8,
           "lag": "Lillehammer Elite",
           "logo": "data/logoer/852911.png",
-          "gp": 3,
+          "gp": 4,
           "pts": 0,
-          "gf": 7,
-          "ga": 8,
-          "diff": -1
+          "gf": 9,
+          "ga": 11,
+          "diff": -2
         },
         {
           "plass": 9,
