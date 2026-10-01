@@ -1,5 +1,5 @@
 {
-  "oppdatert": "01.10.2026, 21:40",
+  "oppdatert": "01.10.2026, 22:08",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -612,11 +612,11 @@
           "plass": 4,
           "lag": "Nidaros",
           "logo": "data/logoer/770066.png",
-          "gp": 3,
-          "pts": 6,
-          "gf": 11,
-          "ga": 11,
-          "diff": 0
+          "gp": 4,
+          "pts": 9,
+          "gf": 14,
+          "ga": 13,
+          "diff": 1
         },
         {
           "plass": 5,
@@ -642,11 +642,11 @@
           "plass": 7,
           "lag": "Storhamar Elite",
           "logo": "data/logoer/708311.png",
-          "gp": 3,
+          "gp": 4,
           "pts": 5,
-          "gf": 12,
-          "ga": 4,
-          "diff": 8
+          "gf": 14,
+          "ga": 7,
+          "diff": 7
         },
         {
           "plass": 8,

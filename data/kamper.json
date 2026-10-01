@@ -1,5 +1,5 @@
 {
-  "oppdatert": "01.10.2026, 21:40",
+  "oppdatert": "01.10.2026, 22:08",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -188,8 +188,8 @@
       "borte": "Storhamar IL Ishockeygruppen Elite",
       "arena": "Leangen Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 2
     },
     {
       "dato": "2026-10-01",
