@@ -1,5 +1,5 @@
 {
-  "oppdatert": "02.10.2026, 16:10",
+  "oppdatert": "02.10.2026, 16:43",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -580,16 +580,6 @@
       "lag": [
         {
           "plass": 1,
-          "lag": "Vålerenga Elite",
-          "logo": "data/logoer/527810.jpg",
-          "gp": 4,
-          "pts": 12,
-          "gf": 20,
-          "ga": 3,
-          "diff": 17
-        },
-        {
-          "plass": 2,
           "lag": "Frisk Asker Elite",
           "logo": "data/logoer/695546.png",
           "gp": 5,
@@ -599,14 +589,24 @@
           "diff": 8
         },
         {
-          "plass": 3,
+          "plass": 2,
           "lag": "Stjernen Elite",
           "logo": "data/logoer/695363.png",
-          "gp": 5,
+          "gp": 4,
           "pts": 9,
           "gf": 18,
-          "ga": 16,
-          "diff": 2
+          "ga": 8,
+          "diff": 10
+        },
+        {
+          "plass": 3,
+          "lag": "Vålerenga Elite",
+          "logo": "data/logoer/527810.jpg",
+          "gp": 3,
+          "pts": 9,
+          "gf": 12,
+          "ga": 3,
+          "diff": 9
         },
         {
           "plass": 4,
