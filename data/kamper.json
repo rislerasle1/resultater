@@ -1,5 +1,5 @@
 {
-  "oppdatert": "02.10.2026, 15:42",
+  "oppdatert": "02.10.2026, 16:10",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -198,8 +198,8 @@
       "borte": "Vålerenga Ishockey Elite",
       "arena": "Stjernehallen",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": 0,
-      "borteMal": 8
+      "hjemmeMal": null,
+      "borteMal": null
     },
     {
       "dato": "2026-10-03",
