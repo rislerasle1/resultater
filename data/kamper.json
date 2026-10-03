@@ -1,5 +1,5 @@
 {
-  "oppdatert": "03.10.2026, 18:34",
+  "oppdatert": "03.10.2026, 21:39",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -208,8 +208,8 @@
       "borte": "Nidaros Ishockeyklubb",
       "arena": "Schjongshallen",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 2
     },
     {
       "dato": "2026-10-03",
@@ -218,8 +218,8 @@
       "borte": "Lillehammer Ishockeyklubb Elite",
       "arena": "Nordkraft Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 5
     },
     {
       "dato": "2026-10-03",
@@ -238,8 +238,8 @@
       "borte": "Vålerenga Ishockey Elite",
       "arena": "CC-Amfi",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 5,
+      "borteMal": 2
     },
     {
       "dato": "2026-10-04",

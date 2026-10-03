@@ -1,5 +1,5 @@
 {
-  "oppdatert": "03.10.2026, 18:34",
+  "oppdatert": "03.10.2026, 21:39",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -8,6 +8,16 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "IHK Sparta Sarp",
+          "logo": "data/logoer/19580.png",
+          "gp": 1,
+          "pts": 3,
+          "gf": 3,
+          "ga": 1,
+          "diff": 2
+        },
+        {
+          "plass": 2,
           "lag": "Rosenborg",
           "logo": "data/logoer/26600.png",
           "gp": 0,
@@ -17,19 +27,9 @@
           "diff": 0
         },
         {
-          "plass": 2,
+          "plass": 3,
           "lag": "Furuset",
           "logo": "data/logoer/188173.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 3,
-          "lag": "IHK Sparta Sarp",
-          "logo": "data/logoer/19580.png",
           "gp": 0,
           "pts": 0,
           "gf": 0,
@@ -48,16 +48,6 @@
         },
         {
           "plass": 5,
-          "lag": "TIF Viking/Bergen",
-          "logo": "",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 6,
           "lag": "Hasle-Løren Elite",
           "logo": "data/logoer/818491.png",
           "gp": 0,
@@ -67,7 +57,7 @@
           "diff": 0
         },
         {
-          "plass": 7,
+          "plass": 6,
           "lag": "Åsane",
           "logo": "",
           "gp": 0,
@@ -75,6 +65,16 @@
           "gf": 0,
           "ga": 0,
           "diff": 0
+        },
+        {
+          "plass": 7,
+          "lag": "TIF Viking/Bergen",
+          "logo": "",
+          "gp": 1,
+          "pts": 0,
+          "gf": 1,
+          "ga": 3,
+          "diff": -2
         }
       ]
     },
@@ -144,11 +144,11 @@
           "plass": 1,
           "lag": "Frisk Asker/Jutul 2",
           "logo": "data/logoer/910033.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
+          "gp": 1,
+          "pts": 2,
+          "gf": 10,
+          "ga": 1,
+          "diff": 9
         },
         {
           "plass": 2,
@@ -214,11 +214,11 @@
           "plass": 8,
           "lag": "Tromsø",
           "logo": "data/logoer/860122.png",
-          "gp": 0,
+          "gp": 1,
           "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
+          "gf": 1,
+          "ga": 10,
+          "diff": -9
         },
         {
           "plass": 9,
@@ -592,21 +592,21 @@
           "plass": 2,
           "lag": "Vålerenga Elite",
           "logo": "data/logoer/527810.jpg",
-          "gp": 4,
+          "gp": 5,
           "pts": 12,
-          "gf": 20,
-          "ga": 3,
-          "diff": 17
+          "gf": 22,
+          "ga": 8,
+          "diff": 14
         },
         {
           "plass": 3,
           "lag": "Nidaros",
           "logo": "data/logoer/770066.png",
-          "gp": 4,
-          "pts": 9,
-          "gf": 14,
-          "ga": 13,
-          "diff": 1
+          "gp": 5,
+          "pts": 10,
+          "gf": 16,
+          "ga": 16,
+          "diff": 0
         },
         {
           "plass": 4,
@@ -620,6 +620,26 @@
         },
         {
           "plass": 5,
+          "lag": "Storhamar Elite",
+          "logo": "data/logoer/708311.png",
+          "gp": 5,
+          "pts": 8,
+          "gf": 19,
+          "ga": 9,
+          "diff": 10
+        },
+        {
+          "plass": 6,
+          "lag": "Ringerike",
+          "logo": "data/logoer/22629.png",
+          "gp": 6,
+          "pts": 8,
+          "gf": 14,
+          "ga": 24,
+          "diff": -10
+        },
+        {
+          "plass": 7,
           "lag": "Stavanger Oilers",
           "logo": "data/logoer/220882.png",
           "gp": 5,
@@ -629,44 +649,24 @@
           "diff": -3
         },
         {
-          "plass": 6,
-          "lag": "Ringerike",
-          "logo": "data/logoer/22629.png",
-          "gp": 5,
-          "pts": 6,
-          "gf": 11,
-          "ga": 22,
-          "diff": -11
-        },
-        {
-          "plass": 7,
-          "lag": "Storhamar Elite",
-          "logo": "data/logoer/708311.png",
-          "gp": 4,
-          "pts": 5,
-          "gf": 14,
-          "ga": 7,
-          "diff": 7
-        },
-        {
           "plass": 8,
           "lag": "Lillehammer Elite",
           "logo": "data/logoer/852911.png",
-          "gp": 4,
-          "pts": 0,
-          "gf": 9,
-          "ga": 11,
-          "diff": -2
+          "gp": 5,
+          "pts": 3,
+          "gf": 14,
+          "ga": 14,
+          "diff": 0
         },
         {
           "plass": 9,
           "lag": "Narvik",
           "logo": "data/logoer/27416.png",
-          "gp": 4,
+          "gp": 5,
           "pts": 0,
-          "gf": 5,
-          "ga": 24,
-          "diff": -19
+          "gf": 8,
+          "ga": 29,
+          "diff": -21
         },
         {
           "plass": 10,
