@@ -1,5 +1,5 @@
 {
-  "oppdatert": "03.10.2026, 21:39",
+  "oppdatert": "04.10.2026, 00:37",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -18,16 +18,26 @@
         },
         {
           "plass": 2,
-          "lag": "Rosenborg",
-          "logo": "data/logoer/26600.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
+          "lag": "Åsane",
+          "logo": "",
+          "gp": 1,
+          "pts": 2,
+          "gf": 5,
+          "ga": 4,
+          "diff": 1
         },
         {
           "plass": 3,
+          "lag": "Rosenborg",
+          "logo": "data/logoer/26600.png",
+          "gp": 1,
+          "pts": 1,
+          "gf": 4,
+          "ga": 5,
+          "diff": -1
+        },
+        {
+          "plass": 4,
           "lag": "Furuset",
           "logo": "data/logoer/188173.png",
           "gp": 0,
@@ -37,7 +47,7 @@
           "diff": 0
         },
         {
-          "plass": 4,
+          "plass": 5,
           "lag": "Tønsberg",
           "logo": "data/logoer/708854.png",
           "gp": 0,
@@ -47,19 +57,9 @@
           "diff": 0
         },
         {
-          "plass": 5,
+          "plass": 6,
           "lag": "Hasle-Løren Elite",
           "logo": "data/logoer/818491.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 6,
-          "lag": "Åsane",
-          "logo": "",
           "gp": 0,
           "pts": 0,
           "gf": 0,
