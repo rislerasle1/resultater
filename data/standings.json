@@ -1,5 +1,5 @@
 {
-  "oppdatert": "04.10.2026, 10:38",
+  "oppdatert": "04.10.2026, 16:34",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -10,31 +10,31 @@
           "plass": 1,
           "lag": "IHK Sparta Sarp",
           "logo": "data/logoer/19580.png",
-          "gp": 1,
-          "pts": 3,
-          "gf": 3,
-          "ga": 1,
-          "diff": 2
+          "gp": 2,
+          "pts": 6,
+          "gf": 11,
+          "ga": 2,
+          "diff": 9
         },
         {
           "plass": 2,
           "lag": "Åsane",
           "logo": "",
-          "gp": 1,
-          "pts": 2,
-          "gf": 5,
-          "ga": 4,
-          "diff": 1
+          "gp": 2,
+          "pts": 4,
+          "gf": 10,
+          "ga": 8,
+          "diff": 2
         },
         {
           "plass": 3,
           "lag": "Rosenborg",
           "logo": "data/logoer/26600.png",
-          "gp": 1,
-          "pts": 1,
-          "gf": 4,
-          "ga": 5,
-          "diff": -1
+          "gp": 2,
+          "pts": 2,
+          "gf": 8,
+          "ga": 10,
+          "diff": -2
         },
         {
           "plass": 4,
@@ -70,11 +70,11 @@
           "plass": 7,
           "lag": "TIF Viking/Bergen",
           "logo": "",
-          "gp": 1,
+          "gp": 2,
           "pts": 0,
-          "gf": 1,
-          "ga": 3,
-          "diff": -2
+          "gf": 2,
+          "ga": 11,
+          "diff": -9
         }
       ]
     },
@@ -154,11 +154,11 @@
           "plass": 2,
           "lag": "Hasle-Løren",
           "logo": "",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
+          "gp": 1,
+          "pts": 2,
+          "gf": 10,
+          "ga": 2,
+          "diff": 8
         },
         {
           "plass": 3,
@@ -203,7 +203,7 @@
         {
           "plass": 7,
           "lag": "Sparta Sarp 2",
-          "logo": "data/logoer/19580.png",
+          "logo": "data/logoer/826221.png",
           "gp": 0,
           "pts": 0,
           "gf": 0,
@@ -214,11 +214,11 @@
           "plass": 8,
           "lag": "Tromsø",
           "logo": "data/logoer/860122.png",
-          "gp": 1,
+          "gp": 2,
           "pts": 0,
-          "gf": 1,
-          "ga": 10,
-          "diff": -9
+          "gf": 3,
+          "ga": 20,
+          "diff": -17
         },
         {
           "plass": 9,

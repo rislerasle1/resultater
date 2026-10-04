@@ -1,5 +1,5 @@
 {
-  "oppdatert": "04.10.2026, 10:38",
+  "oppdatert": "04.10.2026, 16:34",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -248,8 +248,8 @@
       "borte": "Tromsø Ishockeyklubb",
       "arena": "Løren hallen",
       "divisjon": "U15C",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 10,
+      "borteMal": 2
     },
     {
       "dato": "2026-10-04",
