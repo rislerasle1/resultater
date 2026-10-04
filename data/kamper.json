@@ -1,5 +1,5 @@
 {
-  "oppdatert": "04.10.2026, 16:34",
+  "oppdatert": "04.10.2026, 20:30",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -258,8 +258,8 @@
       "borte": "Hasle-Løren Elite",
       "arena": "Tønsberg Ishall",
       "divisjon": "2. divisjon menn",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 4,
+      "borteMal": 1
     },
     {
       "dato": "2026-10-06",

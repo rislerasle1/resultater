@@ -1,5 +1,5 @@
 {
-  "oppdatert": "04.10.2026, 16:34",
+  "oppdatert": "04.10.2026, 20:30",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -28,6 +28,16 @@
         },
         {
           "plass": 3,
+          "lag": "Tønsberg",
+          "logo": "data/logoer/708854.png",
+          "gp": 1,
+          "pts": 3,
+          "gf": 4,
+          "ga": 1,
+          "diff": 3
+        },
+        {
+          "plass": 4,
           "lag": "Rosenborg",
           "logo": "data/logoer/26600.png",
           "gp": 2,
@@ -37,19 +47,9 @@
           "diff": -2
         },
         {
-          "plass": 4,
+          "plass": 5,
           "lag": "Furuset",
           "logo": "data/logoer/188173.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 5,
-          "lag": "Tønsberg",
-          "logo": "data/logoer/708854.png",
           "gp": 0,
           "pts": 0,
           "gf": 0,
@@ -60,11 +60,11 @@
           "plass": 6,
           "lag": "Hasle-Løren Elite",
           "logo": "data/logoer/818491.png",
-          "gp": 0,
+          "gp": 1,
           "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
+          "gf": 1,
+          "ga": 4,
+          "diff": -3
         },
         {
           "plass": 7,
@@ -142,16 +142,26 @@
       "lag": [
         {
           "plass": 1,
-          "lag": "Frisk Asker/Jutul 2",
-          "logo": "data/logoer/910033.png",
+          "lag": "Kongsberg",
+          "logo": "data/logoer/860187.png",
           "gp": 1,
           "pts": 2,
-          "gf": 10,
-          "ga": 1,
-          "diff": 9
+          "gf": 5,
+          "ga": 2,
+          "diff": 3
         },
         {
           "plass": 2,
+          "lag": "Skien",
+          "logo": "data/logoer/600446.png",
+          "gp": 1,
+          "pts": 2,
+          "gf": 19,
+          "ga": 1,
+          "diff": 18
+        },
+        {
+          "plass": 3,
           "lag": "Hasle-Løren",
           "logo": "",
           "gp": 1,
@@ -161,7 +171,17 @@
           "diff": 8
         },
         {
-          "plass": 3,
+          "plass": 4,
+          "lag": "Frisk Asker/Jutul 2",
+          "logo": "data/logoer/910033.png",
+          "gp": 2,
+          "pts": 2,
+          "gf": 12,
+          "ga": 6,
+          "diff": 6
+        },
+        {
+          "plass": 5,
           "lag": "Kristiansand/Idda",
           "logo": "data/logoer/23868.png",
           "gp": 0,
@@ -171,37 +191,7 @@
           "diff": 0
         },
         {
-          "plass": 4,
-          "lag": "Kongsberg",
-          "logo": "data/logoer/860187.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 5,
-          "lag": "Skien",
-          "logo": "data/logoer/600446.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
           "plass": 6,
-          "lag": "Nes",
-          "logo": "data/logoer/20599.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 7,
           "lag": "Sparta Sarp 2",
           "logo": "data/logoer/826221.png",
           "gp": 0,
@@ -211,7 +201,7 @@
           "diff": 0
         },
         {
-          "plass": 8,
+          "plass": 7,
           "lag": "Tromsø",
           "logo": "data/logoer/860122.png",
           "gp": 2,
@@ -219,6 +209,16 @@
           "gf": 3,
           "ga": 20,
           "diff": -17
+        },
+        {
+          "plass": 8,
+          "lag": "Nes",
+          "logo": "data/logoer/20599.png",
+          "gp": 1,
+          "pts": 0,
+          "gf": 1,
+          "ga": 19,
+          "diff": -18
         },
         {
           "plass": 9,
