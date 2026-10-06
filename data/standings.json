@@ -1,5 +1,5 @@
 {
-  "oppdatert": "06.10.2026, 04:39",
+  "oppdatert": "06.10.2026, 11:42",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -397,7 +397,7 @@
         {
           "plass": 6,
           "lag": "Hasle-Løren",
-          "logo": "",
+          "logo": "data/logoer/1029140.png",
           "gp": 0,
           "pts": 0,
           "gf": 0,
