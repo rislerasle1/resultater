@@ -1,5 +1,5 @@
 {
-  "oppdatert": "06.10.2026, 18:27",
+  "oppdatert": "06.10.2026, 23:07",
   "tabeller": [
     {
       "navn": "2. divisjon menn",
@@ -85,6 +85,26 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Comet Halden",
+          "logo": "data/logoer/619776.png",
+          "gp": 1,
+          "pts": 2,
+          "gf": 3,
+          "ga": 1,
+          "diff": 2
+        },
+        {
+          "plass": 2,
+          "lag": "Hasle-Løren",
+          "logo": "",
+          "gp": 1,
+          "pts": 2,
+          "gf": 8,
+          "ga": 7,
+          "diff": 1
+        },
+        {
+          "plass": 3,
           "lag": "Skedsmo",
           "logo": "data/logoer/1010498.jpg",
           "gp": 0,
@@ -94,44 +114,24 @@
           "diff": 0
         },
         {
-          "plass": 2,
+          "plass": 4,
           "lag": "Furuset",
           "logo": "data/logoer/966263.png",
-          "gp": 0,
+          "gp": 1,
           "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 3,
-          "lag": "Comet Halden",
-          "logo": "data/logoer/619776.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 4,
-          "lag": "Jar/Holmen",
-          "logo": "data/logoer/20094.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
+          "gf": 7,
+          "ga": 8,
+          "diff": -1
         },
         {
           "plass": 5,
-          "lag": "Hasle-Løren",
-          "logo": "",
-          "gp": 0,
+          "lag": "Jar/Holmen",
+          "logo": "data/logoer/20094.png",
+          "gp": 1,
           "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
+          "gf": 1,
+          "ga": 3,
+          "diff": -2
         }
       ]
     },

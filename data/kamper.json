@@ -1,5 +1,5 @@
 {
-  "oppdatert": "06.10.2026, 18:27",
+  "oppdatert": "06.10.2026, 23:07",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -268,8 +268,8 @@
       "borte": "Hasle-Løren",
       "arena": "Furuset Forum",
       "divisjon": "U20 1. divisjon",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 7,
+      "borteMal": 8
     },
     {
       "dato": "2026-10-08",
