@@ -1,48 +1,55 @@
 {
-  "_kommentar": "Sidene paa skjermen, i den rekkefoelgen de vises. lag = etiketten i overskriften. type klubb gir tabell + spilte + kommende. type liga gir tabell + siste resultater.",
+  "_kommentar": "Seriene paa skjermen. side = hvilken side serien staar paa, to serier per side, sidene vises i nummerrekkefoelge. lag = lagnavnet paa skjermen. type klubb gir tabell + siste 3 resultater + neste 3 kamper. type liga gir en hel side med tabell + siste resultater + neste kampdag.",
   "seasonId": 201071,
   "tabeller": [
-    {
-      "navn": "2. divisjon menn",
-      "tournamentId": 448978,
-      "lag": "Elite",
-      "type": "klubb"
-    },
-    {
-      "navn": "U20 1. divisjon",
-      "tournamentId": 449696,
-      "lag": "U20",
-      "type": "klubb"
-    },
-    {
-      "navn": "U15C",
-      "tournamentId": 449807,
-      "lag": "U15",
-      "type": "klubb"
-    },
     {
       "navn": "U14B",
       "tournamentId": 449850,
       "lag": "U14",
-      "type": "klubb"
+      "type": "klubb",
+      "side": 1
     },
     {
       "navn": "JU14",
       "tournamentId": 450050,
       "lag": "J14",
-      "type": "klubb"
+      "type": "klubb",
+      "side": 1
+    },
+    {
+      "navn": "U15C",
+      "tournamentId": 449807,
+      "lag": "U15",
+      "type": "klubb",
+      "side": 2
+    },
+    {
+      "navn": "U20 1. divisjon",
+      "tournamentId": 449696,
+      "lag": "U20",
+      "type": "klubb",
+      "side": 2
+    },
+    {
+      "navn": "2. divisjon menn",
+      "tournamentId": 448978,
+      "lag": "A-lag",
+      "type": "klubb",
+      "side": 3
     },
     {
       "navn": "5. divisjon menn",
       "tournamentId": 449995,
-      "lag": "2",
-      "type": "klubb"
+      "lag": "HL2",
+      "type": "klubb",
+      "side": 3
     },
     {
       "navn": "Elitehockeyligaen",
       "tournamentId": 448981,
       "type": "liga",
       "alleLag": true,
+      "side": 4,
       "_kommentar": "alleLag: behold alle kamper i serien, ikke bare klubbens"
     }
   ]

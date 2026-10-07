@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resultatbank – Hasle/Løren</title>
+<title>Resultatbørs – Hasle/Løren</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -14,6 +14,8 @@
     --deep-2: #17518c;
     --red: #c0392b;
     --red-dark: #6e1f18;
+    --win: #157a4c;
+    --loss: #a6342a;
     --text: #12212e;
     --muted: #7d94a8;
     --line: #dbe5ee;
@@ -29,7 +31,6 @@
     color: var(--text);
     overflow: hidden;
   }
-
   body { display: flex; align-items: center; justify-content: center; }
 
   .stage {
@@ -51,89 +52,89 @@
   header {
     flex-shrink: 0;
     display: flex; align-items: center; justify-content: space-between;
-    padding: 1.1vw 2vw;
+    padding: 0.9vw 2vw;
     background: var(--deep);
     border-bottom: 0.25vw solid var(--red);
   }
-  .clock { color: white; line-height: 1; }
-  .clock-time { font-size: 2vw; font-weight: 900; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; }
+  .clock { color: white; line-height: 1; width: 14vw; }
+  .clock-time { font-size: 1.9vw; font-weight: 900; font-variant-numeric: tabular-nums; }
   .clock-date { font-size: 0.8vw; font-weight: 600; color: #9dc0dd; margin-top: 0.25vw; text-transform: capitalize; }
-
   .title { text-align: center; }
   .title .kicker {
     font-size: 0.75vw; font-weight: 800; letter-spacing: 0.22em;
     text-transform: uppercase; color: #7fb0dc;
   }
-  .title h1 {
-    font-size: 1.9vw; font-weight: 900; color: white;
-    letter-spacing: -0.01em; margin-top: 0.2vw;
-  }
+  .title h1 { font-size: 1.8vw; font-weight: 900; color: white; margin-top: 0.15vw; }
+  .brand { display: flex; align-items: center; justify-content: flex-end; gap: 0.8vw; width: 14vw; }
+  .brand img { height: 3.2vw; display: block; }
+  .dots { display: flex; gap: 0.35vw; }
+  .dots i { width: 0.45vw; height: 0.45vw; background: #3d6d9c; display: block; }
+  .dots i.on { background: white; }
 
-  .brand { display: flex; align-items: center; gap: 0.8vw; }
-  .brand img { height: 3.4vw; display: block; }
-
-  /* ---------- Innhold ---------- */
+  /* ---------- To lag side om side ---------- */
   .body {
     flex: 1; min-height: 0;
     display: flex; gap: 0.15vw;
     background: var(--line);
-    border-bottom: 0.15vw solid var(--line);
+  }
+  .lag-kol {
+    flex: 1; min-width: 0;
+    display: flex; flex-direction: column;
+    background: white;
   }
 
-  .panel { background: white; display: flex; flex-direction: column; min-height: 0; min-width: 0; }
-  .panel.tabell { width: 46%; }
-  .panel.kamper { flex: 1; }
-
-  .panel-head {
+  .lag-head {
     flex-shrink: 0;
-    display: flex; align-items: baseline; justify-content: space-between;
-    padding: 0.6vw 1.1vw;
+    display: flex; align-items: center; gap: 0.9vw;
+    padding: 0.65vw 1.1vw;
     background: #eef4f9;
     border-bottom: 1px solid var(--line);
-    font-size: 0.78vw; font-weight: 900;
-    letter-spacing: 0.16em; text-transform: uppercase; color: var(--deep);
   }
-  .panel-head .note {
-    font-size: 0.7vw; font-weight: 700; color: var(--muted);
-    letter-spacing: 0; text-transform: none;
+  .lag-head .navn { font-size: 1.35vw; font-weight: 900; color: var(--deep); }
+  .lag-head .serie {
+    font-size: 0.8vw; font-weight: 700; color: var(--muted);
+    letter-spacing: 0.04em;
   }
-  .panel-body { flex: 1; min-height: 0; overflow: hidden; }
+  .lag-head .plass {
+    margin-left: auto;
+    font-size: 0.8vw; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase;
+    background: var(--red); color: white; padding: 0.3vw 0.7vw;
+  }
 
-  /* ---------- Tabell ----------
-     --rh (radhoeyde) settes av tilpass() slik at tabellen fyller panelet,
-     og all tekst i tabellen skalerer med den. */
-  .panel.tabell { --rh: 2.4vw; }
+  .tabell-body { flex: 1; min-height: 0; overflow: hidden; }
+
+  /* --rh settes av tilpass(): samme radhoeyde for begge lagene paa en side */
+  .page { --rh: 2.2vw; }
   table { width: 100%; border-collapse: collapse; }
   th {
-    font-size: 0.75vw; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
-    color: var(--muted); text-align: right; padding: 0.5vw 0.9vw;
+    font-size: 0.68vw; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted); text-align: right; padding: 0.4vw 0.9vw;
     border-bottom: 1px solid var(--line);
   }
   th.lag { text-align: left; }
   td {
     height: var(--rh);
-    font-size: calc(var(--rh) * 0.42); font-weight: 700; text-align: right;
+    font-size: calc(var(--rh) * 0.44); font-weight: 700; text-align: right;
     padding: 0 0.9vw; border-bottom: 1px solid var(--line-soft);
     font-variant-numeric: tabular-nums;
   }
-  td.pos { width: calc(var(--rh) * 1.15); text-align: center; padding: 0 0.3vw 0 0.9vw; }
+  td.pos { width: calc(var(--rh) * 1.15); text-align: center; padding: 0 0.2vw 0 0.9vw; }
   td.pos b {
     display: block; background: #e7eff7; color: var(--deep);
-    font-size: calc(var(--rh) * 0.36); font-weight: 900; padding: 0.15em 0; line-height: 1.3;
+    font-size: calc(var(--rh) * 0.38); font-weight: 900; padding: 0.12em 0; line-height: 1.3;
   }
-  td.crest { width: calc(var(--rh) * 1.1); text-align: center; padding: 0 0.2vw; }
-  td.lag { text-align: left; font-weight: 700; }
+  td.crest { width: calc(var(--rh) * 1.05); text-align: center; padding: 0 0.2vw; }
+  td.lag { text-align: left; }
   td.pts { color: var(--deep); font-weight: 900; }
   tr.oss td { background: #fdf0ee; color: var(--red); }
   tr.oss td.pts { color: var(--red); }
   tr.oss td.pos b { background: var(--red); color: white; }
   tr.oss td.lag { font-weight: 900; }
-
   .crest span {
     display: inline-flex; align-items: center; justify-content: center;
     width: calc(var(--rh) * 0.72); height: calc(var(--rh) * 0.72);
     background: var(--deep); color: white;
-    font-size: calc(var(--rh) * 0.26); font-weight: 900;
+    font-size: calc(var(--rh) * 0.27); font-weight: 900;
   }
   tr.oss .crest span { background: var(--red); }
   .crest img {
@@ -141,151 +142,95 @@
     object-fit: contain; display: block; margin: 0 auto;
   }
 
-  /* ---------- Neste kamp (fremhevet) ---------- */
-  .neste {
+  /* ---------- Siste 3 / neste 3 under tabellen ---------- */
+  .kamp-rad {
     flex-shrink: 0;
-    display: flex; align-items: center; gap: 1.4vw;
-    padding: 1.1vw 1.4vw;
-    background: var(--deep); color: white;
+    display: flex; gap: 0.15vw;
+    background: var(--line);
+    border-top: 0.15vw solid var(--line);
   }
-  .neste.hjemme { background: linear-gradient(90deg, var(--deep) 0%, var(--deep-2) 100%); }
-  .neste .nk-dato {
-    flex-shrink: 0; width: 6.4vw; text-align: center;
-    background: white; color: var(--deep);
-    padding: 0.5vw 0.3vw; line-height: 1.1;
+  .kamp-kol { flex: 1; min-width: 0; background: white; }
+  .kamp-kol h3 {
+    font-size: 0.7vw; font-weight: 900; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--deep); background: #f5f8fb;
+    padding: 0.45vw 0.9vw; border-bottom: 1px solid var(--line);
   }
-  .neste .nk-dag { font-size: 0.8vw; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); }
-  .neste .nk-dm { font-size: 1.9vw; font-weight: 900; font-variant-numeric: tabular-nums; }
-  .neste .nk-tid { font-size: 0.95vw; font-weight: 800; font-variant-numeric: tabular-nums; color: var(--deep-2); }
-  .neste .nk-info { flex: 1; min-width: 0; }
-  .neste .nk-k {
-    font-size: 0.75vw; font-weight: 800; letter-spacing: 0.22em;
-    text-transform: uppercase; color: #9dc0dd;
-  }
-  .neste .nk-mot {
-    font-size: 2.1vw; font-weight: 900; letter-spacing: -0.01em; margin-top: 0.15vw;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  }
-  .neste .nk-sted {
-    font-size: 0.95vw; font-weight: 600; color: #c4d9eb; margin-top: 0.15vw;
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  }
-  .neste .hb { font-size: 0.85vw; padding: 0.45vw 0.9vw; }
-  .neste .hb.h { background: var(--red); }
-  .neste .hb.b { background: rgba(255,255,255,0.14); color: white; }
-
-  /* ---------- Kamper ---------- */
-  .kamp {
-    display: flex; align-items: center; gap: 0.9vw;
-    padding: 0.5vw 1.1vw;
+  .k {
+    display: flex; align-items: center; gap: 0.6vw;
+    height: 3.2vw; padding: 0 0.9vw;
     border-bottom: 1px solid var(--line-soft);
-    border-left: 0.22vw solid transparent;
   }
-  .kamp.hjemme { border-left-color: var(--deep); background: #fbfcfe; }
-  .kamp .dato {
-    width: 5.6vw; flex-shrink: 0; text-align: center;
+  .k:last-child { border-bottom: 0; }
+  .k .dato {
+    flex-shrink: 0; width: 3.9vw; text-align: center;
     background: #e7eff7; color: var(--deep);
-    font-size: 0.9vw; font-weight: 900; line-height: 1.25;
-    padding: 0.32vw 0.2vw;
+    font-size: 0.72vw; font-weight: 900; line-height: 1.2; padding: 0.25vw 0;
   }
-  .kamp .dato small {
-    display: block; font-size: 0.8vw; font-weight: 700;
-    color: var(--deep-2); opacity: 0.8;
-  }
-  .kamp.hjemme .dato { background: var(--deep); color: white; }
-  .kamp.hjemme .dato small { color: white; opacity: 0.75; }
-  .kamp .mot {
+  .k .dato small { display: block; font-size: 0.66vw; font-weight: 700; opacity: 0.8; }
+  .k.hjemme .dato { background: var(--deep); color: white; }
+  .k .mot {
     flex: 1; min-width: 0;
-    font-size: 1.15vw; font-weight: 700;
+    font-size: 0.95vw; font-weight: 700;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
-  .kamp .mot small {
-    display: block; font-size: 0.78vw; font-weight: 600; color: var(--muted);
+  .k .mot small {
+    display: block; font-size: 0.66vw; font-weight: 600; color: var(--muted);
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
-  .kamp .res {
-    flex-shrink: 0; min-width: 4vw; text-align: center;
-    font-size: 1.25vw; font-weight: 900;
-    font-variant-numeric: tabular-nums;
-    background: #e7eff7; color: var(--deep); padding: 0.3vw 0.5vw;
+  .k .res {
+    flex-shrink: 0; min-width: 3.1vw; text-align: center;
+    font-size: 1vw; font-weight: 900; font-variant-numeric: tabular-nums;
+    background: #e7eff7; color: var(--deep); padding: 0.25vw 0.4vw;
   }
-  .kamp .res.s { background: #157a4c; color: white; }
-  .kamp .res.t { background: #a6342a; color: white; }
-  .hb {
-    flex-shrink: 0; font-size: 0.72vw; font-weight: 900;
-    letter-spacing: 0.08em; text-transform: uppercase;
-    padding: 0.25vw 0.6vw;
+  .k .res.s { background: var(--win); color: white; }
+  .k .res.t { background: var(--loss); color: white; }
+  .k .hb {
+    flex-shrink: 0; font-size: 0.6vw; font-weight: 900; letter-spacing: 0.08em;
+    text-transform: uppercase; padding: 0.2vw 0.45vw;
   }
-  .hb.h { background: var(--deep); color: white; }
-  .hb.b { background: #e9f0f6; color: var(--muted); }
+  .k .hb.h { background: var(--deep); color: white; }
+  .k .hb.b { background: #e9f0f6; color: var(--muted); }
+  .k.tom { color: var(--muted); font-size: 0.85vw; font-weight: 700; }
 
-  /* Ligaresultater er noeytrale: vinneren uthevet, ingen seier/tap-farge */
-  .kamp.liga .mot { flex: 1; font-weight: 600; color: #4a6075; }
-  .kamp.liga .mot.vinner { font-weight: 900; color: var(--text); }
-  .kamp.liga .mot.hj { text-align: right; }
-  .kamp.liga .mot.bo { text-align: left; }
-  .kamp.liga .res { width: 4.4vw; background: var(--deep); color: white; }
-
-  .kol { display: flex; flex-direction: column; min-height: 0; height: 100%; }
-  .kol > .halv { flex: 1; min-height: 0; display: flex; flex-direction: column; }
-  .kol > .halv + .halv { border-top: 0.15vw solid var(--line); }
-  .tomt { padding: 1.2vw 1.1vw; font-size: 1vw; font-weight: 700; color: var(--muted); }
-
-  /* ---------- Isstripe nederst ---------- */
-  .ice {
-    flex-shrink: 0; position: relative;
-    height: 4.2vw;
-    background: var(--red);
-    overflow: hidden;
+  /* Ligakamper: noeytrale, vinneren uthevet */
+  .k.liga .mot { font-weight: 600; color: #4a6075; font-size: 0.9vw; }
+  .k.liga .mot.vinner { font-weight: 900; color: var(--text); }
+  .k.liga .mot.hj { text-align: right; }
+  .k.liga .res, .k.liga .vs { width: 3.6vw; background: var(--deep); color: white; }
+  .k.liga .vs {
+    flex-shrink: 0; text-align: center; font-size: 0.8vw; font-weight: 800;
+    padding: 0.3vw 0; background: #e7eff7; color: var(--deep);
   }
-  .ice-fill {
-    position: absolute; left: 0; top: 0; bottom: 0;
-    background: var(--red-dark);
-    transition: width 1s linear;
-  }
+
+  /* ---------- Isstripe ---------- */
+  .ice { flex-shrink: 0; position: relative; height: 3.8vw; background: var(--red); overflow: hidden; }
+  .ice-fill { position: absolute; left: 0; top: 0; bottom: 0; background: var(--red-dark); transition: width 1s linear; }
   .ice-row {
     position: relative; height: 100%;
     display: flex; align-items: center; justify-content: space-between;
     padding: 0 2vw; gap: 2vw;
   }
   .ice-now { color: white; line-height: 1.15; }
-  .ice-now .k {
-    font-size: 0.7vw; font-weight: 800; letter-spacing: 0.2em;
-    text-transform: uppercase; color: rgba(255,255,255,0.72);
-  }
-  .ice-now .lag { font-size: 1.55vw; font-weight: 900; }
-  .ice-mid {
-    color: rgba(255,255,255,0.9); font-size: 1.1vw; font-weight: 800;
-    font-variant-numeric: tabular-nums;
-  }
+  .ice-now .kk { font-size: 0.65vw; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.72); }
+  .ice-now .lag { font-size: 1.4vw; font-weight: 900; }
+  .ice-mid { color: rgba(255,255,255,0.9); font-size: 1vw; font-weight: 800; font-variant-numeric: tabular-nums; }
   .ice-next { color: rgba(255,255,255,0.82); text-align: right; line-height: 1.15; }
-  .ice-next .k {
-    font-size: 0.7vw; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase;
-    color: rgba(255,255,255,0.6);
-  }
-  .ice-next .lag { font-size: 1.1vw; font-weight: 800; color: white; }
-
-  /* ---------- Sideprikker + demo-merke ---------- */
-  .dots { display: flex; gap: 0.35vw; }
-  .dots i { width: 0.45vw; height: 0.45vw; background: #3d6d9c; display: block; }
-  .dots i.on { background: white; }
-
+  .ice-next .kk { font-size: 0.65vw; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.6); }
+  .ice-next .lag { font-size: 1vw; font-weight: 800; color: white; }
   .ice.tom { background: var(--deep); }
   .ice.tom .ice-fill { display: none; }
 
   .page.banner { background: #0a1622; }
-  .page.banner img {
-    width: 100%; height: 100%;
-    object-fit: contain; display: block;
-  }
+  .page.banner img { width: 100%; height: 100%; object-fit: contain; display: block; }
 
+  .liga-kamper { gap: 0.15vw; background: var(--line); }
+  .liga-kamper .kamp-kol { flex: 1; display: flex; flex-direction: column; }
+  .liga-kamper .k { height: 3.6vw; padding: 0 1.4vw; }
+  .liga-kamper .k .mot { font-size: 1.1vw; }
+  .liga-kamper .k .res, .liga-kamper .k .vs { font-size: 1.1vw; width: 4.6vw; }
   .laster {
     position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
     font-size: 1.4vw; font-weight: 800; color: var(--muted); background: var(--ice); z-index: 30;
-  }
-  .feil {
-    position: absolute; bottom: 4.6vw; left: 2vw;
-    font-size: 0.7vw; font-weight: 700; color: #a6342a;
   }
 </style></head>
 <body>
@@ -296,41 +241,45 @@
 
 <script>
 /* =========================================================================
-   Resultatbank – Hasle/Løren
-   Infoskjerm for Løren ishall.
+   Resultatbørs – Hasle/Løren
+   Infoskjerm for Løren ishall. To lag per side: tabell, og under den de
+   tre siste resultatene og de tre neste kampene.
 
    Leser fire filer fra repoet. Nettleseren snakker aldri med hockey.no
    direkte - GitHub Actions henter dataene og skriver dem hit.
 
-     data/tabeller.json   hvilke sider som vises, og i hvilken rekkefoelge
+     data/tabeller.json   seriene, hvilken side de staar paa ("side") og
+                          lagnavnet paa skjermen ("lag")
      data/standings.json  tabellene
      data/kamper.json     kamper og resultater
      data/schedule.csv    dagens istider, fra Google-arket
 
    Legge til et lag: registrer serien i data/tabeller.json. Ingen kodeendring.
+
+   Taster:   pil venstre/hoeyre = bla, mellomrom = pause
+   Adresse:  ?demo=1  fyller inn oppdiktede resultater (slik det ser ut i sesong)
+             ?side=2  starter paa side 2
    ========================================================================= */
 
 const LOGO = "https://cdn-bloc.no/background/200000195/7987/2026/4/23/hl_logo.png";
-
-const SIDE_MS = 10000;               // hvor lenge hver lagside staar
+const SIDE_MS = 12000;               // hvor lenge hver lagside staar
 
 /* Fullskjermbanner. Raa-adressen, ikke github.com/.../blob/... - den siste
-   er en nettside, ikke et bilde. Best: kopier bildet inn i dette repoet og
-   sett BANNER til "bilder/banner.png", saa er du ikke avhengig av et annet repo. */
+   er en nettside, ikke et bilde. */
 const BANNER = "https://raw.githubusercontent.com/rislerasle1/iceice/main/banner%20sk%C3%B8yte%20og%20hockeyskolen.png";
 const BANNER_MS = 5000;              // hvor lenge banneret staar
-const BANNER_ETTER = [1, 4];         // vises etter disse sidene, nullbasert
+const BANNER_ETTER = [1, 3];         // vises etter disse sidene, nullbasert
 const DATA_REFRESH_MS = 15 * 60 * 1000;
 const IS_REFRESH_MS = 5 * 60 * 1000;
 
-const MAX_SPILTE = 8;                // hoeyst saa mange rader per panel,
-const MAX_KOMMENDE = 12;             // tilpass() kutter til det som faar plass
-const MAX_LIGA = 12;
+const ANTALL_KAMPER = 3;
+const LIGA_KAMPER = 6;
 
-/* Alle skrivemaatene klubben opptrer med paa hockey.no */
 const OSS = /hasle\s*[-/ ]?\s*l(ø|o)ren/i;
+const params = new URLSearchParams(location.search);
+const DEMO = params.has("demo");
 
-/* ---------- Smaating ---------- */
+/* ---------- Smaating (som i index.html) ---------- */
 const pad = n => String(n).padStart(2, "0");
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c =>
   ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -344,8 +293,6 @@ function datoTekst(s) {
   return `${NB[d.getDay()]} ${d.getDate()}.${d.getMonth() + 1}.`;
 }
 
-/* hockey.no bruker de formelle navnene:
-   "Tønsberg og Omegn Ishockeyklubb - MEN 1" -> "Tønsberg og Omegn" */
 function kortNavn(n) {
   let s = String(n || "").trim();
   s = s.replace(/\s*-\s*(MEN|WOMEN|WOM|U\s*-?\d+|JU\s*-?\d+|J\s*-?\d+)\s*\d*\s*$/i, "");
@@ -353,7 +300,6 @@ function kortNavn(n) {
   s = s.replace(/\s+Elite\s*$/i, "");
   s = s.replace(/,?\s*\b(Ishockeygruppen|Ishockeyklubben|Ishockeyklubb|Issportklubb|Idrettsforeningen|Idrettsforening|Idrettslaget|Idrettslag|Sportsklubb|Turn og Idrettsforening|Ishockey|Hockey|IHK|AIL|IL|IF)\b/gi, " ");
   s = s.replace(/\s{2,}/g, " ").replace(/\s*,\s*$/, "").trim() || String(n || "");
-  // Klubben skrives snart med bindestrek, snart med skraastrek. Vi velger en.
   return s.replace(/hasle\s*[-/ ]\s*l(ø|o)ren/i, "Hasle/Løren");
 }
 
@@ -367,12 +313,9 @@ function minutter(t) {
   return m ? +m[1] * 60 + +m[2] : null;
 }
 
-/* ---------- Henting ---------- */
-let sider = [];        // fra tabeller.json
-let standings = null;
-let kamper = [];
-let oekter = [];       // dagens istider
-let feilmelding = "";
+/* ---------- Data ---------- */
+let SIDER = [];        // [[serie, serie], [serie], ...] fra tabeller.json
+let standings = null, kamper = [], oekter = [], feilmelding = "";
 
 async function json(url) {
   const res = await fetch(url + "?t=" + Date.now(), { cache: "no-store" });
@@ -380,28 +323,54 @@ async function json(url) {
   return res.json();
 }
 
+/* Serier med samme "side" i tabeller.json vises sammen. Serier uten
+   side faar en side for seg selv. Rekkefoelgen er sidenummeret. */
+function lagSider(tabeller) {
+  const grupper = new Map();
+  tabeller.forEach((t, i) => {
+    const def = { navn: t.navn, etikett: t.lag || "", liga: t.type === "liga" };
+    const noekkel = t.side ?? 1000 + i;
+    if (!grupper.has(noekkel)) grupper.set(noekkel, []);
+    grupper.get(noekkel).push(def);
+  });
+  return [...grupper.entries()].sort((a, b) => a[0] - b[0]).map(([, defs]) => defs.slice(0, 2));
+}
+
 async function hentData() {
   try {
     const konf = await json("data/tabeller.json");
-    sider = (konf.tabeller || []).filter(t => t.tournamentId);
+    SIDER = lagSider((konf.tabeller || []).filter(t => t.tournamentId));
+    feilmelding = "";
   } catch (e) {
-    feilmelding = "Fant ikke data/tabeller.json";
+    if (!SIDER.length) feilmelding = "Fant ikke data/tabeller.json";
   }
-
-  try {
-    standings = await json("data/standings.json");
-  } catch (e) {
+  try { standings = await json("data/standings.json"); } catch (e) {
     if (!standings) feilmelding = "Fant ikke data/standings.json";
   }
-
-  try {
-    kamper = (await json("data/kamper.json")).kamper || [];
-  } catch (e) {
-    /* behold forrige sett */
-  }
+  try { kamper = (await json("data/kamper.json")).kamper || []; } catch (e) {}
+  if (DEMO) lagDemo();
 }
 
-/* ---------- Istider fra Google-arket ---------- */
+/* Oppdiktede resultater for de tre foerste kampene i hver serie,
+   bare for aa vise hvordan siden ser ut naar sesongen er i gang */
+function lagDemo() {
+  const idag = new Date();
+  const serier = [...new Set(kamper.map(k => k.divisjon))];
+  let frø = 7;
+  const tilfeldig = () => (frø = (frø * 9301 + 49297) % 233280) / 233280;
+  serier.forEach(s => {
+    kamper.filter(k => k.divisjon === s && k.hjemmeMal == null)
+      .sort((a, b) => a.dato.localeCompare(b.dato))
+      .slice(0, 3)
+      .forEach((k, i) => {
+        const d = new Date(idag); d.setDate(d.getDate() - 3 - i * 6);
+        k.dato = iso(d);
+        k.hjemmeMal = Math.floor(tilfeldig() * 6);
+        k.borteMal = Math.floor(tilfeldig() * 6);
+      });
+  });
+}
+
 function parseCSV(text) {
   const rows = []; let row = [], felt = "", iQuote = false;
   for (let i = 0; i < text.length; i++) {
@@ -423,55 +392,35 @@ async function hentIstider() {
     const res = await fetch("data/schedule.csv?t=" + Date.now(), { cache: "no-store" });
     if (!res.ok) throw new Error("HTTP " + res.status);
     const tekst = await res.text();
-    if (/<html/i.test(tekst.slice(0, 200))) throw new Error("innlogging");
-
     const naa = new Date();
     const ukedag = NB[naa.getDay()];
     const dm = `${naa.getDate()}/${naa.getMonth() + 1}`;
     const erIdag = c => new RegExp(`^${ukedag}\\.?\\s+${dm}\\b`).test((c || "").trim().toLowerCase());
-
     let inne = false;
     const ut = [];
     for (const row of parseCSV(tekst)) {
       const a = (row[0] || "").trim();
       if (/^uke\s+\d+/i.test(a)) { inne = false; continue; }
-      if (a) {
-        if (erIdag(a)) inne = true;
-        else if (inne) break;
-        else inne = false;
-      }
+      if (a) { if (erIdag(a)) inne = true; else if (inne) break; else inne = false; }
       if (!inne) continue;
-
       const start = minutter(row[1]);
       if (start === null) continue;
       const slutt = minutter(row[2]);
-      ut.push({
-        fra: (row[1] || "").trim(),
-        til: (row[2] || "").trim(),
-        start,
-        slutt: slutt === null ? start + 60 : slutt,
-        lag: (row[3] || "").trim() || "Trening"
-      });
+      ut.push({ fra: (row[1] || "").trim(), til: (row[2] || "").trim(), start,
+                slutt: slutt === null ? start + 60 : slutt, lag: (row[3] || "").trim() || "Trening" });
     }
     oekter = ut.sort((a, b) => a.start - b.start);
-  } catch (e) {
-    /* behold forrige sett */
-  }
+  } catch (e) {}
 }
 
-/* ---------- Bygg innhold ---------- */
-function tabellHtml(tabell) {
-  const rader = tabell?.lag || [];
-  if (!rader.length) return `<div class="tomt">Ingen tabell</div>`;
-
+/* ---------- Bygg ---------- */
+function tabellHtml(rader) {
+  if (!rader.length) return `<div class="k tom">Ingen tabell</div>`;
   return `<table>
-    <thead><tr>
-      <th></th><th></th><th class="lag">Lag</th><th>GP</th><th>+/−</th><th>PTS</th>
-    </tr></thead>
+    <thead><tr><th></th><th></th><th class="lag">Lag</th><th>GP</th><th>+/−</th><th>PTS</th></tr></thead>
     <tbody>${rader.map((r, i) => {
       const navn = kortNavn(r.lag);
       const oss = OSS.test(r.lag);
-      // Hasle-Løren har ingen logo registrert i NIF - bruk vaar egen
       const logo = r.logo || (oss ? LOGO : "");
       const diff = r.diff ?? (r.gf != null && r.ga != null ? r.gf - r.ga : null);
       const diffTekst = diff == null ? "–" : diff > 0 ? `+${diff}` : String(diff).replace("-", "−");
@@ -487,168 +436,135 @@ function tabellHtml(tabell) {
   </table>`;
 }
 
-/* Kampen sett fra vaart staasted */
 function sett(k) {
   const hjemme = OSS.test(k.hjemme);
-  return {
-    hjemme,
-    motstander: kortNavn(hjemme ? k.borte : k.hjemme),
-    vaare: hjemme ? k.hjemmeMal : k.borteMal,
-    deres: hjemme ? k.borteMal : k.hjemmeMal
-  };
+  return { hjemme, motstander: kortNavn(hjemme ? k.borte : k.hjemme),
+           vaare: hjemme ? k.hjemmeMal : k.borteMal, deres: hjemme ? k.borteMal : k.hjemmeMal };
 }
 
-/* Stort kort med neste kamp - det folk i hallen oftest lurer paa */
-function nesteHtml(k) {
-  const v = sett(k);
-  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(k.dato || "");
-  const d = m ? new Date(+m[1], +m[2] - 1, +m[3]) : null;
-  const idag = iso(new Date()) === k.dato;
-  const tid = k.tid && k.tid !== "00:00" ? k.tid : "";
-  return `<div class="neste ${v.hjemme ? "hjemme" : ""}">
-    <div class="nk-dato">
-      <div class="nk-dag">${idag ? "I dag" : d ? NB[d.getDay()] : ""}</div>
-      <div class="nk-dm">${d ? `${d.getDate()}.${d.getMonth() + 1}.` : ""}</div>
-      ${tid ? `<div class="nk-tid">${esc(tid)}</div>` : ""}
+const fyll = (rader, tekst) => {
+  const ut = rader.slice();
+  if (!ut.length) ut.push(`<div class="k tom">${tekst}</div>`);
+  while (ut.length < ANTALL_KAMPER) ut.push(`<div class="k"></div>`);
+  return ut.join("");
+};
+
+function sisteHtml(liste, liga) {
+  return fyll(liste.map(k => {
+    if (liga) return `<div class="k liga">
+        <div class="mot hj ${k.hjemmeMal > k.borteMal ? "vinner" : ""}">${esc(kortNavn(k.hjemme))}</div>
+        <div class="res">${k.hjemmeMal}–${k.borteMal}</div>
+        <div class="mot ${k.borteMal > k.hjemmeMal ? "vinner" : ""}">${esc(kortNavn(k.borte))}</div>
+      </div>`;
+    const v = sett(k);
+    const u = v.vaare > v.deres ? "s" : v.vaare < v.deres ? "t" : "";
+    return `<div class="k ${v.hjemme ? "hjemme" : ""}">
+      <div class="dato">${esc(datoTekst(k.dato))}</div>
+      <div class="mot">${esc(v.motstander)}<small>${v.hjemme ? "Hjemme" : "Borte"}</small></div>
+      <div class="res ${u}">${v.vaare}–${v.deres}</div>
+    </div>`;
+  }), "Ingen kamper spilt ennå");
+}
+
+function nesteHtml(liste, liga) {
+  return fyll(liste.map(k => {
+    const tid = k.tid && k.tid !== "00:00" ? k.tid : "";
+    if (liga) return `<div class="k liga">
+        <div class="mot hj">${esc(kortNavn(k.hjemme))}</div>
+        <div class="vs">${esc(tid || "–")}</div>
+        <div class="mot">${esc(kortNavn(k.borte))}</div>
+      </div>`;
+    const v = sett(k);
+    return `<div class="k ${v.hjemme ? "hjemme" : ""}">
+      <div class="dato">${esc(datoTekst(k.dato))}${tid ? `<small>${esc(tid)}</small>` : ""}</div>
+      <div class="mot">${esc(v.motstander)}<small>${esc(k.arena || "")}</small></div>
+      <div class="hb ${v.hjemme ? "h" : "b"}">${v.hjemme ? "Hjemme" : "Borte"}</div>
+    </div>`;
+  }), "Ingen kamper satt opp");
+}
+
+function lagKolHtml(def) {
+  const idag = iso(new Date());
+  const tabell = (standings?.tabeller || []).find(t => t.navn === def.navn);
+  const rader = tabell?.lag || [];
+  const iSerien = kamper.filter(k => k.divisjon === def.navn);
+  const spilte = iSerien.filter(k => k.hjemmeMal != null).sort((a, b) => b.dato.localeCompare(a.dato));
+  const kommende = iSerien.filter(k => k.hjemmeMal == null && k.dato >= idag)
+    .sort((a, b) => a.dato.localeCompare(b.dato) || (a.tid || "").localeCompare(b.tid || ""));
+  const oss = rader.find(r => OSS.test(r.lag));
+  const harSpilt = rader.some(r => r.gp > 0);
+
+  // Ligaen: dagens/neste kampdag i stedet for de tre neste enkeltkampene
+  const nesteListe = def.liga
+    ? kommende.filter(k => k.dato === kommende[0]?.dato).slice(0, ANTALL_KAMPER)
+    : kommende.slice(0, ANTALL_KAMPER);
+  const nesteTittel = def.liga && kommende[0]
+    ? `Neste kamper · ${datoTekst(kommende[0].dato)}` : "Neste kamper";
+
+  // Ligasiden har bare ett lag: tabell til venstre, kampene stablet til hoeyre
+  if (def.liga) return `<div class="lag-kol">
+      <div class="lag-head"><div class="navn">Tabell</div><div class="serie">${esc(def.navn)}</div></div>
+      <div class="tabell-body" data-tabell>${tabellHtml(rader)}</div>
     </div>
-    <div class="nk-info">
-      <div class="nk-k">Neste kamp</div>
-      <div class="nk-mot">${v.hjemme ? "mot " : "borte mot "}${esc(v.motstander)}</div>
-      ${k.arena ? `<div class="nk-sted">${esc(k.arena)}</div>` : ""}
+    <div class="lag-kol liga-kamper">
+      <div class="kamp-kol"><h3>Siste resultater</h3>${sisteHtml(spilte.slice(0, LIGA_KAMPER), true)}</div>
+      <div class="kamp-kol"><h3>${esc(nesteTittel)}</h3>${nesteHtml(kommende.filter(k => k.dato === kommende[0]?.dato).slice(0, LIGA_KAMPER), true)}</div>
+    </div>`;
+
+  return `<div class="lag-kol">
+    <div class="lag-head">
+      <div class="navn">${def.liga ? esc(def.navn) : `Hasle/Løren ${esc(def.etikett)}`}</div>
+      ${def.liga ? "" : `<div class="serie">${esc(def.navn)}</div>`}
+      ${oss && harSpilt ? `<div class="plass">${oss.plass}. plass</div>` : ""}
     </div>
-    <div class="hb ${v.hjemme ? "h" : "b"}">${v.hjemme ? "Hjemme" : "Borte"}</div>
+    <div class="tabell-body" data-tabell>${tabellHtml(rader)}</div>
+    <div class="kamp-rad">
+      <div class="kamp-kol"><h3>Siste resultater</h3>${sisteHtml(spilte.slice(0, ANTALL_KAMPER), def.liga)}</div>
+      <div class="kamp-kol"><h3>${esc(nesteTittel)}</h3>${nesteHtml(nesteListe, def.liga)}</div>
+    </div>
   </div>`;
 }
 
-function spilteHtml(liste) {
-  if (!liste.length) return `<div class="tomt">Ingen spilte kamper</div>`;
-  return liste.map(k => {
-    const v = sett(k);
-    const u = v.vaare > v.deres ? "s" : v.vaare < v.deres ? "t" : "";
-    return `<div class="kamp ${v.hjemme ? "hjemme" : ""}">
-      <div class="dato">${esc(datoTekst(k.dato))}</div>
-      <div class="mot">${esc(v.motstander)}<small>${v.hjemme ? "Hjemme" : "Borte"}${k.arena ? " · " + esc(k.arena) : ""}</small></div>
-      <div class="res ${u}">${v.vaare}–${v.deres}</div>
-    </div>`;
-  }).join("");
-}
-
-function kommendeHtml(liste) {
-  if (!liste.length) return `<div class="tomt">Ingen flere kamper satt opp</div>`;
-  return liste.map(k => {
-    const v = sett(k);
-    const tid = k.tid && k.tid !== "00:00" ? k.tid : "";
-    return `<div class="kamp ${v.hjemme ? "hjemme" : ""}">
-      <div class="dato">${esc(datoTekst(k.dato))}${tid ? `<small>${esc(tid)}</small>` : ""}</div>
-      <div class="mot">${esc(v.motstander)}<small>${esc(k.arena || k.divisjon || "")}</small></div>
-      <div class="hb ${v.hjemme ? "h" : "b"}">${v.hjemme ? "Hjemme" : "Borte"}</div>
-    </div>`;
-  }).join("");
-}
-
-/* Noeytral resultatliste for hele ligaen */
-function ligaHtml(liste) {
-  if (!liste.length) return `<div class="tomt">Ingen resultater</div>`;
-  return liste.map(k => `
-    <div class="kamp liga">
-      <div class="dato">${esc(datoTekst(k.dato))}</div>
-      <div class="mot hj ${k.hjemmeMal > k.borteMal ? "vinner" : ""}">${esc(kortNavn(k.hjemme))}</div>
-      <div class="res">${k.hjemmeMal}–${k.borteMal}</div>
-      <div class="mot bo ${k.borteMal > k.hjemmeMal ? "vinner" : ""}">${esc(kortNavn(k.borte))}</div>
-    </div>`).join("");
-}
-
-function sideHtml(def, tabell, n, antall) {
-  const idag = iso(new Date());
-  const iSerien = kamper.filter(k => k.divisjon === def.navn);
-  const spilte = iSerien.filter(k => k.hjemmeMal != null)
-    .sort((a, b) => b.dato.localeCompare(a.dato));
-  const kommende = iSerien.filter(k => k.hjemmeMal == null && k.dato >= idag)
-    .sort((a, b) => a.dato.localeCompare(b.dato) || (a.tid || "").localeCompare(b.tid || ""));
-
-  const tittel = def.type === "liga"
-    ? esc(def.navn)
-    : `Hasle/Løren ${esc(def.lag || "")} · ${esc(def.navn)}`;
-
-  /* Hoeyre side tilpasser seg sesongen: foer seriestart er det ingen spilte
-     kamper, og da faar "Senere kamper" hele hoeyden i stedet for en tom halvdel.
-     Listene kuttes til det som faktisk faar plass, se tilpass(). */
-  const [neste, ...senere] = kommende;
-  const hoeyre = def.type === "liga"
-    ? `<div class="panel-head">Siste resultater <span class="note">${spilte.length || ""}</span></div>
-       <div class="panel-body" data-fyll>${ligaHtml(spilte.slice(0, MAX_LIGA))}</div>`
-    : `<div class="kol">
-         ${neste ? nesteHtml(neste) : ""}
-         ${spilte.length ? `<div class="halv">
-           <div class="panel-head">Siste resultater <span class="note">${spilte.length} spilt</span></div>
-           <div class="panel-body" data-fyll>${spilteHtml(spilte.slice(0, MAX_SPILTE))}</div>
-         </div>` : ""}
-         ${senere.length || !spilte.length ? `<div class="halv">
-           <div class="panel-head">Senere kamper <span class="note">${senere.length ? senere.length + " igjen" : ""}</span></div>
-           <div class="panel-body" data-fyll>${kommendeHtml(senere.slice(0, MAX_KOMMENDE))}</div>
-         </div>` : ""}
-       </div>`;
-
+function sideHtml(side, n, antall) {
+  const tittel = side.map(d => d.liga ? d.navn : d.etikett).join("  ·  ");
   return `
     <header>
-      <div class="clock">
-        <div class="clock-time" data-tid>–</div>
-        <div class="clock-date" data-dato>–</div>
-      </div>
-      <div class="title">
-        <div class="kicker">RESULTATBØRS</div>
-        <h1>${tittel}</h1>
-      </div>
+      <div class="clock"><div class="clock-time" data-tid>–</div><div class="clock-date" data-dato>–</div></div>
+      <div class="title"><div class="kicker">RESULTATBØRS</div><h1>${esc(tittel)}</h1></div>
       <div class="brand">
-        <div class="dots">${Array.from({ length: antall }, (_, i) =>
-          `<i class="${i === n ? "on" : ""}"></i>`).join("")}</div>
+        <div class="dots">${Array.from({ length: antall }, (_, i) => `<i class="${i === n ? "on" : ""}"></i>`).join("")}</div>
         <img src="${LOGO}" alt="Hasle/Løren">
       </div>
     </header>
-
-    <div class="body">
-      <div class="panel tabell">
-        <div class="panel-head">Tabell <span class="note">${standings?.oppdatert ? "Oppdatert " + esc(standings.oppdatert) : ""}</span></div>
-        <div class="panel-body" data-tabell>${tabellHtml(tabell)}</div>
-      </div>
-      <div class="panel kamper">${hoeyre}</div>
-    </div>
-
+    <div class="body">${side.map(lagKolHtml).join("")}</div>
     <div class="ice" data-ice>
       <div class="ice-fill" data-fill style="width:0%"></div>
       <div class="ice-row">
-        <div class="ice-now">
-          <div class="k">På isen nå</div>
-          <div class="lag" data-naa>–</div>
-        </div>
+        <div class="ice-now"><div class="kk">På isen nå</div><div class="lag" data-naa>–</div></div>
         <div class="ice-mid" data-midt></div>
-        <div class="ice-next">
-          <div class="k">Neste ut</div>
-          <div class="lag" data-neste>–</div>
-        </div>
+        <div class="ice-next"><div class="kk">Neste ut</div><div class="lag" data-neste>–</div></div>
       </div>
     </div>`;
 }
 
-/* ---------- Sidene ---------- */
 const stage = document.getElementById("stage");
-let sideIndex = 0;
-let sideTimer = null;
+let sideIndex = +(params.get("side") || 1) - 1;
+let sideTimer = null, pause = false;
 
 function bygg() {
+  // Serier uten verken tabell eller kamper hoppes over
   const tabeller = standings?.tabeller || [];
-  const aktuelle = sider.filter(def =>
-    tabeller.some(t => t.navn === def.navn) || kamper.some(k => k.divisjon === def.navn));
+  const harData = def => tabeller.some(t => t.navn === def.navn) || kamper.some(k => k.divisjon === def.navn);
+  const aktuelle = SIDER.map(side => side.filter(harData)).filter(side => side.length);
 
   stage.querySelectorAll(".page").forEach(el => el.remove());
-
+  const laster = document.getElementById("laster");
   if (!aktuelle.length) {
-    document.getElementById("laster").textContent =
-      feilmelding || "Ingen data ennå – kjør workflowen «Oppdater tabeller»";
-    document.getElementById("laster").style.display = "flex";
+    laster.textContent = feilmelding || "Ingen data ennå – kjør workflowen «Oppdater tabeller»";
+    laster.style.display = "flex";
     return;
   }
-  document.getElementById("laster").style.display = "none";
+  laster.style.display = "none";
 
   const leggTilBanner = () => {
     if (!BANNER) return;
@@ -665,114 +581,92 @@ function bygg() {
     stage.appendChild(el);
   };
 
-  aktuelle.forEach((def, n) => {
-    const tabell = tabeller.find(t => t.navn === def.navn);
+  aktuelle.forEach((side, n) => {
     const el = document.createElement("div");
     el.className = "page";
-    el.innerHTML = sideHtml(def, tabell, n, aktuelle.length);
+    el.innerHTML = sideHtml(side, n, aktuelle.length);
     stage.appendChild(el);
     if (BANNER_ETTER.includes(n)) leggTilBanner();
   });
-
   tilpass();
-  if (sideIndex >= aktuelle.length) sideIndex = 0;
   visSide(sideIndex);
   tikk();
 }
 
-/* Tabellen strekkes til aa fylle panelet (store rader naar det er faa lag),
-   og kamplistene kuttes til hele rader i stedet for aa bli klippet nederst. */
+/* Samme radhoeyde for begge tabellene paa en side, valgt slik at den
+   lengste tabellen akkurat faar plass. Da staar lagene rett overfor hverandre. */
 function tilpass() {
   const vw = stage.clientWidth / 100;
-  stage.querySelectorAll("[data-tabell]").forEach(body => {
-    const panel = body.closest(".panel");
-    const rader = body.querySelectorAll("tbody tr").length;
-    if (!rader) return;
-    const thead = body.querySelector("thead")?.offsetHeight || 0;
-    const rh = (body.clientHeight - thead - 2) / rader;
-    panel.style.setProperty("--rh", Math.max(1.5 * vw, Math.min(3.6 * vw, rh)) + "px");
-  });
-  stage.querySelectorAll("[data-fyll]").forEach(body => {
-    const rader = body.querySelectorAll(".kamp");
-    for (let i = rader.length - 1; i > 0 && body.scrollHeight > body.clientHeight; i--) {
-      rader[i].remove();
-    }
+  stage.querySelectorAll(".page").forEach(page => {
+    let rh = Infinity;
+    page.querySelectorAll("[data-tabell]").forEach(body => {
+      const n = body.querySelectorAll("tbody tr").length;
+      if (!n) return;
+      const thead = body.querySelector("thead")?.offsetHeight || 0;
+      rh = Math.min(rh, (body.clientHeight - thead - 2) / n);
+    });
+    if (rh !== Infinity) page.style.setProperty("--rh", Math.max(1.3 * vw, Math.min(2.6 * vw, rh)) + "px");
   });
 }
-
-let resizeTimer = null;
-window.addEventListener("resize", () => {
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(bygg, 300);
-});
 
 function visSide(n) {
   const alle = stage.querySelectorAll(".page");
   if (!alle.length) return;
-
+  const steg = n < sideIndex ? -1 : 1;
+  let i = ((n % alle.length) + alle.length) % alle.length;
   // Hopp over sider som har meldt seg ut, f.eks. et banner som ikke lastet
-  let i = n % alle.length;
   for (let forsoek = 0; forsoek < alle.length && alle[i].dataset.hopp; forsoek++) {
-    i = (i + 1) % alle.length;
+    i = (i + steg + alle.length) % alle.length;
   }
-
   sideIndex = i;
   alle.forEach((el, k) => el.classList.toggle("on", k === sideIndex));
-
   clearTimeout(sideTimer);
-  sideTimer = setTimeout(() => visSide(sideIndex + 1),
-                         +alle[sideIndex].dataset.ms || SIDE_MS);
+  if (!pause) sideTimer = setTimeout(() => visSide(sideIndex + 1),
+                                     +alle[sideIndex].dataset.ms || SIDE_MS);
 }
 
-/* ---------- Klokke og isstripe ---------- */
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowRight") visSide(sideIndex + 1);
+  if (e.key === "ArrowLeft") visSide(sideIndex - 1);
+  if (e.key === " ") { pause = !pause; visSide(sideIndex); }
+});
+
 function tikk() {
   const n = new Date();
-  const tid = `${pad(n.getHours())}:${pad(n.getMinutes())}:${pad(n.getSeconds())}`;
-  const dato = n.toLocaleDateString("nb-NO", { weekday: "long", day: "numeric", month: "long" });
-  const sett = (sel, v) => stage.querySelectorAll(sel).forEach(e => e.textContent = v);
-
-  sett("[data-tid]", tid);
-  sett("[data-dato]", dato);
+  const s = (sel, v) => stage.querySelectorAll(sel).forEach(e => e.textContent = v);
+  s("[data-tid]", `${pad(n.getHours())}:${pad(n.getMinutes())}:${pad(n.getSeconds())}`);
+  s("[data-dato]", n.toLocaleDateString("nb-NO", { weekday: "long", day: "numeric", month: "long" }));
 
   const naaMin = n.getHours() * 60 + n.getMinutes() + n.getSeconds() / 60;
   const paa = oekter.filter(o => naaMin >= o.start && naaMin < o.slutt);
-  const senere = oekter.filter(o => o.start > naaMin);
-  const neste = senere.length ? senere[0] : null;
-
-  const tom = !paa.length;
-  stage.querySelectorAll("[data-ice]").forEach(e => e.classList.toggle("tom", tom));
-
+  const neste = oekter.find(o => o.start > naaMin);
+  stage.querySelectorAll("[data-ice]").forEach(e => e.classList.toggle("tom", !paa.length));
   if (paa.length) {
-    const a = Math.min(...paa.map(o => o.start));
-    const b = Math.max(...paa.map(o => o.slutt));
+    const a = Math.min(...paa.map(o => o.start)), b = Math.max(...paa.map(o => o.slutt));
     const andel = b > a ? Math.min(1, Math.max(0, (naaMin - a) / (b - a))) : 1;
-    const igjen = Math.max(0, Math.round(b - naaMin));
-
     stage.querySelectorAll("[data-fill]").forEach(e => e.style.width = (andel * 100).toFixed(2) + "%");
-    sett("[data-naa]", paa.map(o => o.lag).join(" + "));
-    sett("[data-midt]", `${paa[0].fra}–${paa[0].til}   ·   ${igjen} min igjen`);
+    s("[data-naa]", paa.map(o => o.lag).join(" + "));
+    s("[data-midt]", `${paa[0].fra}–${paa[0].til}   ·   ${Math.max(0, Math.round(b - naaMin))} min igjen`);
   } else {
     stage.querySelectorAll("[data-fill]").forEach(e => e.style.width = "0%");
-    sett("[data-naa]", oekter.length ? "Isen er ledig" : "Ingen istider i dag");
-    sett("[data-midt]", "");
+    s("[data-naa]", oekter.length ? "Isen er ledig" : "Ingen istider i dag");
+    s("[data-midt]", "");
   }
-
-  sett("[data-neste]", neste ? `${neste.lag} · ${neste.fra}` : "—");
+  s("[data-neste]", neste ? `${neste.lag} · ${neste.fra}` : "—");
 }
 
-/* ---------- Oppstart ---------- */
-async function start() {
+let resizeTimer = null;
+window.addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(bygg, 300); });
+
+(async () => {
   await Promise.all([hentData(), hentIstider()]);
   bygg();
   // Fonten endrer radhoeydene naar den er lastet - mal opp paa nytt
   document.fonts?.ready.then(bygg);
-
   setInterval(async () => { await hentData(); bygg(); }, DATA_REFRESH_MS);
   setInterval(hentIstider, IS_REFRESH_MS);
   setInterval(tikk, 1000);
-}
-
-start();
+})();
 </script>
 </body>
 </html>
