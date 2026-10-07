@@ -197,6 +197,10 @@
   .k.liga .mot.vinner { font-weight: 900; color: var(--text); }
   .k.liga .mot.hj { text-align: right; }
   .k.liga .res, .k.liga .vs { width: 3.6vw; background: var(--deep); color: white; }
+  .k.liga .mot.oss { color: var(--red); }
+  .k.liga .res.s { background: var(--win); }
+  .k.liga .res.t { background: var(--loss); }
+  .k.liga .res.u { background: #e7eff7; color: var(--deep); }
   .k.liga .vs {
     flex-shrink: 0; text-align: center; font-size: 0.8vw; font-weight: 800;
     padding: 0.3vw 0; background: #e7eff7; color: var(--deep);
@@ -449,20 +453,22 @@ const fyll = (rader, tekst) => {
   return ut.join("");
 };
 
+/* Alltid hjemmelag - resultat - bortelag, som i ligaen. For klubbens lag
+   farges resultatet etter vaart utfall: en borteseier 2-5 blir groenn. */
 function sisteHtml(liste, liga) {
   return fyll(liste.map(k => {
-    if (liga) return `<div class="k liga">
-        <div class="mot hj ${k.hjemmeMal > k.borteMal ? "vinner" : ""}">${esc(kortNavn(k.hjemme))}</div>
-        <div class="res">${k.hjemmeMal}–${k.borteMal}</div>
-        <div class="mot ${k.borteMal > k.hjemmeMal ? "vinner" : ""}">${esc(kortNavn(k.borte))}</div>
+    let u = "";
+    if (!liga) {
+      const v = sett(k);
+      u = v.vaare > v.deres ? "s" : v.vaare < v.deres ? "t" : "u";
+    }
+    const navn = (lag, vinner) =>
+      `${vinner ? "vinner" : ""} ${!liga && OSS.test(lag) ? "oss" : ""}">${esc(kortNavn(lag))}`;
+    return `<div class="k liga">
+        <div class="mot hj ${navn(k.hjemme, k.hjemmeMal > k.borteMal)}</div>
+        <div class="res ${u}">${k.hjemmeMal}–${k.borteMal}</div>
+        <div class="mot ${navn(k.borte, k.borteMal > k.hjemmeMal)}</div>
       </div>`;
-    const v = sett(k);
-    const u = v.vaare > v.deres ? "s" : v.vaare < v.deres ? "t" : "";
-    return `<div class="k ${v.hjemme ? "hjemme" : ""}">
-      <div class="dato">${esc(datoTekst(k.dato))}</div>
-      <div class="mot">${esc(v.motstander)}<small>${v.hjemme ? "Hjemme" : "Borte"}</small></div>
-      <div class="res ${u}">${v.vaare}–${v.deres}</div>
-    </div>`;
   }), "Ingen kamper spilt ennå");
 }
 
