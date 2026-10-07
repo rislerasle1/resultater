@@ -1,5 +1,5 @@
 {
-  "oppdatert": "07.10.2026, 16:09",
+  "oppdatert": "07.10.2026, 22:03",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -734,20 +734,20 @@
     {
       "dato": "2026-10-30",
       "tid": "20:00",
-      "hjemme": "Skedsmo",
-      "borte": "Hasle-Løren",
-      "arena": "Skedsmo Ishall",
-      "divisjon": "U20 1. divisjon",
+      "hjemme": "Hasle-Løren IL - Ishockey",
+      "borte": "Sparta Sarp 2",
+      "arena": "Løren hallen",
+      "divisjon": "U15C",
       "hjemmeMal": null,
       "borteMal": null
     },
     {
       "dato": "2026-10-30",
       "tid": "20:00",
-      "hjemme": "Hasle-Løren IL - Ishockey",
-      "borte": "Sparta Sarp 2",
-      "arena": "Løren hallen",
-      "divisjon": "U15C",
+      "hjemme": "Skedsmo",
+      "borte": "Hasle-Løren",
+      "arena": "Skedsmo Ishall",
+      "divisjon": "U20 1. divisjon",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -1744,20 +1744,20 @@
     {
       "dato": "2027-01-09",
       "tid": "16:00",
-      "hjemme": "Sparta Sarpsborg, IHK",
-      "borte": "Hasle-Løren Elite",
-      "arena": "Sparta Amfi",
-      "divisjon": "2. divisjon menn",
+      "hjemme": "Kongsvinger IL - Ishockey",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Kongsvinger Ishall",
+      "divisjon": "U14B",
       "hjemmeMal": null,
       "borteMal": null
     },
     {
       "dato": "2027-01-09",
       "tid": "16:00",
-      "hjemme": "Kongsvinger IL - Ishockey",
-      "borte": "Hasle-Løren IL - Ishockey",
-      "arena": "Kongsvinger Ishall",
-      "divisjon": "U14B",
+      "hjemme": "Sparta Sarpsborg, IHK",
+      "borte": "Hasle-Løren Elite",
+      "arena": "Sparta Amfi",
+      "divisjon": "2. divisjon menn",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -2084,16 +2084,6 @@
     {
       "dato": "2027-01-24",
       "tid": "15:00",
-      "hjemme": "Skien Ishockeyklubb",
-      "borte": "Hasle-Løren IL - Ishockey",
-      "arena": "Skien isstadion ishockeyanlegg",
-      "divisjon": "U15C",
-      "hjemmeMal": null,
-      "borteMal": null
-    },
-    {
-      "dato": "2027-01-24",
-      "tid": "15:00",
       "hjemme": "Hasle-Løren",
       "borte": "Kongsberg",
       "arena": "Løren hallen",
@@ -2103,11 +2093,11 @@
     },
     {
       "dato": "2027-01-24",
-      "tid": "17:00",
-      "hjemme": "Hasle-Løren Elite",
-      "borte": "Furuset Ishockey IF",
-      "arena": "Løren hallen",
-      "divisjon": "2. divisjon menn",
+      "tid": "15:00",
+      "hjemme": "Skien Ishockeyklubb",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Skien isstadion ishockeyanlegg",
+      "divisjon": "U15C",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -2118,6 +2108,16 @@
       "borte": "Hasle-Løren",
       "arena": "Halden Ishall",
       "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-24",
+      "tid": "17:00",
+      "hjemme": "Hasle-Løren Elite",
+      "borte": "Furuset Ishockey IF",
+      "arena": "Løren hallen",
+      "divisjon": "2. divisjon menn",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -2934,20 +2934,20 @@
     {
       "dato": "2027-03-14",
       "tid": "14:45",
-      "hjemme": "Ishockeyklubben Comet Halden",
-      "borte": "Hasle-Løren",
-      "arena": "Halden Ishall",
-      "divisjon": "U20 1. divisjon",
+      "hjemme": "Kongsberg",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Kongsberghallen",
+      "divisjon": "U15C",
       "hjemmeMal": null,
       "borteMal": null
     },
     {
       "dato": "2027-03-14",
       "tid": "14:45",
-      "hjemme": "Kongsberg",
-      "borte": "Hasle-Løren IL - Ishockey",
-      "arena": "Kongsberghallen",
-      "divisjon": "U15C",
+      "hjemme": "Ishockeyklubben Comet Halden",
+      "borte": "Hasle-Løren",
+      "arena": "Halden Ishall",
+      "divisjon": "U20 1. divisjon",
       "hjemmeMal": null,
       "borteMal": null
     }
