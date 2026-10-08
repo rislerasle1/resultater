@@ -1,5 +1,5 @@
 {
-  "oppdatert": "08.10.2026, 08:26",
+  "oppdatert": "08.10.2026, 15:50",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -463,16 +463,6 @@
     },
     {
       "dato": "2026-10-17",
-      "tid": "16:00",
-      "hjemme": "Nidaros Ishockeyklubb",
-      "borte": "Lillehammer Ishockeyklubb Elite",
-      "arena": "Leangen Arena",
-      "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
-    },
-    {
-      "dato": "2026-10-17",
       "tid": "17:00",
       "hjemme": "Kristiansand/Idda",
       "borte": "Hasle-Løren IL - Ishockey",
@@ -487,6 +477,16 @@
       "hjemme": "IF Frisk Asker Hockey",
       "borte": "Stavanger Ishockeyklubb",
       "arena": "Varner Arena",
+      "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-17",
+      "tid": "17:00",
+      "hjemme": "Nidaros Ishockeyklubb",
+      "borte": "Lillehammer Ishockeyklubb Elite",
+      "arena": "Leangen Arena",
       "divisjon": "Elitehockeyligaen",
       "hjemmeMal": null,
       "borteMal": null
@@ -793,7 +793,7 @@
     },
     {
       "dato": "2026-10-31",
-      "tid": "16:00",
+      "tid": "18:30",
       "hjemme": "Stjernen Hockey Fredrikstad Elite",
       "borte": "Storhamar IL Ishockeygruppen Elite",
       "arena": "Stjernehallen",
@@ -2624,9 +2624,19 @@
     {
       "dato": "2027-02-27",
       "tid": "16:00",
-      "hjemme": "Ringerike IHK",
-      "borte": "Lillehammer Ishockeyklubb Elite",
-      "arena": "Schjongshallen",
+      "hjemme": "Storhamar IL Ishockeygruppen Elite",
+      "borte": "IF Frisk Asker Hockey",
+      "arena": "CC-Amfi",
+      "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-27",
+      "tid": "16:00",
+      "hjemme": "Lillehammer Ishockeyklubb Elite",
+      "borte": "Ringerike IHK",
+      "arena": "Eidsiva Arena",
       "divisjon": "Elitehockeyligaen",
       "hjemmeMal": null,
       "borteMal": null
@@ -2647,16 +2657,6 @@
       "hjemme": "Vålerenga Ishockey Elite",
       "borte": "Narvik Ishockeyklubb",
       "arena": "Jordal Amfi",
-      "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
-    },
-    {
-      "dato": "2027-02-27",
-      "tid": "18:00",
-      "hjemme": "IF Frisk Asker Hockey",
-      "borte": "Storhamar IL Ishockeygruppen Elite",
-      "arena": "Varner Arena",
       "divisjon": "Elitehockeyligaen",
       "hjemmeMal": null,
       "borteMal": null
