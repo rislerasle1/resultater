@@ -1,5 +1,5 @@
 {
-  "oppdatert": "09.10.2026, 21:12",
+  "oppdatert": "10.10.2026, 01:23",
   "tabeller": [
     {
       "navn": "U14B",
@@ -212,6 +212,16 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Hasle-Løren",
+          "logo": "",
+          "gp": 2,
+          "pts": 4,
+          "gf": 17,
+          "ga": 5,
+          "diff": 12
+        },
+        {
+          "plass": 2,
           "lag": "Kongsberg",
           "logo": "data/logoer/860187.png",
           "gp": 1,
@@ -221,7 +231,7 @@
           "diff": 3
         },
         {
-          "plass": 2,
+          "plass": 3,
           "lag": "Skien",
           "logo": "data/logoer/600446.png",
           "gp": 1,
@@ -231,24 +241,14 @@
           "diff": 18
         },
         {
-          "plass": 3,
-          "lag": "Hasle-Løren",
-          "logo": "",
-          "gp": 1,
-          "pts": 2,
-          "gf": 10,
-          "ga": 2,
-          "diff": 8
-        },
-        {
           "plass": 4,
           "lag": "Frisk Asker/Jutul 2",
           "logo": "data/logoer/910033.png",
-          "gp": 2,
+          "gp": 3,
           "pts": 2,
-          "gf": 12,
-          "ga": 6,
-          "diff": 6
+          "gf": 15,
+          "ga": 13,
+          "diff": 2
         },
         {
           "plass": 5,
