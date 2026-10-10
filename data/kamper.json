@@ -1,5 +1,5 @@
 {
-  "oppdatert": "10.10.2026, 11:19",
+  "oppdatert": "10.10.2026, 17:30",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -318,8 +318,8 @@
       "borte": "Hasle-Løren IL - Ishockey",
       "arena": "Stjernehallen",
       "divisjon": "U14B",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 1,
+      "borteMal": 9
     },
     {
       "dato": "2026-10-10",
@@ -328,8 +328,8 @@
       "borte": "Storhamar/Ullensaker",
       "arena": "Løren hallen",
       "divisjon": "JU14",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 5
     },
     {
       "dato": "2026-10-10",
