@@ -1,5 +1,5 @@
 {
-  "oppdatert": "10.10.2026, 21:28",
+  "oppdatert": "11.10.2026, 00:50",
   "tabeller": [
     {
       "navn": "U14B",
@@ -610,6 +610,16 @@
         },
         {
           "plass": 4,
+          "lag": "Storhamar Elite",
+          "logo": "data/logoer/708311.png",
+          "gp": 6,
+          "pts": 11,
+          "gf": 25,
+          "ga": 11,
+          "diff": 14
+        },
+        {
+          "plass": 5,
           "lag": "Stjernen Elite",
           "logo": "data/logoer/695363.png",
           "gp": 7,
@@ -619,24 +629,14 @@
           "diff": 0
         },
         {
-          "plass": 5,
+          "plass": 6,
           "lag": "Stavanger Oilers",
           "logo": "data/logoer/220882.png",
-          "gp": 6,
+          "gp": 7,
           "pts": 9,
-          "gf": 17,
-          "ga": 18,
-          "diff": -1
-        },
-        {
-          "plass": 6,
-          "lag": "Storhamar Elite",
-          "logo": "data/logoer/708311.png",
-          "gp": 5,
-          "pts": 8,
           "gf": 19,
-          "ga": 9,
-          "diff": 10
+          "ga": 24,
+          "diff": -5
         },
         {
           "plass": 7,

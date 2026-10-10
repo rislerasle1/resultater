@@ -1,5 +1,5 @@
 {
-  "oppdatert": "10.10.2026, 21:28",
+  "oppdatert": "11.10.2026, 00:50",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -378,8 +378,8 @@
       "borte": "Stavanger Ishockeyklubb",
       "arena": "CC-Amfi",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 6,
+      "borteMal": 2
     },
     {
       "dato": "2026-10-11",
