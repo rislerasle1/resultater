@@ -1,5 +1,5 @@
 {
-  "oppdatert": "10.10.2026, 17:30",
+  "oppdatert": "10.10.2026, 21:28",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -338,8 +338,8 @@
       "borte": "Sparta Sarpsborg, IHK",
       "arena": "Løren hallen",
       "divisjon": "2. divisjon menn",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 1,
+      "borteMal": 8
     },
     {
       "dato": "2026-10-10",
@@ -348,8 +348,8 @@
       "borte": "Narvik Ishockeyklubb",
       "arena": "Leangen Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 0
     },
     {
       "dato": "2026-10-10",
@@ -358,8 +358,8 @@
       "borte": "Lillehammer Ishockeyklubb Elite",
       "arena": "Jordal Amfi",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 5,
+      "borteMal": 0
     },
     {
       "dato": "2026-10-10",
