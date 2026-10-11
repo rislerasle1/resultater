@@ -1,5 +1,5 @@
 {
-  "oppdatert": "11.10.2026, 16:59",
+  "oppdatert": "11.10.2026, 21:26",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -388,8 +388,8 @@
       "borte": "Kongsvinger IL - Ishockey",
       "arena": "Løren hallen",
       "divisjon": "U14B",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 4
     },
     {
       "dato": "2026-10-11",
@@ -398,8 +398,8 @@
       "borte": "Skedsmo",
       "arena": "Løren hallen",
       "divisjon": "U20 1. divisjon",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 4,
+      "borteMal": 5
     },
     {
       "dato": "2026-10-11",
@@ -408,8 +408,8 @@
       "borte": "Hasle-Løren",
       "arena": "Ski Ishall",
       "divisjon": "JU14",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 5,
+      "borteMal": 1
     },
     {
       "dato": "2026-10-15",
