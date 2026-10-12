@@ -1,5 +1,5 @@
 {
-  "oppdatert": "12.10.2026, 12:07",
+  "oppdatert": "12.10.2026, 21:55",
   "tabeller": [
     {
       "navn": "U14B",
@@ -213,7 +213,7 @@
         {
           "plass": 1,
           "lag": "Hasle-Løren",
-          "logo": "",
+          "logo": "data/logoer/600633.jpg",
           "gp": 2,
           "pts": 4,
           "gf": 17,
@@ -330,7 +330,7 @@
         {
           "plass": 3,
           "lag": "Hasle-Løren",
-          "logo": "",
+          "logo": "data/logoer/982477.jpg",
           "gp": 2,
           "pts": 2,
           "gf": 12,
