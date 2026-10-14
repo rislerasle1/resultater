@@ -1,5 +1,5 @@
 {
-  "oppdatert": "14.10.2026, 07:44",
+  "oppdatert": "14.10.2026, 13:02",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -633,16 +633,6 @@
     },
     {
       "dato": "2026-10-25",
-      "tid": "12:50",
-      "hjemme": "Hasle-Løren",
-      "borte": "Lillehammer",
-      "arena": "Løren hallen",
-      "divisjon": "JU14",
-      "hjemmeMal": null,
-      "borteMal": null
-    },
-    {
-      "dato": "2026-10-25",
       "tid": "14:20",
       "hjemme": "Hasle-Løren",
       "borte": "Ishockeyklubben Comet Halden",
@@ -813,6 +803,16 @@
     },
     {
       "dato": "2026-11-01",
+      "tid": "13:20",
+      "hjemme": "Hasle-Løren",
+      "borte": "Lillehammer",
+      "arena": "Løren hallen",
+      "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-01",
       "tid": "18:00",
       "hjemme": "Narvik Ishockeyklubb",
       "borte": "Nidaros Ishockeyklubb",
@@ -835,7 +835,7 @@
       "dato": "2026-11-04",
       "tid": "18:00",
       "hjemme": "Hasle-Løren",
-      "borte": "Idrettslaget Jutul",
+      "borte": "Jutul/Jar",
       "arena": "Løren hallen",
       "divisjon": "JU14",
       "hjemmeMal": null,
@@ -2294,7 +2294,7 @@
     {
       "dato": "2027-02-06",
       "tid": "14:30",
-      "hjemme": "Idrettslaget Jutul",
+      "hjemme": "Jutul/Jar",
       "borte": "Hasle-Løren",
       "arena": "Bærum Ishall",
       "divisjon": "JU14",
