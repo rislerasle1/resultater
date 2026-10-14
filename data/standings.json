@@ -1,5 +1,5 @@
 {
-  "oppdatert": "14.10.2026, 21:56",
+  "oppdatert": "15.10.2026, 00:58",
   "tabeller": [
     {
       "navn": "U14B",
@@ -253,7 +253,7 @@
         {
           "plass": 5,
           "lag": "Kristiansand/Idda",
-          "logo": "",
+          "logo": "data/logoer/23868.png",
           "gp": 0,
           "pts": 0,
           "gf": 0,
@@ -283,7 +283,7 @@
         {
           "plass": 8,
           "lag": "Nes",
-          "logo": "",
+          "logo": "data/logoer/20599.png",
           "gp": 1,
           "pts": 0,
           "gf": 1,
