@@ -1,5 +1,5 @@
 {
-  "oppdatert": "14.10.2026, 17:53",
+  "oppdatert": "14.10.2026, 21:56",
   "tabeller": [
     {
       "navn": "U14B",
@@ -253,7 +253,7 @@
         {
           "plass": 5,
           "lag": "Kristiansand/Idda",
-          "logo": "data/logoer/23868.png",
+          "logo": "",
           "gp": 0,
           "pts": 0,
           "gf": 0,
@@ -283,7 +283,7 @@
         {
           "plass": 8,
           "lag": "Nes",
-          "logo": "data/logoer/20599.png",
+          "logo": "",
           "gp": 1,
           "pts": 0,
           "gf": 1,
@@ -309,6 +309,26 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Skedsmo",
+          "logo": "data/logoer/1010498.jpg",
+          "gp": 2,
+          "pts": 3,
+          "gf": 9,
+          "ga": 8,
+          "diff": 1
+        },
+        {
+          "plass": 2,
+          "lag": "Jar/Holmen",
+          "logo": "data/logoer/20094.png",
+          "gp": 3,
+          "pts": 3,
+          "gf": 9,
+          "ga": 10,
+          "diff": -1
+        },
+        {
+          "plass": 3,
           "lag": "Furuset",
           "logo": "data/logoer/966263.png",
           "gp": 3,
@@ -318,17 +338,7 @@
           "diff": 7
         },
         {
-          "plass": 2,
-          "lag": "Skedsmo",
-          "logo": "data/logoer/1010498.jpg",
-          "gp": 1,
-          "pts": 2,
-          "gf": 5,
-          "ga": 4,
-          "diff": 1
-        },
-        {
-          "plass": 3,
+          "plass": 4,
           "lag": "Hasle-Løren",
           "logo": "data/logoer/982477.jpg",
           "gp": 2,
@@ -336,16 +346,6 @@
           "gf": 12,
           "ga": 12,
           "diff": 0
-        },
-        {
-          "plass": 4,
-          "lag": "Jar/Holmen",
-          "logo": "data/logoer/20094.png",
-          "gp": 2,
-          "pts": 2,
-          "gf": 5,
-          "ga": 6,
-          "diff": -1
         },
         {
           "plass": 5,
