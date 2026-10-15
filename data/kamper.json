@@ -1,5 +1,5 @@
 {
-  "oppdatert": "15.10.2026, 08:08",
+  "oppdatert": "15.10.2026, 13:52",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -633,16 +633,6 @@
     },
     {
       "dato": "2026-10-25",
-      "tid": "14:20",
-      "hjemme": "Hasle-Løren",
-      "borte": "Ishockeyklubben Comet Halden",
-      "arena": "Løren hallen",
-      "divisjon": "U20 1. divisjon",
-      "hjemmeMal": null,
-      "borteMal": null
-    },
-    {
-      "dato": "2026-10-25",
       "tid": "15:30",
       "hjemme": "Ullensaker",
       "borte": "Hasle-Løren IL - Ishockey",
@@ -978,6 +968,16 @@
       "borte": "Storhamar IL Ishockeygruppen Elite",
       "arena": "Jordal Amfi",
       "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-15",
+      "tid": "14:20",
+      "hjemme": "Hasle-Løren",
+      "borte": "Ishockeyklubben Comet Halden",
+      "arena": "Løren hallen",
+      "divisjon": "U20 1. divisjon",
       "hjemmeMal": null,
       "borteMal": null
     },

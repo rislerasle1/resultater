@@ -1,5 +1,5 @@
 {
-  "oppdatert": "15.10.2026, 08:08",
+  "oppdatert": "15.10.2026, 13:52",
   "tabeller": [
     {
       "navn": "U14B",
@@ -283,7 +283,7 @@
         {
           "plass": 8,
           "lag": "Nes",
-          "logo": "",
+          "logo": "data/logoer/20599.png",
           "gp": 1,
           "pts": 0,
           "gf": 1,
