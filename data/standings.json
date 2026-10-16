@@ -1,5 +1,5 @@
 {
-  "oppdatert": "16.10.2026, 07:38",
+  "oppdatert": "16.10.2026, 12:33",
   "tabeller": [
     {
       "navn": "U14B",
@@ -8,6 +8,16 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Ringerike",
+          "logo": "data/logoer/22629.png",
+          "gp": 2,
+          "pts": 5,
+          "gf": 8,
+          "ga": 7,
+          "diff": 1
+        },
+        {
+          "plass": 2,
           "lag": "Kongsvinger",
           "logo": "data/logoer/600681.png",
           "gp": 2,
@@ -17,17 +27,37 @@
           "diff": 3
         },
         {
-          "plass": 2,
-          "lag": "Ringerike",
-          "logo": "data/logoer/22629.png",
+          "plass": 3,
+          "lag": "Hasle Løren",
+          "logo": "data/logoer/600632.png",
           "gp": 2,
-          "pts": 3,
-          "gf": 8,
-          "ga": 7,
-          "diff": 1
+          "pts": 4,
+          "gf": 11,
+          "ga": 5,
+          "diff": 6
         },
         {
-          "plass": 3,
+          "plass": 4,
+          "lag": "Storhamar",
+          "logo": "data/logoer/222143.png",
+          "gp": 2,
+          "pts": 3,
+          "gf": 19,
+          "ga": 4,
+          "diff": 15
+        },
+        {
+          "plass": 5,
+          "lag": "Furuset/Lørenskog 2",
+          "logo": "data/logoer/600615.png",
+          "gp": 2,
+          "pts": 3,
+          "gf": 3,
+          "ga": 19,
+          "diff": -16
+        },
+        {
+          "plass": 6,
           "lag": "Comet",
           "logo": "data/logoer/619776.png",
           "gp": 2,
@@ -37,27 +67,7 @@
           "diff": 1
         },
         {
-          "plass": 4,
-          "lag": "Hasle Løren",
-          "logo": "data/logoer/600632.png",
-          "gp": 2,
-          "pts": 2,
-          "gf": 11,
-          "ga": 5,
-          "diff": 6
-        },
-        {
-          "plass": 5,
-          "lag": "Storhamar",
-          "logo": "data/logoer/222143.png",
-          "gp": 2,
-          "pts": 2,
-          "gf": 19,
-          "ga": 4,
-          "diff": 15
-        },
-        {
-          "plass": 6,
+          "plass": 7,
           "lag": "Stjernen 2",
           "logo": "data/logoer/680196.png",
           "gp": 2,
@@ -67,31 +77,21 @@
           "diff": -5
         },
         {
-          "plass": 7,
+          "plass": 8,
           "lag": "Ski",
           "logo": "data/logoer/92751.png",
           "gp": 2,
-          "pts": 1,
+          "pts": 2,
           "gf": 5,
           "ga": 8,
           "diff": -3
-        },
-        {
-          "plass": 8,
-          "lag": "Furuset/Lørenskog 2",
-          "logo": "data/logoer/600615.png",
-          "gp": 2,
-          "pts": 1,
-          "gf": 3,
-          "ga": 19,
-          "diff": -16
         },
         {
           "plass": 9,
           "lag": "Ullensaker",
           "logo": "data/logoer/860188.jpg",
           "gp": 1,
-          "pts": 0,
+          "pts": 1,
           "gf": 3,
           "ga": 4,
           "diff": -1
