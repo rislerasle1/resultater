@@ -1,5 +1,5 @@
 {
-  "oppdatert": "16.10.2026, 17:07",
+  "oppdatert": "16.10.2026, 20:54",
   "tabeller": [
     {
       "navn": "U14B",
@@ -222,6 +222,16 @@
         },
         {
           "plass": 2,
+          "lag": "Sparta Sarp 2",
+          "logo": "data/logoer/826221.png",
+          "gp": 1,
+          "pts": 2,
+          "gf": 7,
+          "ga": 2,
+          "diff": 5
+        },
+        {
+          "plass": 3,
           "lag": "Kongsberg",
           "logo": "data/logoer/860187.png",
           "gp": 1,
@@ -231,7 +241,7 @@
           "diff": 3
         },
         {
-          "plass": 3,
+          "plass": 4,
           "lag": "Skien",
           "logo": "data/logoer/600446.png",
           "gp": 1,
@@ -241,29 +251,19 @@
           "diff": 18
         },
         {
-          "plass": 4,
+          "plass": 5,
           "lag": "Frisk Asker/Jutul 2",
           "logo": "data/logoer/910033.png",
-          "gp": 3,
+          "gp": 4,
           "pts": 2,
-          "gf": 15,
-          "ga": 13,
-          "diff": 2
-        },
-        {
-          "plass": 5,
-          "lag": "Kristiansand/Idda",
-          "logo": "data/logoer/23868.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
+          "gf": 17,
+          "ga": 20,
+          "diff": -3
         },
         {
           "plass": 6,
-          "lag": "Sparta Sarp 2",
-          "logo": "data/logoer/826221.png",
+          "lag": "Kristiansand/Idda",
+          "logo": "data/logoer/23868.png",
           "gp": 0,
           "pts": 0,
           "gf": 0,
@@ -570,113 +570,6 @@
           "gf": 0,
           "ga": 0,
           "diff": 0
-        }
-      ]
-    },
-    {
-      "navn": "Elitehockeyligaen",
-      "tournamentId": 448981,
-      "kilde": "https://sf34-terminlister-prod-app.azurewebsites.net/ta/TournamentStandings/?tournamentId=448981",
-      "lag": [
-        {
-          "plass": 1,
-          "lag": "Vålerenga Elite",
-          "logo": "data/logoer/527810.jpg",
-          "gp": 8,
-          "pts": 21,
-          "gf": 38,
-          "ga": 11,
-          "diff": 27
-        },
-        {
-          "plass": 2,
-          "lag": "Frisk Asker Elite",
-          "logo": "data/logoer/695546.png",
-          "gp": 8,
-          "pts": 19,
-          "gf": 32,
-          "ga": 16,
-          "diff": 16
-        },
-        {
-          "plass": 3,
-          "lag": "Nidaros",
-          "logo": "data/logoer/770066.png",
-          "gp": 7,
-          "pts": 13,
-          "gf": 21,
-          "ga": 22,
-          "diff": -1
-        },
-        {
-          "plass": 4,
-          "lag": "Stavanger Oilers",
-          "logo": "data/logoer/220882.png",
-          "gp": 8,
-          "pts": 12,
-          "gf": 23,
-          "ga": 27,
-          "diff": -4
-        },
-        {
-          "plass": 5,
-          "lag": "Storhamar Elite",
-          "logo": "data/logoer/708311.png",
-          "gp": 6,
-          "pts": 11,
-          "gf": 25,
-          "ga": 11,
-          "diff": 14
-        },
-        {
-          "plass": 6,
-          "lag": "Stjernen Elite",
-          "logo": "data/logoer/695363.png",
-          "gp": 8,
-          "pts": 11,
-          "gf": 26,
-          "ga": 27,
-          "diff": -1
-        },
-        {
-          "plass": 7,
-          "lag": "Ringerike",
-          "logo": "data/logoer/22629.png",
-          "gp": 8,
-          "pts": 8,
-          "gf": 16,
-          "ga": 34,
-          "diff": -18
-        },
-        {
-          "plass": 8,
-          "lag": "Lillehammer Elite",
-          "logo": "data/logoer/852911.png",
-          "gp": 8,
-          "pts": 4,
-          "gf": 20,
-          "ga": 28,
-          "diff": -8
-        },
-        {
-          "plass": 9,
-          "lag": "Narvik",
-          "logo": "data/logoer/27416.png",
-          "gp": 7,
-          "pts": 0,
-          "gf": 10,
-          "ga": 35,
-          "diff": -25
-        },
-        {
-          "plass": 10,
-          "lag": "Sparta Elite",
-          "logo": "data/logoer/678819.jpg",
-          "gp": null,
-          "pts": null,
-          "gf": null,
-          "ga": null,
-          "diff": null
         }
       ]
     }
