@@ -1,5 +1,5 @@
 {
-  "oppdatert": "17.10.2026, 20:42",
+  "oppdatert": "17.10.2026, 23:11",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -498,8 +498,8 @@
       "borte": "Stjernen Hockey Fredrikstad Elite",
       "arena": "CC-Amfi",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 2
     },
     {
       "dato": "2026-10-18",
