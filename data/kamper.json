@@ -1,5 +1,5 @@
 {
-  "oppdatert": "17.10.2026, 11:00",
+  "oppdatert": "17.10.2026, 14:48",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -243,6 +243,16 @@
     },
     {
       "dato": "2026-10-04",
+      "tid": "13:00",
+      "hjemme": "Hasle-Løren IL - Ishockey",
+      "borte": "Tromsø Ishockeyklubb",
+      "arena": "Løren hallen",
+      "divisjon": "U15C",
+      "hjemmeMal": 10,
+      "borteMal": 2
+    },
+    {
+      "dato": "2026-10-04",
       "tid": "17:00",
       "hjemme": "Tønsberg og Omegn Ishockeyklubb",
       "borte": "Hasle-Løren Elite",
@@ -290,6 +300,16 @@
       "divisjon": "Elitehockeyligaen",
       "hjemmeMal": 6,
       "borteMal": 3
+    },
+    {
+      "dato": "2026-10-09",
+      "tid": "20:00",
+      "hjemme": "Frisk Asker/Jutul 2",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Askerhallen",
+      "divisjon": "U15C",
+      "hjemmeMal": 3,
+      "borteMal": 7
     },
     {
       "dato": "2026-10-10",
@@ -444,6 +464,16 @@
     {
       "dato": "2026-10-17",
       "tid": "17:00",
+      "hjemme": "Kristiansand/Idda",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Idda Arena",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-17",
+      "tid": "17:00",
       "hjemme": "IF Frisk Asker Hockey",
       "borte": "Stavanger Ishockeyklubb",
       "arena": "Varner Arena",
@@ -468,6 +498,16 @@
       "borte": "Stjernen Hockey Fredrikstad Elite",
       "arena": "CC-Amfi",
       "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-18",
+      "tid": "10:00",
+      "hjemme": "Kristiansand/Idda",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Idda Arena",
+      "divisjon": "U15C",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -498,6 +538,16 @@
       "borte": "Hasle-Løren",
       "arena": "Holmen Ishall",
       "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-21",
+      "tid": "19:30",
+      "hjemme": "Kongsberg",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Kongsberghallen",
+      "divisjon": "U15C",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -658,6 +708,16 @@
       "borte": "Nidaros Ishockeyklubb",
       "arena": "CC-Amfi",
       "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-30",
+      "tid": "20:00",
+      "hjemme": "Hasle-Løren IL - Ishockey",
+      "borte": "Sparta Sarp 2",
+      "arena": "Løren hallen",
+      "divisjon": "U15C",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -872,6 +932,16 @@
       "borteMal": null
     },
     {
+      "dato": "2026-11-13",
+      "tid": "20:00",
+      "hjemme": "Nes Ishockeyklubb",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Runnirinken",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
       "dato": "2026-11-14",
       "tid": "16:00",
       "hjemme": "Lillehammer Ishockeyklubb Elite",
@@ -988,6 +1058,16 @@
       "borte": "Hasle-Løren",
       "arena": "Furuset Forum",
       "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-22",
+      "tid": "13:00",
+      "hjemme": "Hasle-Løren IL - Ishockey",
+      "borte": "Skien Ishockeyklubb",
+      "arena": "Løren hallen",
+      "divisjon": "U15C",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -1208,6 +1288,16 @@
       "borte": "Ringerike Ishockeyklubb",
       "arena": "Løren hallen",
       "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-01",
+      "tid": "20:00",
+      "hjemme": "Hasle-Løren IL - Ishockey",
+      "borte": "Frisk Asker/Jutul 2",
+      "arena": "Løren hallen",
+      "divisjon": "U15C",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -1443,6 +1533,16 @@
     },
     {
       "dato": "2026-12-19",
+      "tid": "12:30",
+      "hjemme": "Hasle-Løren IL - Ishockey",
+      "borte": "Kongsberg",
+      "arena": "Løren hallen",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-19",
       "tid": "16:00",
       "hjemme": "Lillehammer Ishockeyklubb Elite",
       "borte": "Stavanger Ishockeyklubb",
@@ -1622,6 +1722,16 @@
       "borteMal": null
     },
     {
+      "dato": "2027-01-08",
+      "tid": "20:00",
+      "hjemme": "Sparta Sarp 2",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Sparta Amfi Ungdomshallen",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
       "dato": "2027-01-09",
       "tid": "15:30",
       "hjemme": "Stjernen Hockey Fredrikstad Elite",
@@ -1794,10 +1904,30 @@
     {
       "dato": "2027-01-16",
       "tid": "18:00",
+      "hjemme": "Tromsø Ishockeyklubb",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Tromsø Ishall",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-16",
+      "tid": "18:00",
       "hjemme": "Stavanger Ishockeyklubb",
       "borte": "Ringerike IHK",
       "arena": "DNB Arena",
       "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-17",
+      "tid": "13:00",
+      "hjemme": "Tromsø Ishockeyklubb",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Tromsø Ishall",
+      "divisjon": "U15C",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -1892,6 +2022,16 @@
       "borteMal": null
     },
     {
+      "dato": "2027-01-22",
+      "tid": "20:00",
+      "hjemme": "Hasle-Løren IL - Ishockey",
+      "borte": "Nes Ishockeyklubb",
+      "arena": "Løren hallen",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
       "dato": "2027-01-23",
       "tid": "16:00",
       "hjemme": "Nidaros Ishockeyklubb",
@@ -1948,6 +2088,16 @@
       "borte": "Kongsberg",
       "arena": "Løren hallen",
       "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-24",
+      "tid": "15:00",
+      "hjemme": "Skien Ishockeyklubb",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Skien isstadion ishockeyanlegg",
+      "divisjon": "U15C",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -2183,6 +2333,16 @@
     },
     {
       "dato": "2027-02-07",
+      "tid": "13:00",
+      "hjemme": "Hasle-Løren IL - Ishockey",
+      "borte": "Kristiansand/Idda",
+      "arena": "Løren hallen",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-07",
       "tid": "14:15",
       "hjemme": "Tønsberg og Omegn Ishockeyklubb",
       "borte": "Hasle-Løren Elite",
@@ -2238,6 +2398,16 @@
       "borte": "Hasle-Løren",
       "arena": "Jarhallen",
       "divisjon": "U20 1. divisjon",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-16",
+      "tid": "20:00",
+      "hjemme": "Frisk Asker/Jutul 2",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Varner Arena",
+      "divisjon": "U15C",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -2348,6 +2518,16 @@
       "borte": "Kråkene Moss 2",
       "arena": "Løren hallen",
       "divisjon": "5. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-21",
+      "tid": "16:00",
+      "hjemme": "Hasle-Løren IL - Ishockey",
+      "borte": "Sparta Sarp 2",
+      "arena": "Løren hallen",
+      "divisjon": "U15C",
       "hjemmeMal": null,
       "borteMal": null
     },
@@ -2583,6 +2763,16 @@
     },
     {
       "dato": "2027-03-07",
+      "tid": "15:00",
+      "hjemme": "Nes Ishockeyklubb",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Runnirinken",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-03-07",
       "tid": "15:40",
       "hjemme": "Furuset/Lørenskog 2",
       "borte": "Hasle-Løren IL - Ishockey",
@@ -2692,6 +2882,16 @@
       "borteMal": null
     },
     {
+      "dato": "2027-03-12",
+      "tid": "20:00",
+      "hjemme": "Hasle-Løren IL - Ishockey",
+      "borte": "Skien Ishockeyklubb",
+      "arena": "Løren hallen",
+      "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
       "dato": "2027-03-13",
       "tid": "16:00",
       "hjemme": "IF Frisk Asker Hockey",
@@ -2728,6 +2928,16 @@
       "borte": "Ringerike IHK",
       "arena": "Stjernehallen",
       "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-03-14",
+      "tid": "14:45",
+      "hjemme": "Kongsberg",
+      "borte": "Hasle-Løren IL - Ishockey",
+      "arena": "Kongsberghallen",
+      "divisjon": "U15C",
       "hjemmeMal": null,
       "borteMal": null
     },
