@@ -59,6 +59,7 @@
   .clock { color: white; line-height: 1; width: 14vw; }
   .clock-time { font-size: 1.9vw; font-weight: 900; font-variant-numeric: tabular-nums; }
   .clock-date { font-size: 0.8vw; font-weight: 600; color: #9dc0dd; margin-top: 0.25vw; text-transform: capitalize; }
+  .clock-ver { font-size: 0.6vw; font-weight: 600; color: #9dc0dd; opacity: 0.55; margin-top: 0.2vw; }
   .title { text-align: center; }
   .title .kicker {
     font-size: 0.75vw; font-weight: 800; letter-spacing: 0.22em;
@@ -557,7 +558,7 @@ function sideHtml(side, n, antall) {
   const tittel = side.map(d => d.liga ? d.navn : d.etikett).join("  ·  ");
   return `
     <header>
-      <div class="clock"><div class="clock-time" data-tid>–</div><div class="clock-date" data-dato>–</div></div>
+      <div class="clock"><div class="clock-time" data-tid>–</div><div class="clock-date" data-dato>–</div><div class="clock-ver">v.2.0</div></div>
       <div class="title"><div class="kicker">RESULTATBØRS</div><h1>${esc(tittel)}</h1></div>
       <div class="brand">
         <div class="dots">${Array.from({ length: antall }, (_, i) => `<i class="${i === n ? "on" : ""}"></i>`).join("")}</div>
