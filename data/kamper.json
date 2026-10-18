@@ -1,5 +1,5 @@
 {
-  "oppdatert": "18.10.2026, 20:14",
+  "oppdatert": "18.10.2026, 22:56",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -518,8 +518,8 @@
       "borte": "Hasle-Løren Elite",
       "arena": "Furuset Forum",
       "divisjon": "2. divisjon menn",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 3
     },
     {
       "dato": "2026-10-20",
