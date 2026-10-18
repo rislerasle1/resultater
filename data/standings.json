@@ -1,5 +1,5 @@
 {
-  "oppdatert": "18.10.2026, 08:16",
+  "oppdatert": "18.10.2026, 13:31",
   "tabeller": [
     {
       "navn": "U14B",
@@ -222,36 +222,6 @@
         },
         {
           "plass": 2,
-          "lag": "Sparta Sarp 2",
-          "logo": "data/logoer/826221.png",
-          "gp": 1,
-          "pts": 2,
-          "gf": 7,
-          "ga": 2,
-          "diff": 5
-        },
-        {
-          "plass": 3,
-          "lag": "Kongsberg",
-          "logo": "data/logoer/860187.png",
-          "gp": 1,
-          "pts": 2,
-          "gf": 5,
-          "ga": 2,
-          "diff": 3
-        },
-        {
-          "plass": 4,
-          "lag": "Frisk Asker/Jutul 2",
-          "logo": "data/logoer/910033.png",
-          "gp": 4,
-          "pts": 2,
-          "gf": 17,
-          "ga": 20,
-          "diff": -3
-        },
-        {
-          "plass": 5,
           "lag": "Skien",
           "logo": "data/logoer/600446.png",
           "gp": 1,
@@ -261,7 +231,57 @@
           "diff": 18
         },
         {
+          "plass": 3,
+          "lag": "Sparta Sarp 2",
+          "logo": "data/logoer/826221.png",
+          "gp": 1,
+          "pts": 2,
+          "gf": 7,
+          "ga": 2,
+          "diff": 5
+        },
+        {
+          "plass": 4,
+          "lag": "Kongsberg",
+          "logo": "data/logoer/860187.png",
+          "gp": 1,
+          "pts": 2,
+          "gf": 5,
+          "ga": 2,
+          "diff": 3
+        },
+        {
+          "plass": 5,
+          "lag": "Frisk Asker/Jutul 2",
+          "logo": "data/logoer/910033.png",
+          "gp": 4,
+          "pts": 2,
+          "gf": 17,
+          "ga": 20,
+          "diff": -3
+        },
+        {
           "plass": 6,
+          "lag": "Tromsø",
+          "logo": "data/logoer/860122.png",
+          "gp": 4,
+          "pts": 2,
+          "gf": 10,
+          "ga": 29,
+          "diff": -19
+        },
+        {
+          "plass": 7,
+          "lag": "Nes",
+          "logo": "data/logoer/20599.png",
+          "gp": 3,
+          "pts": 2,
+          "gf": 10,
+          "ga": 26,
+          "diff": -16
+        },
+        {
+          "plass": 8,
           "lag": "Kristiansand/Idda",
           "logo": "data/logoer/23868.png",
           "gp": 1,
@@ -269,26 +289,6 @@
           "gf": 3,
           "ga": 1,
           "diff": 2
-        },
-        {
-          "plass": 7,
-          "lag": "Tromsø",
-          "logo": "data/logoer/860122.png",
-          "gp": 3,
-          "pts": 2,
-          "gf": 5,
-          "ga": 21,
-          "diff": -16
-        },
-        {
-          "plass": 8,
-          "lag": "Nes",
-          "logo": "data/logoer/20599.png",
-          "gp": 2,
-          "pts": 0,
-          "gf": 2,
-          "ga": 21,
-          "diff": -19
         },
         {
           "plass": 9,
