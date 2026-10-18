@@ -1,5 +1,5 @@
 {
-  "oppdatert": "18.10.2026, 17:16",
+  "oppdatert": "18.10.2026, 20:14",
   "tabeller": [
     {
       "navn": "U14B",
@@ -309,13 +309,13 @@
       "lag": [
         {
           "plass": 1,
-          "lag": "Skedsmo",
-          "logo": "data/logoer/1010498.jpg",
-          "gp": 2,
-          "pts": 3,
-          "gf": 9,
-          "ga": 8,
-          "diff": 1
+          "lag": "Comet Halden",
+          "logo": "data/logoer/619776.png",
+          "gp": 3,
+          "pts": 4,
+          "gf": 11,
+          "ga": 15,
+          "diff": -4
         },
         {
           "plass": 2,
@@ -329,13 +329,13 @@
         },
         {
           "plass": 3,
-          "lag": "Furuset",
-          "logo": "data/logoer/966263.png",
+          "lag": "Skedsmo",
+          "logo": "data/logoer/1010498.jpg",
           "gp": 3,
-          "pts": 2,
-          "gf": 21,
+          "pts": 3,
+          "gf": 12,
           "ga": 14,
-          "diff": 7
+          "diff": -2
         },
         {
           "plass": 4,
@@ -349,13 +349,13 @@
         },
         {
           "plass": 5,
-          "lag": "Comet Halden",
-          "logo": "data/logoer/619776.png",
-          "gp": 2,
+          "lag": "Furuset",
+          "logo": "data/logoer/966263.png",
+          "gp": 3,
           "pts": 2,
-          "gf": 5,
-          "ga": 12,
-          "diff": -7
+          "gf": 21,
+          "ga": 14,
+          "diff": 7
         }
       ]
     },
