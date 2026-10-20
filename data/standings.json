@@ -1,5 +1,5 @@
 {
-  "oppdatert": "20.10.2026, 13:56",
+  "oppdatert": "20.10.2026, 18:18",
   "tabeller": [
     {
       "navn": "U14B",
@@ -632,11 +632,11 @@
           "plass": 6,
           "lag": "Stjernen Elite",
           "logo": "data/logoer/695363.png",
-          "gp": 9,
-          "pts": 11,
-          "gf": 28,
-          "ga": 30,
-          "diff": -2
+          "gp": 8,
+          "pts": 9,
+          "gf": 24,
+          "ga": 27,
+          "diff": -3
         },
         {
           "plass": 7,
@@ -652,11 +652,11 @@
           "plass": 8,
           "lag": "Lillehammer Elite",
           "logo": "data/logoer/852911.png",
-          "gp": 9,
-          "pts": 4,
-          "gf": 22,
-          "ga": 33,
-          "diff": -11
+          "gp": 8,
+          "pts": 3,
+          "gf": 19,
+          "ga": 29,
+          "diff": -10
         },
         {
           "plass": 9,
