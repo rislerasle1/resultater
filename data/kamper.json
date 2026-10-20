@@ -1,5 +1,5 @@
 {
-  "oppdatert": "20.10.2026, 22:04",
+  "oppdatert": "21.10.2026, 01:17",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -538,8 +538,8 @@
       "borte": "Hasle-Løren",
       "arena": "Holmen Ishall",
       "divisjon": "U20 1. divisjon",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 4,
+      "borteMal": 7
     },
     {
       "dato": "2026-10-21",

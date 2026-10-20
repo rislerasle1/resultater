@@ -1,5 +1,5 @@
 {
-  "oppdatert": "20.10.2026, 22:04",
+  "oppdatert": "21.10.2026, 01:17",
   "tabeller": [
     {
       "navn": "U14B",
@@ -309,6 +309,16 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Hasle-Løren",
+          "logo": "data/logoer/982477.jpg",
+          "gp": 3,
+          "pts": 4,
+          "gf": 19,
+          "ga": 16,
+          "diff": 3
+        },
+        {
+          "plass": 2,
           "lag": "Comet Halden",
           "logo": "data/logoer/619776.png",
           "gp": 3,
@@ -316,16 +326,6 @@
           "gf": 11,
           "ga": 15,
           "diff": -4
-        },
-        {
-          "plass": 2,
-          "lag": "Jar/Holmen",
-          "logo": "data/logoer/20094.png",
-          "gp": 3,
-          "pts": 3,
-          "gf": 9,
-          "ga": 10,
-          "diff": -1
         },
         {
           "plass": 3,
@@ -339,13 +339,13 @@
         },
         {
           "plass": 4,
-          "lag": "Hasle-Løren",
-          "logo": "data/logoer/982477.jpg",
-          "gp": 2,
-          "pts": 2,
-          "gf": 12,
-          "ga": 12,
-          "diff": 0
+          "lag": "Jar/Holmen",
+          "logo": "data/logoer/20094.png",
+          "gp": 4,
+          "pts": 3,
+          "gf": 13,
+          "ga": 17,
+          "diff": -4
         },
         {
           "plass": 5,
