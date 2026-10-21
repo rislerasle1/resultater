@@ -1,5 +1,5 @@
 {
-  "oppdatert": "21.10.2026, 19:51",
+  "oppdatert": "21.10.2026, 23:09",
   "tabeller": [
     {
       "navn": "U14B",
@@ -214,24 +214,14 @@
           "plass": 1,
           "lag": "Hasle-Løren",
           "logo": "data/logoer/600633.jpg",
-          "gp": 4,
+          "gp": 5,
           "pts": 5,
-          "gf": 24,
-          "ga": 14,
-          "diff": 10
+          "gf": 27,
+          "ga": 23,
+          "diff": 4
         },
         {
           "plass": 2,
-          "lag": "Skien",
-          "logo": "data/logoer/600446.png",
-          "gp": 2,
-          "pts": 4,
-          "gf": 22,
-          "ga": 2,
-          "diff": 20
-        },
-        {
-          "plass": 3,
           "lag": "Sparta Sarp 2",
           "logo": "data/logoer/826221.png",
           "gp": 2,
@@ -241,7 +231,27 @@
           "diff": 6
         },
         {
+          "plass": 3,
+          "lag": "Skien",
+          "logo": "data/logoer/600446.png",
+          "gp": 2,
+          "pts": 4,
+          "gf": 22,
+          "ga": 2,
+          "diff": 20
+        },
+        {
           "plass": 4,
+          "lag": "Kongsberg",
+          "logo": "data/logoer/860187.png",
+          "gp": 3,
+          "pts": 4,
+          "gf": 19,
+          "ga": 11,
+          "diff": 8
+        },
+        {
+          "plass": 5,
           "lag": "Kristiansand/Idda",
           "logo": "data/logoer/23868.png",
           "gp": 2,
@@ -251,7 +261,7 @@
           "diff": 2
         },
         {
-          "plass": 5,
+          "plass": 6,
           "lag": "Frisk Asker/Jutul 2",
           "logo": "data/logoer/910033.png",
           "gp": 5,
@@ -259,16 +269,6 @@
           "gf": 18,
           "ga": 23,
           "diff": -5
-        },
-        {
-          "plass": 6,
-          "lag": "Kongsberg",
-          "logo": "data/logoer/860187.png",
-          "gp": 2,
-          "pts": 2,
-          "gf": 10,
-          "ga": 8,
-          "diff": 2
         },
         {
           "plass": 7,

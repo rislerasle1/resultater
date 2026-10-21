@@ -1,5 +1,5 @@
 {
-  "oppdatert": "21.10.2026, 19:51",
+  "oppdatert": "21.10.2026, 23:09",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -548,8 +548,8 @@
       "borte": "Hasle-Løren IL - Ishockey",
       "arena": "Kongsberghallen",
       "divisjon": "U15C",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 9,
+      "borteMal": 3
     },
     {
       "dato": "2026-10-22",
