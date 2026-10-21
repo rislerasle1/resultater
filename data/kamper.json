@@ -1,5 +1,5 @@
 {
-  "oppdatert": "21.10.2026, 08:56",
+  "oppdatert": "21.10.2026, 14:42",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -1234,16 +1234,6 @@
     {
       "dato": "2026-11-28",
       "tid": "16:00",
-      "hjemme": "Stavanger Ishockeyklubb",
-      "borte": "Ringerike IHK",
-      "arena": "DNB Arena",
-      "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
-    },
-    {
-      "dato": "2026-11-28",
-      "tid": "16:00",
       "hjemme": "Storhamar IL Ishockeygruppen Elite",
       "borte": "Nidaros Ishockeyklubb",
       "arena": "CC-Amfi",
@@ -1258,6 +1248,16 @@
       "borte": "Hasle-Løren Elite",
       "arena": "Åsane Arena",
       "divisjon": "2. divisjon menn",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-28",
+      "tid": "17:00",
+      "hjemme": "Stavanger Ishockeyklubb",
+      "borte": "Ringerike IHK",
+      "arena": "DNB Arena",
+      "divisjon": "Elitehockeyligaen",
       "hjemmeMal": null,
       "borteMal": null
     },

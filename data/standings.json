@@ -1,5 +1,5 @@
 {
-  "oppdatert": "21.10.2026, 08:56",
+  "oppdatert": "21.10.2026, 14:42",
   "tabeller": [
     {
       "navn": "U14B",
@@ -464,7 +464,7 @@
         {
           "plass": 3,
           "lag": "Jutul",
-          "logo": "",
+          "logo": "data/logoer/189999.png",
           "gp": 0,
           "pts": 0,
           "gf": 0,
