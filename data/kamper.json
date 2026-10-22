@@ -1,5 +1,5 @@
 {
-  "oppdatert": "22.10.2026, 17:27",
+  "oppdatert": "22.10.2026, 21:21",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -578,8 +578,8 @@
       "borte": "Narvik Ishockeyklubb",
       "arena": "Stjernehallen",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 4
     },
     {
       "dato": "2026-10-22",

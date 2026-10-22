@@ -1,5 +1,5 @@
 {
-  "oppdatert": "22.10.2026, 17:27",
+  "oppdatert": "22.10.2026, 21:21",
   "tabeller": [
     {
       "navn": "U14B",
@@ -622,21 +622,21 @@
           "plass": 5,
           "lag": "Stavanger Oilers",
           "logo": "data/logoer/220882.png",
-          "gp": 9,
-          "pts": 12,
-          "gf": 25,
-          "ga": 32,
-          "diff": -7
+          "gp": 10,
+          "pts": 15,
+          "gf": 31,
+          "ga": 33,
+          "diff": -2
         },
         {
           "plass": 6,
           "lag": "Stjernen Elite",
           "logo": "data/logoer/695363.png",
-          "gp": 9,
+          "gp": 10,
           "pts": 11,
-          "gf": 28,
-          "ga": 30,
-          "diff": -2
+          "gf": 30,
+          "ga": 34,
+          "diff": -4
         },
         {
           "plass": 7,
@@ -650,23 +650,23 @@
         },
         {
           "plass": 8,
-          "lag": "Lillehammer Elite",
-          "logo": "data/logoer/852911.png",
+          "lag": "Narvik",
+          "logo": "data/logoer/27416.png",
           "gp": 9,
-          "pts": 4,
-          "gf": 22,
-          "ga": 33,
-          "diff": -11
+          "pts": 5,
+          "gf": 17,
+          "ga": 39,
+          "diff": -22
         },
         {
           "plass": 9,
-          "lag": "Narvik",
-          "logo": "data/logoer/27416.png",
-          "gp": 8,
-          "pts": 2,
-          "gf": 13,
-          "ga": 37,
-          "diff": -24
+          "lag": "Lillehammer Elite",
+          "logo": "data/logoer/852911.png",
+          "gp": 10,
+          "pts": 4,
+          "gf": 23,
+          "ga": 39,
+          "diff": -16
         },
         {
           "plass": 10,
