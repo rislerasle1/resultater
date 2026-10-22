@@ -1,5 +1,5 @@
 {
-  "oppdatert": "22.10.2026, 21:21",
+  "oppdatert": "23.10.2026, 00:34",
   "tabeller": [
     {
       "navn": "U14B",
@@ -580,23 +580,23 @@
       "lag": [
         {
           "plass": 1,
-          "lag": "Frisk Asker Elite",
-          "logo": "data/logoer/695546.png",
+          "lag": "Vålerenga Elite",
+          "logo": "data/logoer/527810.jpg",
           "gp": 9,
-          "pts": 22,
-          "gf": 37,
-          "ga": 18,
-          "diff": 19
+          "pts": 24,
+          "gf": 43,
+          "ga": 13,
+          "diff": 30
         },
         {
           "plass": 2,
-          "lag": "Vålerenga Elite",
-          "logo": "data/logoer/527810.jpg",
-          "gp": 8,
-          "pts": 21,
-          "gf": 38,
-          "ga": 11,
-          "diff": 27
+          "lag": "Frisk Asker Elite",
+          "logo": "data/logoer/695546.png",
+          "gp": 10,
+          "pts": 22,
+          "gf": 39,
+          "ga": 23,
+          "diff": 16
         },
         {
           "plass": 3,
@@ -612,11 +612,11 @@
           "plass": 4,
           "lag": "Nidaros",
           "logo": "data/logoer/770066.png",
-          "gp": 8,
+          "gp": 9,
           "pts": 16,
-          "gf": 26,
-          "ga": 24,
-          "diff": 2
+          "gf": 27,
+          "ga": 26,
+          "diff": 1
         },
         {
           "plass": 5,
@@ -630,6 +630,16 @@
         },
         {
           "plass": 6,
+          "lag": "Ringerike",
+          "logo": "data/logoer/22629.png",
+          "gp": 11,
+          "pts": 12,
+          "gf": 20,
+          "ga": 43,
+          "diff": -23
+        },
+        {
+          "plass": 7,
           "lag": "Stjernen Elite",
           "logo": "data/logoer/695363.png",
           "gp": 10,
@@ -637,16 +647,6 @@
           "gf": 30,
           "ga": 34,
           "diff": -4
-        },
-        {
-          "plass": 7,
-          "lag": "Ringerike",
-          "logo": "data/logoer/22629.png",
-          "gp": 10,
-          "pts": 9,
-          "gf": 18,
-          "ga": 42,
-          "diff": -24
         },
         {
           "plass": 8,

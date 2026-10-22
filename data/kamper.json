@@ -1,5 +1,5 @@
 {
-  "oppdatert": "22.10.2026, 21:21",
+  "oppdatert": "23.10.2026, 00:34",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -558,8 +558,8 @@
       "borte": "Stavanger Ishockeyklubb",
       "arena": "Eidsiva Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 1,
+      "borteMal": 6
     },
     {
       "dato": "2026-10-22",
@@ -568,8 +568,8 @@
       "borte": "Ringerike IHK",
       "arena": "Leangen Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 1,
+      "borteMal": 2
     },
     {
       "dato": "2026-10-22",
@@ -588,8 +588,8 @@
       "borte": "IF Frisk Asker Hockey",
       "arena": "Jordal Amfi",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 5,
+      "borteMal": 2
     },
     {
       "dato": "2026-10-24",
