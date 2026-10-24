@@ -1,5 +1,5 @@
 {
-  "oppdatert": "24.10.2026, 08:48",
+  "oppdatert": "24.10.2026, 13:48",
   "tabeller": [
     {
       "navn": "U14B",
@@ -10,11 +10,11 @@
           "plass": 1,
           "lag": "Ringerike",
           "logo": "data/logoer/22629.png",
-          "gp": 3,
-          "pts": 7,
-          "gf": 15,
-          "ga": 10,
-          "diff": 5
+          "gp": 4,
+          "pts": 9,
+          "gf": 22,
+          "ga": 11,
+          "diff": 11
         },
         {
           "plass": 2,
@@ -50,11 +50,11 @@
           "plass": 5,
           "lag": "Furuset/Lørenskog 2",
           "logo": "data/logoer/600615.png",
-          "gp": 2,
+          "gp": 3,
           "pts": 3,
-          "gf": 3,
-          "ga": 19,
-          "diff": -16
+          "gf": 4,
+          "ga": 26,
+          "diff": -22
         },
         {
           "plass": 6,
