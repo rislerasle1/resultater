@@ -1,5 +1,5 @@
 {
-  "oppdatert": "24.10.2026, 17:16",
+  "oppdatert": "24.10.2026, 20:16",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -598,8 +598,8 @@
       "borte": "IF Frisk Asker Hockey",
       "arena": "Schjongshallen",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 1,
+      "borteMal": 3
     },
     {
       "dato": "2026-10-24",
