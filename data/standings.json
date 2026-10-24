@@ -1,5 +1,5 @@
 {
-  "oppdatert": "24.10.2026, 20:16",
+  "oppdatert": "24.10.2026, 23:01",
   "tabeller": [
     {
       "navn": "U14B",
@@ -398,14 +398,24 @@
           "plass": 4,
           "lag": "Tønsberg",
           "logo": "data/logoer/708854.png",
-          "gp": 3,
-          "pts": 4,
-          "gf": 9,
-          "ga": 8,
-          "diff": 1
+          "gp": 4,
+          "pts": 6,
+          "gf": 11,
+          "ga": 9,
+          "diff": 2
         },
         {
           "plass": 5,
+          "lag": "Rosenborg",
+          "logo": "data/logoer/26600.png",
+          "gp": 3,
+          "pts": 3,
+          "gf": 9,
+          "ga": 12,
+          "diff": -3
+        },
+        {
+          "plass": 6,
           "lag": "Hasle-Løren Elite",
           "logo": "data/logoer/818491.png",
           "gp": 4,
@@ -413,16 +423,6 @@
           "gf": 5,
           "ga": 25,
           "diff": -20
-        },
-        {
-          "plass": 6,
-          "lag": "Rosenborg",
-          "logo": "data/logoer/26600.png",
-          "gp": 2,
-          "pts": 2,
-          "gf": 8,
-          "ga": 10,
-          "diff": -2
         },
         {
           "plass": 7,
@@ -580,6 +580,16 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Vålerenga Elite",
+          "logo": "data/logoer/527810.jpg",
+          "gp": 10,
+          "pts": 27,
+          "gf": 47,
+          "ga": 14,
+          "diff": 33
+        },
+        {
+          "plass": 2,
           "lag": "Frisk Asker Elite",
           "logo": "data/logoer/695546.png",
           "gp": 11,
@@ -589,47 +599,47 @@
           "diff": 18
         },
         {
-          "plass": 2,
-          "lag": "Vålerenga Elite",
-          "logo": "data/logoer/527810.jpg",
-          "gp": 9,
-          "pts": 24,
-          "gf": 43,
-          "ga": 13,
-          "diff": 30
-        },
-        {
           "plass": 3,
           "lag": "Storhamar Elite",
           "logo": "data/logoer/708311.png",
-          "gp": 8,
-          "pts": 17,
-          "gf": 33,
+          "gp": 9,
+          "pts": 20,
+          "gf": 39,
           "ga": 13,
-          "diff": 20
+          "diff": 26
         },
         {
           "plass": 4,
           "lag": "Nidaros",
           "logo": "data/logoer/770066.png",
-          "gp": 9,
-          "pts": 16,
-          "gf": 27,
-          "ga": 26,
-          "diff": 1
+          "gp": 10,
+          "pts": 18,
+          "gf": 29,
+          "ga": 27,
+          "diff": 2
         },
         {
           "plass": 5,
           "lag": "Stavanger Oilers",
           "logo": "data/logoer/220882.png",
-          "gp": 10,
+          "gp": 11,
           "pts": 15,
-          "gf": 31,
-          "ga": 33,
-          "diff": -2
+          "gf": 32,
+          "ga": 37,
+          "diff": -5
         },
         {
           "plass": 6,
+          "lag": "Stjernen Elite",
+          "logo": "data/logoer/695363.png",
+          "gp": 11,
+          "pts": 12,
+          "gf": 31,
+          "ga": 36,
+          "diff": -5
+        },
+        {
+          "plass": 7,
           "lag": "Ringerike",
           "logo": "data/logoer/22629.png",
           "gp": 12,
@@ -637,16 +647,6 @@
           "gf": 21,
           "ga": 46,
           "diff": -25
-        },
-        {
-          "plass": 7,
-          "lag": "Stjernen Elite",
-          "logo": "data/logoer/695363.png",
-          "gp": 10,
-          "pts": 11,
-          "gf": 30,
-          "ga": 34,
-          "diff": -4
         },
         {
           "plass": 8,
@@ -662,11 +662,11 @@
           "plass": 9,
           "lag": "Lillehammer Elite",
           "logo": "data/logoer/852911.png",
-          "gp": 10,
+          "gp": 11,
           "pts": 4,
           "gf": 23,
-          "ga": 39,
-          "diff": -16
+          "ga": 45,
+          "diff": -22
         },
         {
           "plass": 10,

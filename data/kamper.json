@@ -1,5 +1,5 @@
 {
-  "oppdatert": "24.10.2026, 20:16",
+  "oppdatert": "24.10.2026, 23:01",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -608,8 +608,8 @@
       "borte": "Stjernen Hockey Fredrikstad Elite",
       "arena": "Leangen Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 1
     },
     {
       "dato": "2026-10-24",
@@ -618,8 +618,8 @@
       "borte": "Storhamar IL Ishockeygruppen Elite",
       "arena": "Håkons Hall",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 0,
+      "borteMal": 6
     },
     {
       "dato": "2026-10-24",
@@ -628,8 +628,8 @@
       "borte": "Vålerenga Ishockey Elite",
       "arena": "DNB Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 1,
+      "borteMal": 4
     },
     {
       "dato": "2026-10-25",
