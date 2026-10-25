@@ -1,5 +1,5 @@
 {
-  "oppdatert": "25.10.2026, 08:12",
+  "oppdatert": "25.10.2026, 13:41",
   "tabeller": [
     {
       "navn": "U14B",
@@ -212,6 +212,16 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Skien",
+          "logo": "data/logoer/600446.png",
+          "gp": 3,
+          "pts": 6,
+          "gf": 26,
+          "ga": 4,
+          "diff": 22
+        },
+        {
+          "plass": 2,
           "lag": "Kongsberg",
           "logo": "data/logoer/860187.png",
           "gp": 4,
@@ -221,7 +231,7 @@
           "diff": 10
         },
         {
-          "plass": 2,
+          "plass": 3,
           "lag": "Hasle-Løren",
           "logo": "data/logoer/600633.jpg",
           "gp": 5,
@@ -231,7 +241,7 @@
           "diff": 4
         },
         {
-          "plass": 3,
+          "plass": 4,
           "lag": "Sparta Sarp 2",
           "logo": "data/logoer/826221.png",
           "gp": 2,
@@ -239,16 +249,6 @@
           "gf": 13,
           "ga": 7,
           "diff": 6
-        },
-        {
-          "plass": 4,
-          "lag": "Skien",
-          "logo": "data/logoer/600446.png",
-          "gp": 2,
-          "pts": 4,
-          "gf": 22,
-          "ga": 2,
-          "diff": 20
         },
         {
           "plass": 5,
@@ -264,11 +264,11 @@
           "plass": 6,
           "lag": "Kristiansand/Idda",
           "logo": "data/logoer/23868.png",
-          "gp": 3,
+          "gp": 4,
           "pts": 3,
-          "gf": 11,
-          "ga": 11,
-          "diff": 0
+          "gf": 13,
+          "ga": 15,
+          "diff": -2
         },
         {
           "plass": 7,
