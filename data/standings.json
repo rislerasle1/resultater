@@ -1,5 +1,5 @@
 {
-  "oppdatert": "25.10.2026, 20:27",
+  "oppdatert": "25.10.2026, 22:59",
   "tabeller": [
     {
       "navn": "U14B",
@@ -155,6 +155,16 @@
         },
         {
           "plass": 5,
+          "lag": "Frisk Asker",
+          "logo": "data/logoer/20224.png",
+          "gp": 2,
+          "pts": 3,
+          "gf": 6,
+          "ga": 6,
+          "diff": 0
+        },
+        {
+          "plass": 6,
           "lag": "Vålerenga",
           "logo": "data/logoer/21226.png",
           "gp": 2,
@@ -164,24 +174,14 @@
           "diff": 2
         },
         {
-          "plass": 6,
+          "plass": 7,
           "lag": "Storhamar/Ullensaker",
           "logo": "data/logoer/222143.png",
-          "gp": 2,
+          "gp": 3,
           "pts": 3,
-          "gf": 8,
-          "ga": 12,
-          "diff": -4
-        },
-        {
-          "plass": 7,
-          "lag": "Frisk Asker",
-          "logo": "data/logoer/20224.png",
-          "gp": 1,
-          "pts": 1,
-          "gf": 2,
-          "ga": 4,
-          "diff": -2
+          "gf": 10,
+          "ga": 16,
+          "diff": -6
         },
         {
           "plass": 8,
