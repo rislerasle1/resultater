@@ -1,5 +1,5 @@
 {
-  "oppdatert": "25.10.2026, 13:41",
+  "oppdatert": "25.10.2026, 17:56",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -638,8 +638,8 @@
       "borte": "Hasle-Løren IL - Ishockey",
       "arena": "Jessheim is- og flerbrukshall",
       "divisjon": "U14B",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 7,
+      "borteMal": 6
     },
     {
       "dato": "2026-10-25",

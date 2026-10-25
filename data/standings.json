@@ -1,5 +1,5 @@
 {
-  "oppdatert": "25.10.2026, 13:41",
+  "oppdatert": "25.10.2026, 17:56",
   "tabeller": [
     {
       "navn": "U14B",
@@ -30,11 +30,11 @@
           "plass": 3,
           "lag": "Hasle Løren",
           "logo": "data/logoer/600632.png",
-          "gp": 2,
+          "gp": 3,
           "pts": 4,
-          "gf": 11,
-          "ga": 5,
-          "diff": 6
+          "gf": 17,
+          "ga": 12,
+          "diff": 5
         },
         {
           "plass": 4,
@@ -48,16 +48,36 @@
         },
         {
           "plass": 5,
-          "lag": "Comet",
-          "logo": "data/logoer/619776.png",
-          "gp": 2,
-          "pts": 3,
-          "gf": 8,
-          "ga": 7,
-          "diff": 1
+          "lag": "Tønsberg",
+          "logo": "data/logoer/1011252.jpg",
+          "gp": 3,
+          "pts": 4,
+          "gf": 11,
+          "ga": 9,
+          "diff": 2
         },
         {
           "plass": 6,
+          "lag": "Comet",
+          "logo": "data/logoer/619776.png",
+          "gp": 3,
+          "pts": 3,
+          "gf": 10,
+          "ga": 11,
+          "diff": -1
+        },
+        {
+          "plass": 7,
+          "lag": "Ullensaker",
+          "logo": "data/logoer/860188.jpg",
+          "gp": 4,
+          "pts": 3,
+          "gf": 18,
+          "ga": 23,
+          "diff": -5
+        },
+        {
+          "plass": 8,
           "lag": "Stjernen 2",
           "logo": "data/logoer/680196.png",
           "gp": 3,
@@ -67,7 +87,7 @@
           "diff": -5
         },
         {
-          "plass": 7,
+          "plass": 9,
           "lag": "Furuset/Lørenskog 2",
           "logo": "data/logoer/600615.png",
           "gp": 3,
@@ -77,17 +97,7 @@
           "diff": -22
         },
         {
-          "plass": 8,
-          "lag": "Tønsberg",
-          "logo": "data/logoer/1011252.jpg",
-          "gp": 2,
-          "pts": 2,
-          "gf": 7,
-          "ga": 7,
-          "diff": 0
-        },
-        {
-          "plass": 9,
+          "plass": 10,
           "lag": "Ski",
           "logo": "data/logoer/92751.png",
           "gp": 2,
@@ -95,16 +105,6 @@
           "gf": 5,
           "ga": 8,
           "diff": -3
-        },
-        {
-          "plass": 10,
-          "lag": "Ullensaker",
-          "logo": "data/logoer/860188.jpg",
-          "gp": 3,
-          "pts": 1,
-          "gf": 11,
-          "ga": 17,
-          "diff": -6
         }
       ]
     },
@@ -117,11 +117,11 @@
           "plass": 1,
           "lag": "Furuset",
           "logo": "data/logoer/21388.png",
-          "gp": 2,
-          "pts": 5,
-          "gf": 12,
-          "ga": 6,
-          "diff": 6
+          "gp": 3,
+          "pts": 7,
+          "gf": 19,
+          "ga": 8,
+          "diff": 11
         },
         {
           "plass": 2,
@@ -147,11 +147,11 @@
           "plass": 4,
           "lag": "Ski",
           "logo": "data/logoer/92751.png",
-          "gp": 2,
+          "gp": 3,
           "pts": 4,
-          "gf": 6,
-          "ga": 3,
-          "diff": 3
+          "gf": 8,
+          "ga": 10,
+          "diff": -2
         },
         {
           "plass": 5,
@@ -368,24 +368,34 @@
           "plass": 1,
           "lag": "IHK Sparta Sarp",
           "logo": "data/logoer/19580.png",
-          "gp": 5,
-          "pts": 15,
-          "gf": 35,
+          "gp": 6,
+          "pts": 18,
+          "gf": 37,
           "ga": 4,
-          "diff": 31
+          "diff": 33
         },
         {
           "plass": 2,
           "lag": "Åsane",
           "logo": "",
-          "gp": 5,
+          "gp": 6,
           "pts": 9,
           "gf": 18,
-          "ga": 18,
-          "diff": 0
+          "ga": 20,
+          "diff": -2
         },
         {
           "plass": 3,
+          "lag": "Tønsberg",
+          "logo": "data/logoer/708854.png",
+          "gp": 5,
+          "pts": 9,
+          "gf": 17,
+          "ga": 11,
+          "diff": 6
+        },
+        {
+          "plass": 4,
           "lag": "TIF Viking/Bergen",
           "logo": "",
           "gp": 4,
@@ -395,24 +405,14 @@
           "diff": 2
         },
         {
-          "plass": 4,
-          "lag": "Tønsberg",
-          "logo": "data/logoer/708854.png",
-          "gp": 4,
-          "pts": 6,
-          "gf": 11,
-          "ga": 9,
-          "diff": 2
-        },
-        {
           "plass": 5,
           "lag": "Rosenborg",
           "logo": "data/logoer/26600.png",
-          "gp": 3,
+          "gp": 4,
           "pts": 3,
-          "gf": 9,
-          "ga": 12,
-          "diff": -3
+          "gf": 11,
+          "ga": 18,
+          "diff": -7
         },
         {
           "plass": 6,
