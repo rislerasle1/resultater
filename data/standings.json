@@ -1,5 +1,5 @@
 {
-  "oppdatert": "27.10.2026, 17:48",
+  "oppdatert": "27.10.2026, 22:05",
   "tabeller": [
     {
       "navn": "U14B",
@@ -214,20 +214,20 @@
           "plass": 1,
           "lag": "Skien",
           "logo": "data/logoer/600446.png",
-          "gp": 3,
-          "pts": 6,
-          "gf": 26,
-          "ga": 4,
+          "gp": 4,
+          "pts": 7,
+          "gf": 29,
+          "ga": 7,
           "diff": 22
         },
         {
           "plass": 2,
           "lag": "Kongsberg",
           "logo": "data/logoer/860187.png",
-          "gp": 4,
-          "pts": 6,
-          "gf": 23,
-          "ga": 13,
+          "gp": 5,
+          "pts": 7,
+          "gf": 26,
+          "ga": 16,
           "diff": 10
         },
         {
@@ -602,11 +602,11 @@
           "plass": 3,
           "lag": "Storhamar Elite",
           "logo": "data/logoer/708311.png",
-          "gp": 9,
+          "gp": 10,
           "pts": 20,
-          "gf": 39,
-          "ga": 13,
-          "diff": 26
+          "gf": 41,
+          "ga": 17,
+          "diff": 24
         },
         {
           "plass": 4,
@@ -652,11 +652,11 @@
           "plass": 8,
           "lag": "Narvik",
           "logo": "data/logoer/27416.png",
-          "gp": 9,
-          "pts": 5,
-          "gf": 17,
-          "ga": 39,
-          "diff": -22
+          "gp": 10,
+          "pts": 8,
+          "gf": 21,
+          "ga": 41,
+          "diff": -20
         },
         {
           "plass": 9,
