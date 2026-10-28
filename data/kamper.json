@@ -1,5 +1,5 @@
 {
-  "oppdatert": "28.10.2026, 20:17",
+  "oppdatert": "29.10.2026, 00:23",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -668,8 +668,8 @@
       "borte": "Hasle/Løren IL - Ishockey",
       "arena": "Ungdomshallen Jordal",
       "divisjon": "5. divisjon menn",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 4
     },
     {
       "dato": "2026-10-29",

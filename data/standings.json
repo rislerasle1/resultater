@@ -1,5 +1,5 @@
 {
-  "oppdatert": "28.10.2026, 20:17",
+  "oppdatert": "29.10.2026, 00:23",
   "tabeller": [
     {
       "navn": "U14B",
@@ -443,6 +443,36 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Hasle/Løren 2",
+          "logo": "",
+          "gp": 1,
+          "pts": 2,
+          "gf": 4,
+          "ga": 2,
+          "diff": 2
+        },
+        {
+          "plass": 2,
+          "lag": "Jutul",
+          "logo": "data/logoer/189999.png",
+          "gp": 1,
+          "pts": 1,
+          "gf": 4,
+          "ga": 4,
+          "diff": 0
+        },
+        {
+          "plass": 3,
+          "lag": "Aker",
+          "logo": "data/logoer/21345.png",
+          "gp": 1,
+          "pts": 1,
+          "gf": 4,
+          "ga": 4,
+          "diff": 0
+        },
+        {
+          "plass": 4,
           "lag": "Gamle Oslo",
           "logo": "data/logoer/21324.png",
           "gp": 0,
@@ -452,7 +482,7 @@
           "diff": 0
         },
         {
-          "plass": 2,
+          "plass": 5,
           "lag": "Ullensaker",
           "logo": "data/logoer/741937.png",
           "gp": 0,
@@ -462,17 +492,7 @@
           "diff": 0
         },
         {
-          "plass": 3,
-          "lag": "Jutul",
-          "logo": "data/logoer/189999.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 4,
+          "plass": 6,
           "lag": "Bøler",
           "logo": "data/logoer/707568.png",
           "gp": 0,
@@ -482,7 +502,7 @@
           "diff": 0
         },
         {
-          "plass": 5,
+          "plass": 7,
           "lag": "Grüner 3",
           "logo": "data/logoer/720861.jpg",
           "gp": 0,
@@ -492,29 +512,9 @@
           "diff": 0
         },
         {
-          "plass": 6,
+          "plass": 8,
           "lag": "Ringerike 2",
           "logo": "data/logoer/22629.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 7,
-          "lag": "Jordal",
-          "logo": "data/logoer/21269.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 8,
-          "lag": "Hasle/Løren 2",
-          "logo": "",
           "gp": 0,
           "pts": 0,
           "gf": 0,
@@ -553,8 +553,8 @@
         },
         {
           "plass": 12,
-          "lag": "Aker",
-          "logo": "data/logoer/21345.png",
+          "lag": "Stange Sportsklubb",
+          "logo": "data/logoer/21716.png",
           "gp": 0,
           "pts": 0,
           "gf": 0,
@@ -563,13 +563,13 @@
         },
         {
           "plass": 13,
-          "lag": "Stange Sportsklubb",
-          "logo": "data/logoer/21716.png",
-          "gp": 0,
+          "lag": "Jordal",
+          "logo": "data/logoer/21269.png",
+          "gp": 1,
           "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
+          "gf": 2,
+          "ga": 4,
+          "diff": -2
         }
       ]
     },
