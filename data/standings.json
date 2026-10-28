@@ -1,5 +1,5 @@
 {
-  "oppdatert": "27.10.2026, 22:05",
+  "oppdatert": "28.10.2026, 01:38",
   "tabeller": [
     {
       "navn": "U14B",
@@ -311,11 +311,11 @@
           "plass": 1,
           "lag": "Furuset",
           "logo": "data/logoer/966263.png",
-          "gp": 4,
-          "pts": 4,
-          "gf": 26,
-          "ga": 16,
-          "diff": 10
+          "gp": 5,
+          "pts": 6,
+          "gf": 34,
+          "ga": 18,
+          "diff": 16
         },
         {
           "plass": 2,
@@ -339,16 +339,6 @@
         },
         {
           "plass": 4,
-          "lag": "Jar/Holmen",
-          "logo": "data/logoer/20094.png",
-          "gp": 4,
-          "pts": 3,
-          "gf": 13,
-          "ga": 17,
-          "diff": -4
-        },
-        {
-          "plass": 5,
           "lag": "Skedsmo",
           "logo": "data/logoer/1010498.jpg",
           "gp": 4,
@@ -356,6 +346,16 @@
           "gf": 14,
           "ga": 19,
           "diff": -5
+        },
+        {
+          "plass": 5,
+          "lag": "Jar/Holmen",
+          "logo": "data/logoer/20094.png",
+          "gp": 5,
+          "pts": 3,
+          "gf": 15,
+          "ga": 25,
+          "diff": -10
         }
       ]
     },
