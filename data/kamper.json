@@ -1,5 +1,5 @@
 {
-  "oppdatert": "28.10.2026, 07:34",
+  "oppdatert": "28.10.2026, 14:46",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -1754,16 +1754,6 @@
     {
       "dato": "2027-01-09",
       "tid": "16:00",
-      "hjemme": "Sparta Sarpsborg, IHK",
-      "borte": "Hasle-Løren Elite",
-      "arena": "Sparta Amfi",
-      "divisjon": "2. divisjon menn",
-      "hjemmeMal": null,
-      "borteMal": null
-    },
-    {
-      "dato": "2027-01-09",
-      "tid": "16:00",
       "hjemme": "Ringerike IHK",
       "borte": "Storhamar IL Ishockeygruppen Elite",
       "arena": "Schjongshallen",
@@ -2468,6 +2458,16 @@
       "borte": "Hasle-Løren",
       "arena": "Storhamar Ishall",
       "divisjon": "JU14",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-02-20",
+      "tid": "16:00",
+      "hjemme": "Sparta Sarpsborg, IHK",
+      "borte": "Hasle-Løren Elite",
+      "arena": "Sparta Amfi",
+      "divisjon": "2. divisjon menn",
       "hjemmeMal": null,
       "borteMal": null
     },
