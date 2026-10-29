@@ -1,5 +1,5 @@
 {
-  "oppdatert": "29.10.2026, 17:18",
+  "oppdatert": "29.10.2026, 22:17",
   "tabeller": [
     {
       "navn": "U14B",
@@ -582,81 +582,81 @@
           "plass": 1,
           "lag": "Vålerenga Elite",
           "logo": "data/logoer/527810.jpg",
-          "gp": 10,
-          "pts": 27,
-          "gf": 47,
-          "ga": 14,
-          "diff": 33
+          "gp": 11,
+          "pts": 30,
+          "gf": 53,
+          "ga": 16,
+          "diff": 37
         },
         {
           "plass": 2,
           "lag": "Frisk Asker Elite",
           "logo": "data/logoer/695546.png",
-          "gp": 11,
-          "pts": 25,
-          "gf": 42,
-          "ga": 24,
-          "diff": 18
+          "gp": 12,
+          "pts": 28,
+          "gf": 45,
+          "ga": 26,
+          "diff": 19
         },
         {
           "plass": 3,
           "lag": "Storhamar Elite",
           "logo": "data/logoer/708311.png",
-          "gp": 10,
-          "pts": 20,
-          "gf": 41,
-          "ga": 17,
-          "diff": 24
+          "gp": 11,
+          "pts": 23,
+          "gf": 46,
+          "ga": 19,
+          "diff": 27
         },
         {
           "plass": 4,
           "lag": "Nidaros",
           "logo": "data/logoer/770066.png",
-          "gp": 10,
+          "gp": 11,
           "pts": 18,
-          "gf": 29,
-          "ga": 27,
-          "diff": 2
+          "gf": 31,
+          "ga": 32,
+          "diff": -1
         },
         {
           "plass": 5,
           "lag": "Stavanger Oilers",
           "logo": "data/logoer/220882.png",
-          "gp": 11,
-          "pts": 15,
+          "gp": 12,
+          "pts": 16,
           "gf": 32,
-          "ga": 37,
-          "diff": -5
+          "ga": 38,
+          "diff": -6
         },
         {
           "plass": 6,
           "lag": "Stjernen Elite",
           "logo": "data/logoer/695363.png",
-          "gp": 11,
+          "gp": 12,
           "pts": 12,
-          "gf": 31,
-          "ga": 36,
-          "diff": -5
+          "gf": 33,
+          "ga": 39,
+          "diff": -6
         },
         {
           "plass": 7,
           "lag": "Ringerike",
           "logo": "data/logoer/22629.png",
-          "gp": 12,
+          "gp": 13,
           "pts": 12,
-          "gf": 21,
-          "ga": 46,
-          "diff": -25
+          "gf": 23,
+          "ga": 52,
+          "diff": -29
         },
         {
           "plass": 8,
           "lag": "Narvik",
           "logo": "data/logoer/27416.png",
-          "gp": 10,
-          "pts": 8,
-          "gf": 21,
+          "gp": 11,
+          "pts": 10,
+          "gf": 22,
           "ga": 41,
-          "diff": -20
+          "diff": -19
         },
         {
           "plass": 9,

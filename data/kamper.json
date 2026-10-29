@@ -1,5 +1,5 @@
 {
-  "oppdatert": "29.10.2026, 17:18",
+  "oppdatert": "29.10.2026, 22:17",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -678,8 +678,8 @@
       "borte": "Stjernen Hockey Fredrikstad Elite",
       "arena": "Varner Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 2
     },
     {
       "dato": "2026-10-29",
@@ -688,8 +688,8 @@
       "borte": "Stavanger Ishockeyklubb",
       "arena": "Nordkraft Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 1,
+      "borteMal": 0
     },
     {
       "dato": "2026-10-29",
@@ -698,8 +698,8 @@
       "borte": "Ringerike IHK",
       "arena": "Jordal Amfi",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 6,
+      "borteMal": 2
     },
     {
       "dato": "2026-10-29",
@@ -708,8 +708,8 @@
       "borte": "Nidaros Ishockeyklubb",
       "arena": "CC-Amfi",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 5,
+      "borteMal": 2
     },
     {
       "dato": "2026-10-30",
