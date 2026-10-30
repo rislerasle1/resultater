@@ -1,5 +1,5 @@
 {
-  "oppdatert": "30.10.2026, 20:36",
+  "oppdatert": "31.10.2026, 00:26",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -718,8 +718,8 @@
       "borte": "Sparta Sarp 2",
       "arena": "Løren hallen",
       "divisjon": "U15C",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 8
     },
     {
       "dato": "2026-10-30",
@@ -728,8 +728,8 @@
       "borte": "Hasle-Løren",
       "arena": "Skedsmo Ishall",
       "divisjon": "U20 1. divisjon",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 4,
+      "borteMal": 5
     },
     {
       "dato": "2026-10-31",
