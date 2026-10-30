@@ -1,5 +1,5 @@
 {
-  "oppdatert": "29.10.2026, 22:17",
+  "oppdatert": "30.10.2026, 02:13",
   "tabeller": [
     {
       "navn": "U14B",
@@ -443,6 +443,16 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Grüner 3",
+          "logo": "data/logoer/720861.jpg",
+          "gp": 1,
+          "pts": 2,
+          "gf": 9,
+          "ga": 4,
+          "diff": 5
+        },
+        {
+          "plass": 2,
           "lag": "Hasle/Løren 2",
           "logo": "",
           "gp": 1,
@@ -452,7 +462,7 @@
           "diff": 2
         },
         {
-          "plass": 2,
+          "plass": 3,
           "lag": "Jutul",
           "logo": "data/logoer/189999.png",
           "gp": 1,
@@ -462,7 +472,7 @@
           "diff": 0
         },
         {
-          "plass": 3,
+          "plass": 4,
           "lag": "Aker",
           "logo": "data/logoer/21345.png",
           "gp": 1,
@@ -472,7 +482,7 @@
           "diff": 0
         },
         {
-          "plass": 4,
+          "plass": 5,
           "lag": "Gamle Oslo",
           "logo": "data/logoer/21324.png",
           "gp": 0,
@@ -482,7 +492,7 @@
           "diff": 0
         },
         {
-          "plass": 5,
+          "plass": 6,
           "lag": "Ullensaker",
           "logo": "data/logoer/741937.png",
           "gp": 0,
@@ -492,19 +502,9 @@
           "diff": 0
         },
         {
-          "plass": 6,
+          "plass": 7,
           "lag": "Bøler",
           "logo": "data/logoer/707568.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 7,
-          "lag": "Grüner 3",
-          "logo": "data/logoer/720861.jpg",
           "gp": 0,
           "pts": 0,
           "gf": 0,
@@ -533,16 +533,6 @@
         },
         {
           "plass": 10,
-          "lag": "Nesøya 2",
-          "logo": "data/logoer/825391.jpg",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 11,
           "lag": "Tønsberg 2",
           "logo": "data/logoer/708854.png",
           "gp": 0,
@@ -552,7 +542,7 @@
           "diff": 0
         },
         {
-          "plass": 12,
+          "plass": 11,
           "lag": "Stange Sportsklubb",
           "logo": "data/logoer/21716.png",
           "gp": 0,
@@ -562,7 +552,7 @@
           "diff": 0
         },
         {
-          "plass": 13,
+          "plass": 12,
           "lag": "Jordal",
           "logo": "data/logoer/21269.png",
           "gp": 1,
@@ -570,6 +560,16 @@
           "gf": 2,
           "ga": 4,
           "diff": -2
+        },
+        {
+          "plass": 13,
+          "lag": "Nesøya 2",
+          "logo": "data/logoer/825391.jpg",
+          "gp": 1,
+          "pts": 0,
+          "gf": 4,
+          "ga": 9,
+          "diff": -5
         }
       ]
     },
