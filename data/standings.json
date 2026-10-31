@@ -1,5 +1,5 @@
 {
-  "oppdatert": "31.10.2026, 20:27",
+  "oppdatert": "31.10.2026, 23:42",
   "tabeller": [
     {
       "navn": "U14B",
@@ -396,23 +396,23 @@
         },
         {
           "plass": 4,
-          "lag": "TIF Viking/Bergen",
-          "logo": "",
-          "gp": 4,
-          "pts": 6,
-          "gf": 15,
-          "ga": 13,
-          "diff": 2
+          "lag": "Hasle-Løren Elite",
+          "logo": "data/logoer/818491.png",
+          "gp": 6,
+          "pts": 7,
+          "gf": 14,
+          "ga": 32,
+          "diff": -18
         },
         {
           "plass": 5,
-          "lag": "Hasle-Løren Elite",
-          "logo": "data/logoer/818491.png",
+          "lag": "TIF Viking/Bergen",
+          "logo": "",
           "gp": 5,
-          "pts": 5,
-          "gf": 11,
-          "ga": 30,
-          "diff": -19
+          "pts": 7,
+          "gf": 17,
+          "ga": 16,
+          "diff": 1
         },
         {
           "plass": 6,
@@ -602,11 +602,11 @@
           "plass": 3,
           "lag": "Storhamar Elite",
           "logo": "data/logoer/708311.png",
-          "gp": 11,
-          "pts": 23,
-          "gf": 46,
-          "ga": 19,
-          "diff": 27
+          "gp": 12,
+          "pts": 25,
+          "gf": 48,
+          "ga": 20,
+          "diff": 28
         },
         {
           "plass": 4,
@@ -632,11 +632,11 @@
           "plass": 6,
           "lag": "Stjernen Elite",
           "logo": "data/logoer/695363.png",
-          "gp": 12,
-          "pts": 12,
-          "gf": 33,
-          "ga": 39,
-          "diff": -6
+          "gp": 13,
+          "pts": 13,
+          "gf": 34,
+          "ga": 41,
+          "diff": -7
         },
         {
           "plass": 7,

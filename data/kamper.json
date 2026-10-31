@@ -1,5 +1,5 @@
 {
-  "oppdatert": "31.10.2026, 20:27",
+  "oppdatert": "31.10.2026, 23:42",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -768,8 +768,8 @@
       "borte": "Hasle-Løren Elite",
       "arena": "Iskanten Ishall",
       "divisjon": "2. divisjon menn",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 3
     },
     {
       "dato": "2026-10-31",
@@ -778,8 +778,8 @@
       "borte": "Storhamar IL Ishockeygruppen Elite",
       "arena": "Stjernehallen",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 1,
+      "borteMal": 2
     },
     {
       "dato": "2026-11-01",
