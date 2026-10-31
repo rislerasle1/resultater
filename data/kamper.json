@@ -1,5 +1,5 @@
 {
-  "oppdatert": "31.10.2026, 10:12",
+  "oppdatert": "31.10.2026, 16:27",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -734,16 +734,6 @@
     {
       "dato": "2026-10-31",
       "tid": "16:00",
-      "hjemme": "Viking Turn og Idrettsforening",
-      "borte": "Hasle-Løren Elite",
-      "arena": "Bergenshallen",
-      "divisjon": "2. divisjon menn",
-      "hjemmeMal": null,
-      "borteMal": null
-    },
-    {
-      "dato": "2026-10-31",
-      "tid": "16:00",
       "hjemme": "Lillehammer Ishockeyklubb Elite",
       "borte": "Vålerenga Ishockey Elite",
       "arena": "Eidsiva Arena",
@@ -768,6 +758,16 @@
       "borte": "IF Frisk Asker Hockey",
       "arena": "DNB Arena",
       "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-10-31",
+      "tid": "18:30",
+      "hjemme": "Viking Turn og Idrettsforening",
+      "borte": "Hasle-Løren Elite",
+      "arena": "Iskanten Ishall",
+      "divisjon": "2. divisjon menn",
       "hjemmeMal": null,
       "borteMal": null
     },
