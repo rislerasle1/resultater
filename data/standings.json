@@ -1,5 +1,5 @@
 {
-  "oppdatert": "01.11.2026, 16:42",
+  "oppdatert": "01.11.2026, 21:06",
   "tabeller": [
     {
       "navn": "U14B",
@@ -612,11 +612,11 @@
           "plass": 4,
           "lag": "Nidaros",
           "logo": "data/logoer/770066.png",
-          "gp": 12,
-          "pts": 21,
-          "gf": 33,
-          "ga": 33,
-          "diff": 0
+          "gp": 13,
+          "pts": 23,
+          "gf": 36,
+          "ga": 35,
+          "diff": 1
         },
         {
           "plass": 5,
@@ -652,11 +652,11 @@
           "plass": 8,
           "lag": "Narvik",
           "logo": "data/logoer/27416.png",
-          "gp": 12,
-          "pts": 10,
-          "gf": 23,
-          "ga": 43,
-          "diff": -20
+          "gp": 13,
+          "pts": 11,
+          "gf": 25,
+          "ga": 46,
+          "diff": -21
         },
         {
           "plass": 9,

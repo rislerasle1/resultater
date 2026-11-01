@@ -1,5 +1,5 @@
 {
-  "oppdatert": "01.11.2026, 16:42",
+  "oppdatert": "01.11.2026, 21:06",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -808,8 +808,8 @@
       "borte": "Nidaros Ishockeyklubb",
       "arena": "Nordkraft Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 3
     },
     {
       "dato": "2026-11-03",
