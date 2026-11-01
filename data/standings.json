@@ -1,5 +1,5 @@
 {
-  "oppdatert": "01.11.2026, 21:06",
+  "oppdatert": "02.11.2026, 00:44",
   "tabeller": [
     {
       "navn": "U14B",
@@ -9,7 +9,7 @@
         {
           "plass": 1,
           "lag": "Ringerike",
-          "logo": "data/logoer/22629.png",
+          "logo": "",
           "gp": 4,
           "pts": 10,
           "gf": 22,
@@ -59,7 +59,7 @@
         {
           "plass": 6,
           "lag": "Storhamar",
-          "logo": "data/logoer/222143.png",
+          "logo": "",
           "gp": 3,
           "pts": 4,
           "gf": 22,
@@ -89,7 +89,7 @@
         {
           "plass": 9,
           "lag": "Comet",
-          "logo": "data/logoer/619776.png",
+          "logo": "",
           "gp": 3,
           "pts": 3,
           "gf": 10,
@@ -99,7 +99,7 @@
         {
           "plass": 10,
           "lag": "Ski",
-          "logo": "data/logoer/92751.png",
+          "logo": "",
           "gp": 3,
           "pts": 3,
           "gf": 6,
@@ -116,7 +116,7 @@
         {
           "plass": 1,
           "lag": "Furuset",
-          "logo": "data/logoer/21388.png",
+          "logo": "",
           "gp": 3,
           "pts": 8,
           "gf": 19,
@@ -136,7 +136,7 @@
         {
           "plass": 3,
           "lag": "Ski",
-          "logo": "data/logoer/92751.png",
+          "logo": "",
           "gp": 3,
           "pts": 5,
           "gf": 8,
@@ -146,7 +146,7 @@
         {
           "plass": 4,
           "lag": "Frisk Asker",
-          "logo": "data/logoer/20224.png",
+          "logo": "",
           "gp": 2,
           "pts": 4,
           "gf": 6,
@@ -166,7 +166,7 @@
         {
           "plass": 6,
           "lag": "Vålerenga",
-          "logo": "data/logoer/21226.png",
+          "logo": "",
           "gp": 2,
           "pts": 3,
           "gf": 7,
@@ -176,7 +176,7 @@
         {
           "plass": 7,
           "lag": "Storhamar/Ullensaker",
-          "logo": "data/logoer/222143.png",
+          "logo": "",
           "gp": 3,
           "pts": 3,
           "gf": 10,
@@ -263,7 +263,7 @@
         {
           "plass": 6,
           "lag": "Kristiansand/Idda",
-          "logo": "data/logoer/23868.png",
+          "logo": "",
           "gp": 4,
           "pts": 3,
           "gf": 13,
@@ -273,7 +273,7 @@
         {
           "plass": 7,
           "lag": "Nes",
-          "logo": "data/logoer/20599.png",
+          "logo": "",
           "gp": 6,
           "pts": 2,
           "gf": 16,
@@ -443,6 +443,16 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Bøler",
+          "logo": "",
+          "gp": 1,
+          "pts": 2,
+          "gf": 9,
+          "ga": 4,
+          "diff": 5
+        },
+        {
+          "plass": 2,
           "lag": "Grüner 3",
           "logo": "data/logoer/720861.jpg",
           "gp": 1,
@@ -452,9 +462,9 @@
           "diff": 5
         },
         {
-          "plass": 2,
+          "plass": 3,
           "lag": "Ringerike 2",
-          "logo": "data/logoer/22629.png",
+          "logo": "",
           "gp": 1,
           "pts": 2,
           "gf": 7,
@@ -462,7 +472,17 @@
           "diff": 4
         },
         {
-          "plass": 3,
+          "plass": 4,
+          "lag": "Ullensaker",
+          "logo": "data/logoer/741937.png",
+          "gp": 1,
+          "pts": 2,
+          "gf": 5,
+          "ga": 2,
+          "diff": 3
+        },
+        {
+          "plass": 5,
           "lag": "Hasle/Løren 2",
           "logo": "",
           "gp": 1,
@@ -472,7 +492,7 @@
           "diff": 2
         },
         {
-          "plass": 4,
+          "plass": 6,
           "lag": "Jutul",
           "logo": "data/logoer/189999.png",
           "gp": 1,
@@ -482,9 +502,9 @@
           "diff": 0
         },
         {
-          "plass": 5,
+          "plass": 7,
           "lag": "Aker",
-          "logo": "data/logoer/21345.png",
+          "logo": "",
           "gp": 1,
           "pts": 1,
           "gf": 4,
@@ -492,29 +512,9 @@
           "diff": 0
         },
         {
-          "plass": 6,
-          "lag": "Gamle Oslo",
-          "logo": "data/logoer/21324.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 7,
-          "lag": "Ullensaker",
-          "logo": "data/logoer/741937.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
           "plass": 8,
-          "lag": "Bøler",
-          "logo": "data/logoer/707568.png",
+          "lag": "Gamle Oslo",
+          "logo": "",
           "gp": 0,
           "pts": 0,
           "gf": 0,
@@ -523,28 +523,8 @@
         },
         {
           "plass": 9,
-          "lag": "Tønsberg 2",
-          "logo": "data/logoer/708854.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 10,
-          "lag": "Stange Sportsklubb",
-          "logo": "data/logoer/1031676.png",
-          "gp": 0,
-          "pts": 0,
-          "gf": 0,
-          "ga": 0,
-          "diff": 0
-        },
-        {
-          "plass": 11,
           "lag": "Jordal",
-          "logo": "data/logoer/21269.png",
+          "logo": "",
           "gp": 1,
           "pts": 0,
           "gf": 2,
@@ -552,7 +532,17 @@
           "diff": -2
         },
         {
-          "plass": 12,
+          "plass": 10,
+          "lag": "Stange Sportsklubb",
+          "logo": "data/logoer/1031676.png",
+          "gp": 1,
+          "pts": 0,
+          "gf": 2,
+          "ga": 5,
+          "diff": -3
+        },
+        {
+          "plass": 11,
           "lag": "Kråkene Moss 2",
           "logo": "data/logoer/609482.png",
           "gp": 1,
@@ -562,9 +552,19 @@
           "diff": -4
         },
         {
-          "plass": 13,
+          "plass": 12,
           "lag": "Nesøya 2",
           "logo": "data/logoer/825391.jpg",
+          "gp": 1,
+          "pts": 0,
+          "gf": 4,
+          "ga": 9,
+          "diff": -5
+        },
+        {
+          "plass": 13,
+          "lag": "Tønsberg 2",
+          "logo": "",
           "gp": 1,
           "pts": 0,
           "gf": 4,
@@ -641,7 +641,7 @@
         {
           "plass": 7,
           "lag": "Ringerike",
-          "logo": "data/logoer/22629.png",
+          "logo": "",
           "gp": 13,
           "pts": 12,
           "gf": 23,
@@ -651,7 +651,7 @@
         {
           "plass": 8,
           "lag": "Narvik",
-          "logo": "data/logoer/27416.png",
+          "logo": "",
           "gp": 13,
           "pts": 11,
           "gf": 25,
