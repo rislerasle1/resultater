@@ -1,5 +1,5 @@
 {
-  "oppdatert": "01.11.2026, 09:36",
+  "oppdatert": "01.11.2026, 16:42",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -788,8 +788,8 @@
       "borte": "Hasle-Løren Elite",
       "arena": "Bergenshallen",
       "divisjon": "2. divisjon menn",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 7,
+      "borteMal": 2
     },
     {
       "dato": "2026-11-01",
@@ -798,8 +798,8 @@
       "borte": "Lillehammer",
       "arena": "Løren hallen",
       "divisjon": "JU14",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 1,
+      "borteMal": 16
     },
     {
       "dato": "2026-11-01",
