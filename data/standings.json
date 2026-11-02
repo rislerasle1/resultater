@@ -1,5 +1,5 @@
 {
-  "oppdatert": "02.11.2026, 00:44",
+  "oppdatert": "02.11.2026, 05:00",
   "tabeller": [
     {
       "navn": "U14B",
@@ -9,7 +9,7 @@
         {
           "plass": 1,
           "lag": "Ringerike",
-          "logo": "",
+          "logo": "data/logoer/22629.png",
           "gp": 4,
           "pts": 10,
           "gf": 22,
@@ -59,7 +59,7 @@
         {
           "plass": 6,
           "lag": "Storhamar",
-          "logo": "",
+          "logo": "data/logoer/222143.png",
           "gp": 3,
           "pts": 4,
           "gf": 22,
@@ -89,7 +89,7 @@
         {
           "plass": 9,
           "lag": "Comet",
-          "logo": "",
+          "logo": "data/logoer/619776.png",
           "gp": 3,
           "pts": 3,
           "gf": 10,
@@ -99,7 +99,7 @@
         {
           "plass": 10,
           "lag": "Ski",
-          "logo": "",
+          "logo": "data/logoer/92751.png",
           "gp": 3,
           "pts": 3,
           "gf": 6,
@@ -116,7 +116,7 @@
         {
           "plass": 1,
           "lag": "Furuset",
-          "logo": "",
+          "logo": "data/logoer/21388.png",
           "gp": 3,
           "pts": 8,
           "gf": 19,
@@ -136,7 +136,7 @@
         {
           "plass": 3,
           "lag": "Ski",
-          "logo": "",
+          "logo": "data/logoer/92751.png",
           "gp": 3,
           "pts": 5,
           "gf": 8,
@@ -146,7 +146,7 @@
         {
           "plass": 4,
           "lag": "Frisk Asker",
-          "logo": "",
+          "logo": "data/logoer/20224.png",
           "gp": 2,
           "pts": 4,
           "gf": 6,
@@ -166,7 +166,7 @@
         {
           "plass": 6,
           "lag": "Vålerenga",
-          "logo": "",
+          "logo": "data/logoer/21226.png",
           "gp": 2,
           "pts": 3,
           "gf": 7,
@@ -176,7 +176,7 @@
         {
           "plass": 7,
           "lag": "Storhamar/Ullensaker",
-          "logo": "",
+          "logo": "data/logoer/222143.png",
           "gp": 3,
           "pts": 3,
           "gf": 10,
@@ -263,7 +263,7 @@
         {
           "plass": 6,
           "lag": "Kristiansand/Idda",
-          "logo": "",
+          "logo": "data/logoer/23868.png",
           "gp": 4,
           "pts": 3,
           "gf": 13,
@@ -273,7 +273,7 @@
         {
           "plass": 7,
           "lag": "Nes",
-          "logo": "",
+          "logo": "data/logoer/20599.png",
           "gp": 6,
           "pts": 2,
           "gf": 16,
@@ -444,7 +444,7 @@
         {
           "plass": 1,
           "lag": "Bøler",
-          "logo": "",
+          "logo": "data/logoer/707568.png",
           "gp": 1,
           "pts": 2,
           "gf": 9,
@@ -464,7 +464,7 @@
         {
           "plass": 3,
           "lag": "Ringerike 2",
-          "logo": "",
+          "logo": "data/logoer/22629.png",
           "gp": 1,
           "pts": 2,
           "gf": 7,
@@ -504,7 +504,7 @@
         {
           "plass": 7,
           "lag": "Aker",
-          "logo": "",
+          "logo": "data/logoer/21345.png",
           "gp": 1,
           "pts": 1,
           "gf": 4,
@@ -514,7 +514,7 @@
         {
           "plass": 8,
           "lag": "Gamle Oslo",
-          "logo": "",
+          "logo": "data/logoer/21324.png",
           "gp": 0,
           "pts": 0,
           "gf": 0,
@@ -524,7 +524,7 @@
         {
           "plass": 9,
           "lag": "Jordal",
-          "logo": "",
+          "logo": "data/logoer/21269.png",
           "gp": 1,
           "pts": 0,
           "gf": 2,
@@ -564,7 +564,7 @@
         {
           "plass": 13,
           "lag": "Tønsberg 2",
-          "logo": "",
+          "logo": "data/logoer/708854.png",
           "gp": 1,
           "pts": 0,
           "gf": 4,
@@ -641,7 +641,7 @@
         {
           "plass": 7,
           "lag": "Ringerike",
-          "logo": "",
+          "logo": "data/logoer/22629.png",
           "gp": 13,
           "pts": 12,
           "gf": 23,
@@ -651,7 +651,7 @@
         {
           "plass": 8,
           "lag": "Narvik",
-          "logo": "",
+          "logo": "data/logoer/27416.png",
           "gp": 13,
           "pts": 11,
           "gf": 25,
