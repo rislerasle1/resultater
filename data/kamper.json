@@ -1,5 +1,5 @@
 {
-  "oppdatert": "03.11.2026, 19:33",
+  "oppdatert": "04.11.2026, 00:51",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -818,8 +818,8 @@
       "borte": "Furuset Ishockey IF",
       "arena": "Løren hallen",
       "divisjon": "U20 1. divisjon",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 5
     },
     {
       "dato": "2026-11-04",

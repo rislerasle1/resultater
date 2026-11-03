@@ -1,5 +1,5 @@
 {
-  "oppdatert": "03.11.2026, 19:33",
+  "oppdatert": "04.11.2026, 00:51",
   "tabeller": [
     {
       "navn": "U14B",
@@ -311,21 +311,21 @@
           "plass": 1,
           "lag": "Furuset",
           "logo": "data/logoer/966263.png",
-          "gp": 5,
-          "pts": 6,
-          "gf": 34,
-          "ga": 18,
-          "diff": 16
+          "gp": 6,
+          "pts": 8,
+          "gf": 39,
+          "ga": 21,
+          "diff": 18
         },
         {
           "plass": 2,
           "lag": "Hasle-Løren",
           "logo": "data/logoer/982477.jpg",
-          "gp": 4,
+          "gp": 5,
           "pts": 6,
-          "gf": 24,
-          "ga": 20,
-          "diff": 4
+          "gf": 27,
+          "ga": 25,
+          "diff": 2
         },
         {
           "plass": 3,
@@ -443,26 +443,6 @@
       "lag": [
         {
           "plass": 1,
-          "lag": "Bøler",
-          "logo": "data/logoer/707568.png",
-          "gp": 1,
-          "pts": 2,
-          "gf": 9,
-          "ga": 4,
-          "diff": 5
-        },
-        {
-          "plass": 2,
-          "lag": "Grüner 3",
-          "logo": "data/logoer/720861.jpg",
-          "gp": 1,
-          "pts": 2,
-          "gf": 9,
-          "ga": 4,
-          "diff": 5
-        },
-        {
-          "plass": 3,
           "lag": "Ringerike 2",
           "logo": "data/logoer/22629.png",
           "gp": 1,
@@ -470,6 +450,26 @@
           "gf": 7,
           "ga": 3,
           "diff": 4
+        },
+        {
+          "plass": 2,
+          "lag": "Kråkene Moss 2",
+          "logo": "data/logoer/609482.png",
+          "gp": 2,
+          "pts": 2,
+          "gf": 8,
+          "ga": 10,
+          "diff": -2
+        },
+        {
+          "plass": 3,
+          "lag": "Bøler",
+          "logo": "data/logoer/707568.png",
+          "gp": 1,
+          "pts": 2,
+          "gf": 9,
+          "ga": 4,
+          "diff": 5
         },
         {
           "plass": 4,
@@ -493,6 +493,16 @@
         },
         {
           "plass": 6,
+          "lag": "Grüner 3",
+          "logo": "data/logoer/720861.jpg",
+          "gp": 2,
+          "pts": 2,
+          "gf": 12,
+          "ga": 9,
+          "diff": 3
+        },
+        {
+          "plass": 7,
           "lag": "Jutul",
           "logo": "data/logoer/189999.png",
           "gp": 1,
@@ -502,7 +512,7 @@
           "diff": 0
         },
         {
-          "plass": 7,
+          "plass": 8,
           "lag": "Aker",
           "logo": "data/logoer/21345.png",
           "gp": 1,
@@ -512,7 +522,7 @@
           "diff": 0
         },
         {
-          "plass": 8,
+          "plass": 9,
           "lag": "Gamle Oslo",
           "logo": "data/logoer/21324.png",
           "gp": 0,
@@ -522,7 +532,7 @@
           "diff": 0
         },
         {
-          "plass": 9,
+          "plass": 10,
           "lag": "Jordal",
           "logo": "data/logoer/21269.png",
           "gp": 1,
@@ -532,7 +542,7 @@
           "diff": -2
         },
         {
-          "plass": 10,
+          "plass": 11,
           "lag": "Stange Sportsklubb",
           "logo": "data/logoer/1031676.png",
           "gp": 1,
@@ -540,16 +550,6 @@
           "gf": 2,
           "ga": 5,
           "diff": -3
-        },
-        {
-          "plass": 11,
-          "lag": "Kråkene Moss 2",
-          "logo": "data/logoer/609482.png",
-          "gp": 1,
-          "pts": 0,
-          "gf": 3,
-          "ga": 7,
-          "diff": -4
         },
         {
           "plass": 12,
