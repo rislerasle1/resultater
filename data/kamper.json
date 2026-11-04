@@ -1,5 +1,5 @@
 {
-  "oppdatert": "04.11.2026, 13:44",
+  "oppdatert": "04.11.2026, 21:14",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -828,8 +828,8 @@
       "borte": "Jutul/Jar",
       "arena": "Løren hallen",
       "divisjon": "JU14",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 3
     },
     {
       "dato": "2026-11-07",
