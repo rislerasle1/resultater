@@ -1,5 +1,5 @@
 {
-  "oppdatert": "04.11.2026, 05:33",
+  "oppdatert": "04.11.2026, 13:44",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -1162,16 +1162,6 @@
       "borteMal": null
     },
     {
-      "dato": "2026-11-24",
-      "tid": "18:30",
-      "hjemme": "Vålerenga Ishockey Elite",
-      "borte": "Nidaros Ishockeyklubb",
-      "arena": "Jordal Amfi",
-      "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
-    },
-    {
       "dato": "2026-11-25",
       "tid": "20:30",
       "hjemme": "Hasle/Løren IL - Ishockey",
@@ -1657,6 +1647,16 @@
       "hjemme": "Storhamar IL Ishockeygruppen Elite",
       "borte": "Vålerenga Ishockey Elite",
       "arena": "CC-Amfi",
+      "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2027-01-03",
+      "tid": "16:00",
+      "hjemme": "Vålerenga Ishockey Elite",
+      "borte": "Nidaros Ishockeyklubb",
+      "arena": "Jordal Amfi",
       "divisjon": "Elitehockeyligaen",
       "hjemmeMal": null,
       "borteMal": null
