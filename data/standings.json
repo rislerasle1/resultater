@@ -1,5 +1,5 @@
 {
-  "oppdatert": "05.11.2026, 08:46",
+  "oppdatert": "05.11.2026, 23:10",
   "tabeller": [
     {
       "navn": "U14B",
@@ -188,7 +188,7 @@
           "lag": "Kongsberg",
           "logo": "data/logoer/1010887.jpg",
           "gp": 2,
-          "pts": 1,
+          "pts": 2,
           "gf": 6,
           "ga": 15,
           "diff": -9
