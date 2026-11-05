@@ -1,5 +1,5 @@
 {
-  "oppdatert": "04.11.2026, 21:14",
+  "oppdatert": "05.11.2026, 01:58",
   "tabeller": [
     {
       "navn": "U14B",
@@ -443,6 +443,16 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Ullensaker",
+          "logo": "data/logoer/741937.png",
+          "gp": 2,
+          "pts": 4,
+          "gf": 7,
+          "ga": 2,
+          "diff": 5
+        },
+        {
+          "plass": 2,
           "lag": "Ringerike 2",
           "logo": "data/logoer/22629.png",
           "gp": 1,
@@ -452,7 +462,7 @@
           "diff": 4
         },
         {
-          "plass": 2,
+          "plass": 3,
           "lag": "Kråkene Moss 2",
           "logo": "data/logoer/609482.png",
           "gp": 2,
@@ -462,7 +472,7 @@
           "diff": -2
         },
         {
-          "plass": 3,
+          "plass": 4,
           "lag": "Bøler",
           "logo": "data/logoer/707568.png",
           "gp": 1,
@@ -470,16 +480,6 @@
           "gf": 9,
           "ga": 4,
           "diff": 5
-        },
-        {
-          "plass": 4,
-          "lag": "Ullensaker",
-          "logo": "data/logoer/741937.png",
-          "gp": 1,
-          "pts": 2,
-          "gf": 5,
-          "ga": 2,
-          "diff": 3
         },
         {
           "plass": 5,
@@ -515,11 +515,11 @@
           "plass": 8,
           "lag": "Aker",
           "logo": "data/logoer/21345.png",
-          "gp": 1,
+          "gp": 2,
           "pts": 1,
           "gf": 4,
-          "ga": 4,
-          "diff": 0
+          "ga": 6,
+          "diff": -2
         },
         {
           "plass": 9,
