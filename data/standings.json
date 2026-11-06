@@ -1,5 +1,5 @@
 {
-  "oppdatert": "06.11.2026, 18:37",
+  "oppdatert": "06.11.2026, 23:38",
   "tabeller": [
     {
       "navn": "U14B",
@@ -443,6 +443,16 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Bøler",
+          "logo": "data/logoer/707568.png",
+          "gp": 2,
+          "pts": 4,
+          "gf": 17,
+          "ga": 6,
+          "diff": 11
+        },
+        {
+          "plass": 2,
           "lag": "Ullensaker",
           "logo": "data/logoer/741937.png",
           "gp": 2,
@@ -452,7 +462,7 @@
           "diff": 5
         },
         {
-          "plass": 2,
+          "plass": 3,
           "lag": "Ringerike 2",
           "logo": "data/logoer/22629.png",
           "gp": 1,
@@ -462,7 +472,7 @@
           "diff": 4
         },
         {
-          "plass": 3,
+          "plass": 4,
           "lag": "Kråkene Moss 2",
           "logo": "data/logoer/609482.png",
           "gp": 2,
@@ -470,16 +480,6 @@
           "gf": 8,
           "ga": 10,
           "diff": -2
-        },
-        {
-          "plass": 4,
-          "lag": "Bøler",
-          "logo": "data/logoer/707568.png",
-          "gp": 1,
-          "pts": 2,
-          "gf": 9,
-          "ga": 4,
-          "diff": 5
         },
         {
           "plass": 5,
@@ -553,8 +553,8 @@
         },
         {
           "plass": 12,
-          "lag": "Nesøya 2",
-          "logo": "data/logoer/825391.jpg",
+          "lag": "Tønsberg 2",
+          "logo": "data/logoer/708854.png",
           "gp": 1,
           "pts": 0,
           "gf": 4,
@@ -563,13 +563,13 @@
         },
         {
           "plass": 13,
-          "lag": "Tønsberg 2",
-          "logo": "data/logoer/708854.png",
-          "gp": 1,
+          "lag": "Nesøya 2",
+          "logo": "data/logoer/825391.jpg",
+          "gp": 2,
           "pts": 0,
-          "gf": 4,
-          "ga": 9,
-          "diff": -5
+          "gf": 6,
+          "ga": 17,
+          "diff": -11
         }
       ]
     },
