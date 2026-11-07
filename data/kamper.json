@@ -1,5 +1,5 @@
 {
-  "oppdatert": "07.11.2026, 10:32",
+  "oppdatert": "07.11.2026, 17:03",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -838,8 +838,8 @@
       "borte": "Hasle-Løren",
       "arena": "Tønsberg Ishall",
       "divisjon": "JU14",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 1,
+      "borteMal": 10
     },
     {
       "dato": "2026-11-07",

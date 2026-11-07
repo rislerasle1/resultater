@@ -1,5 +1,5 @@
 {
-  "oppdatert": "07.11.2026, 10:32",
+  "oppdatert": "07.11.2026, 17:03",
   "tabeller": [
     {
       "navn": "U14B",
@@ -167,41 +167,41 @@
           "plass": 6,
           "lag": "Vålerenga",
           "logo": "data/logoer/21226.png",
-          "gp": 2,
-          "pts": 3,
-          "gf": 7,
-          "ga": 5,
+          "gp": 3,
+          "pts": 4,
+          "gf": 9,
+          "ga": 7,
           "diff": 2
         },
         {
           "plass": 7,
           "lag": "Storhamar/Ullensaker",
           "logo": "data/logoer/222143.png",
-          "gp": 3,
-          "pts": 3,
-          "gf": 10,
-          "ga": 16,
+          "gp": 4,
+          "pts": 4,
+          "gf": 12,
+          "ga": 18,
           "diff": -6
         },
         {
           "plass": 8,
-          "lag": "Kongsberg",
-          "logo": "data/logoer/1010887.jpg",
-          "gp": 2,
-          "pts": 2,
-          "gf": 6,
-          "ga": 15,
-          "diff": -9
+          "lag": "Hasle-Løren",
+          "logo": "data/logoer/1029140.png",
+          "gp": 5,
+          "pts": 3,
+          "gf": 18,
+          "ga": 30,
+          "diff": -12
         },
         {
           "plass": 9,
-          "lag": "Hasle-Løren",
-          "logo": "data/logoer/1029140.png",
-          "gp": 4,
-          "pts": 1,
-          "gf": 8,
-          "ga": 29,
-          "diff": -21
+          "lag": "Kongsberg",
+          "logo": "data/logoer/1010887.jpg",
+          "gp": 3,
+          "pts": 2,
+          "gf": 7,
+          "ga": 25,
+          "diff": -18
         }
       ]
     },
