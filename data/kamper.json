@@ -1,5 +1,5 @@
 {
-  "oppdatert": "07.11.2026, 17:03",
+  "oppdatert": "07.11.2026, 21:23",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -848,8 +848,8 @@
       "borte": "Tønsberg og Omegn Ishockeyklubb",
       "arena": "Løren hallen",
       "divisjon": "U14B",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 1,
+      "borteMal": 3
     },
     {
       "dato": "2026-11-08",
