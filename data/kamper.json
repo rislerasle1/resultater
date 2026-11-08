@@ -1,5 +1,5 @@
 {
-  "oppdatert": "08.11.2026, 12:12",
+  "oppdatert": "08.11.2026, 18:10",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -858,8 +858,8 @@
       "borte": "Comet",
       "arena": "Løren hallen",
       "divisjon": "U14B",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 9
     },
     {
       "dato": "2026-11-08",
