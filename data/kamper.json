@@ -1,5 +1,5 @@
 {
-  "oppdatert": "10.11.2026, 18:12",
+  "oppdatert": "10.11.2026, 23:27",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -878,8 +878,8 @@
       "borte": "Jar/Holmen",
       "arena": "Løren hallen",
       "divisjon": "U20 1. divisjon",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 9,
+      "borteMal": 3
     },
     {
       "dato": "2026-11-12",

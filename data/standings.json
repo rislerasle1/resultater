@@ -1,5 +1,5 @@
 {
-  "oppdatert": "10.11.2026, 18:12",
+  "oppdatert": "10.11.2026, 23:27",
   "tabeller": [
     {
       "navn": "U14B",
@@ -321,11 +321,11 @@
           "plass": 2,
           "lag": "Hasle-Løren",
           "logo": "data/logoer/982477.jpg",
-          "gp": 5,
-          "pts": 6,
-          "gf": 27,
-          "ga": 25,
-          "diff": 2
+          "gp": 6,
+          "pts": 8,
+          "gf": 36,
+          "ga": 28,
+          "diff": 8
         },
         {
           "plass": 3,
@@ -341,11 +341,11 @@
           "plass": 4,
           "lag": "Jar/Holmen",
           "logo": "data/logoer/20094.png",
-          "gp": 7,
+          "gp": 8,
           "pts": 5,
-          "gf": 22,
-          "ga": 31,
-          "diff": -9
+          "gf": 25,
+          "ga": 40,
+          "diff": -15
         },
         {
           "plass": 5,
