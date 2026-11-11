@@ -1,5 +1,5 @@
 {
-  "oppdatert": "11.11.2026, 18:39",
+  "oppdatert": "12.11.2026, 00:57",
   "tabeller": [
     {
       "navn": "U14B",
@@ -331,11 +331,11 @@
           "plass": 3,
           "lag": "Comet Halden",
           "logo": "data/logoer/619776.png",
-          "gp": 4,
+          "gp": 5,
           "pts": 6,
-          "gf": 15,
-          "ga": 17,
-          "diff": -2
+          "gf": 20,
+          "ga": 23,
+          "diff": -3
         },
         {
           "plass": 4,
@@ -351,11 +351,11 @@
           "plass": 5,
           "lag": "Skedsmo",
           "logo": "data/logoer/1010498.jpg",
-          "gp": 6,
-          "pts": 3,
-          "gf": 20,
-          "ga": 29,
-          "diff": -9
+          "gp": 7,
+          "pts": 5,
+          "gf": 26,
+          "ga": 34,
+          "diff": -8
         }
       ]
     },
@@ -378,21 +378,21 @@
           "plass": 2,
           "lag": "Åsane",
           "logo": "",
-          "gp": 8,
-          "pts": 15,
-          "gf": 28,
-          "ga": 24,
-          "diff": 4
+          "gp": 9,
+          "pts": 16,
+          "gf": 29,
+          "ga": 26,
+          "diff": 3
         },
         {
           "plass": 3,
           "lag": "TIF Viking/Bergen",
           "logo": "",
-          "gp": 6,
-          "pts": 10,
-          "gf": 24,
-          "ga": 18,
-          "diff": 6
+          "gp": 7,
+          "pts": 12,
+          "gf": 26,
+          "ga": 19,
+          "diff": 7
         },
         {
           "plass": 4,
@@ -463,6 +463,16 @@
         },
         {
           "plass": 3,
+          "lag": "Aker",
+          "logo": "data/logoer/21345.png",
+          "gp": 3,
+          "pts": 3,
+          "gf": 9,
+          "ga": 9,
+          "diff": 0
+        },
+        {
+          "plass": 4,
           "lag": "Ringerike 2",
           "logo": "data/logoer/22629.png",
           "gp": 1,
@@ -472,7 +482,7 @@
           "diff": 4
         },
         {
-          "plass": 4,
+          "plass": 5,
           "lag": "Kråkene Moss 2",
           "logo": "data/logoer/609482.png",
           "gp": 2,
@@ -482,17 +492,17 @@
           "diff": -2
         },
         {
-          "plass": 5,
+          "plass": 6,
           "lag": "Gamle Oslo",
           "logo": "data/logoer/21324.png",
-          "gp": 1,
+          "gp": 2,
           "pts": 2,
-          "gf": 4,
-          "ga": 0,
-          "diff": 4
+          "gf": 7,
+          "ga": 5,
+          "diff": 2
         },
         {
-          "plass": 6,
+          "plass": 7,
           "lag": "Hasle/Løren 2",
           "logo": "",
           "gp": 1,
@@ -502,7 +512,7 @@
           "diff": 2
         },
         {
-          "plass": 7,
+          "plass": 8,
           "lag": "Tønsberg 2",
           "logo": "data/logoer/708854.png",
           "gp": 2,
@@ -512,7 +522,7 @@
           "diff": -2
         },
         {
-          "plass": 8,
+          "plass": 9,
           "lag": "Grüner 3",
           "logo": "data/logoer/720861.jpg",
           "gp": 2,
@@ -520,16 +530,6 @@
           "gf": 12,
           "ga": 9,
           "diff": 3
-        },
-        {
-          "plass": 9,
-          "lag": "Aker",
-          "logo": "data/logoer/21345.png",
-          "gp": 2,
-          "pts": 1,
-          "gf": 4,
-          "ga": 6,
-          "diff": -2
         },
         {
           "plass": 10,
