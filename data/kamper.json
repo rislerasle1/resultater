@@ -1,5 +1,5 @@
 {
-  "oppdatert": "12.11.2026, 07:15",
+  "oppdatert": "12.11.2026, 16:29",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -894,16 +894,6 @@
     {
       "dato": "2026-11-12",
       "tid": "18:30",
-      "hjemme": "Stavanger Ishockeyklubb",
-      "borte": "Lillehammer Ishockeyklubb Elite",
-      "arena": "DNB Arena",
-      "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
-    },
-    {
-      "dato": "2026-11-12",
-      "tid": "18:30",
       "hjemme": "Stjernen Hockey Fredrikstad Elite",
       "borte": "Ringerike IHK",
       "arena": "Stjernehallen",
@@ -917,6 +907,16 @@
       "hjemme": "Storhamar IL Ishockeygruppen Elite",
       "borte": "Narvik Ishockeyklubb",
       "arena": "CC-Amfi",
+      "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-11-12",
+      "tid": "19:00",
+      "hjemme": "Stavanger Ishockeyklubb",
+      "borte": "Lillehammer Ishockeyklubb Elite",
+      "arena": "DNB Arena",
       "divisjon": "Elitehockeyligaen",
       "hjemmeMal": null,
       "borteMal": null
