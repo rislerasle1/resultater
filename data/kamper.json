@@ -1,5 +1,5 @@
 {
-  "oppdatert": "12.11.2026, 16:29",
+  "oppdatert": "12.11.2026, 22:53",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -884,32 +884,12 @@
     {
       "dato": "2026-11-12",
       "tid": "18:30",
-      "hjemme": "Nidaros Ishockeyklubb",
-      "borte": "Vålerenga Ishockey Elite",
-      "arena": "Leangen Arena",
-      "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
-    },
-    {
-      "dato": "2026-11-12",
-      "tid": "18:30",
       "hjemme": "Stjernen Hockey Fredrikstad Elite",
       "borte": "Ringerike IHK",
       "arena": "Stjernehallen",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
-    },
-    {
-      "dato": "2026-11-12",
-      "tid": "18:30",
-      "hjemme": "Storhamar IL Ishockeygruppen Elite",
-      "borte": "Narvik Ishockeyklubb",
-      "arena": "CC-Amfi",
-      "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 4,
+      "borteMal": 1
     },
     {
       "dato": "2026-11-12",
@@ -917,6 +897,26 @@
       "hjemme": "Stavanger Ishockeyklubb",
       "borte": "Lillehammer Ishockeyklubb Elite",
       "arena": "DNB Arena",
+      "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": 7,
+      "borteMal": 4
+    },
+    {
+      "dato": "2026-11-12",
+      "tid": "19:30",
+      "hjemme": "Storhamar IL Ishockeygruppen Elite",
+      "borte": "Narvik Ishockeyklubb",
+      "arena": "CC-Amfi",
+      "divisjon": "Elitehockeyligaen",
+      "hjemmeMal": 6,
+      "borteMal": 2
+    },
+    {
+      "dato": "2026-11-12",
+      "tid": "20:00",
+      "hjemme": "Nidaros Ishockeyklubb",
+      "borte": "Vålerenga Ishockey Elite",
+      "arena": "Leangen Arena",
       "divisjon": "Elitehockeyligaen",
       "hjemmeMal": null,
       "borteMal": null
@@ -928,8 +928,8 @@
       "borte": "Hasle/Løren IL - Ishockey",
       "arena": "Grunerhallen",
       "divisjon": "5. divisjon menn",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 5
     },
     {
       "dato": "2026-11-13",
