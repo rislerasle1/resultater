@@ -1,5 +1,5 @@
 {
-  "oppdatert": "12.11.2026, 22:53",
+  "oppdatert": "13.11.2026, 03:20",
   "tabeller": [
     {
       "navn": "U14B",
@@ -582,11 +582,11 @@
           "plass": 1,
           "lag": "Vålerenga Elite",
           "logo": "data/logoer/527810.jpg",
-          "gp": 12,
+          "gp": 13,
           "pts": 33,
           "gf": 56,
-          "ga": 16,
-          "diff": 40
+          "ga": 20,
+          "diff": 36
         },
         {
           "plass": 2,
@@ -612,11 +612,11 @@
           "plass": 4,
           "lag": "Nidaros",
           "logo": "data/logoer/770066.png",
-          "gp": 13,
-          "pts": 23,
-          "gf": 36,
+          "gp": 14,
+          "pts": 26,
+          "gf": 40,
           "ga": 35,
-          "diff": 1
+          "diff": 5
         },
         {
           "plass": 5,
