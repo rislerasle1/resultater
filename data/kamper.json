@@ -1,5 +1,5 @@
 {
-  "oppdatert": "13.11.2026, 18:28",
+  "oppdatert": "13.11.2026, 23:47",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -938,8 +938,8 @@
       "borte": "Hasle-Løren IL - Ishockey",
       "arena": "Runnirinken",
       "divisjon": "U15C",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 10
     },
     {
       "dato": "2026-11-14",
