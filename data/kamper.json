@@ -1,5 +1,5 @@
 {
-  "oppdatert": "14.11.2026, 17:19",
+  "oppdatert": "14.11.2026, 21:51",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -948,8 +948,8 @@
       "borte": "Narvik Ishockeyklubb",
       "arena": "Eidsiva Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 2
     },
     {
       "dato": "2026-11-14",
@@ -958,8 +958,8 @@
       "borte": "Stavanger Ishockeyklubb",
       "arena": "Schjongshallen",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 0,
+      "borteMal": 4
     },
     {
       "dato": "2026-11-14",
