@@ -1,5 +1,5 @@
 {
-  "oppdatert": "14.11.2026, 10:45",
+  "oppdatert": "14.11.2026, 17:19",
   "tabeller": [
     {
       "navn": "U14B",
@@ -493,6 +493,16 @@
         },
         {
           "plass": 6,
+          "lag": "Jutul",
+          "logo": "data/logoer/189999.png",
+          "gp": 3,
+          "pts": 3,
+          "gf": 10,
+          "ga": 12,
+          "diff": -2
+        },
+        {
+          "plass": 7,
           "lag": "Kråkene Moss 2",
           "logo": "data/logoer/609482.png",
           "gp": 2,
@@ -502,7 +512,7 @@
           "diff": -2
         },
         {
-          "plass": 7,
+          "plass": 8,
           "lag": "Gamle Oslo",
           "logo": "data/logoer/21324.png",
           "gp": 2,
@@ -512,7 +522,7 @@
           "diff": 2
         },
         {
-          "plass": 8,
+          "plass": 9,
           "lag": "Tønsberg 2",
           "logo": "data/logoer/708854.png",
           "gp": 2,
@@ -522,7 +532,7 @@
           "diff": -2
         },
         {
-          "plass": 9,
+          "plass": 10,
           "lag": "Grüner 3",
           "logo": "data/logoer/720861.jpg",
           "gp": 3,
@@ -530,16 +540,6 @@
           "gf": 14,
           "ga": 14,
           "diff": 0
-        },
-        {
-          "plass": 10,
-          "lag": "Jutul",
-          "logo": "data/logoer/189999.png",
-          "gp": 2,
-          "pts": 1,
-          "gf": 6,
-          "ga": 9,
-          "diff": -3
         },
         {
           "plass": 11,
@@ -565,11 +565,11 @@
           "plass": 13,
           "lag": "Nesøya 2",
           "logo": "data/logoer/825391.jpg",
-          "gp": 2,
+          "gp": 3,
           "pts": 0,
-          "gf": 6,
-          "ga": 17,
-          "diff": -11
+          "gf": 9,
+          "ga": 21,
+          "diff": -12
         }
       ]
     },
