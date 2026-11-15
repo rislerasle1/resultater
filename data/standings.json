@@ -1,5 +1,5 @@
 {
-  "oppdatert": "14.11.2026, 21:51",
+  "oppdatert": "15.11.2026, 01:40",
   "tabeller": [
     {
       "navn": "U14B",
@@ -582,21 +582,21 @@
           "plass": 1,
           "lag": "Vålerenga Elite",
           "logo": "data/logoer/527810.jpg",
-          "gp": 13,
-          "pts": 33,
-          "gf": 56,
-          "ga": 20,
-          "diff": 36
+          "gp": 14,
+          "pts": 35,
+          "gf": 61,
+          "ga": 24,
+          "diff": 37
         },
         {
           "plass": 2,
           "lag": "Storhamar Elite",
           "logo": "data/logoer/708311.png",
-          "gp": 13,
-          "pts": 28,
-          "gf": 54,
-          "ga": 22,
-          "diff": 32
+          "gp": 14,
+          "pts": 29,
+          "gf": 58,
+          "ga": 27,
+          "diff": 31
         },
         {
           "plass": 3,

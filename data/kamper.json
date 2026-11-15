@@ -1,5 +1,5 @@
 {
-  "oppdatert": "14.11.2026, 21:51",
+  "oppdatert": "15.11.2026, 01:40",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -968,8 +968,8 @@
       "borte": "Storhamar IL Ishockeygruppen Elite",
       "arena": "Jordal Amfi",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 5,
+      "borteMal": 4
     },
     {
       "dato": "2026-11-15",
