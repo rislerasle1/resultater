@@ -1,5 +1,5 @@
 {
-  "oppdatert": "15.11.2026, 08:28",
+  "oppdatert": "15.11.2026, 15:55",
   "tabeller": [
     {
       "navn": "U14B",
@@ -214,11 +214,11 @@
           "plass": 1,
           "lag": "Kongsberg",
           "logo": "data/logoer/860187.png",
-          "gp": 7,
-          "pts": 11,
-          "gf": 43,
-          "ga": 18,
-          "diff": 25
+          "gp": 8,
+          "pts": 13,
+          "gf": 56,
+          "ga": 19,
+          "diff": 37
         },
         {
           "plass": 2,
@@ -284,11 +284,11 @@
           "plass": 8,
           "lag": "Tromsø",
           "logo": "data/logoer/860122.png",
-          "gp": 5,
+          "gp": 6,
           "pts": 2,
-          "gf": 10,
-          "ga": 40,
-          "diff": -30
+          "gf": 11,
+          "ga": 53,
+          "diff": -42
         },
         {
           "plass": 9,
