@@ -1,5 +1,5 @@
 {
-  "oppdatert": "15.11.2026, 15:55",
+  "oppdatert": "15.11.2026, 21:06",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -978,8 +978,8 @@
       "borte": "Ishockeyklubben Comet Halden",
       "arena": "Løren hallen",
       "divisjon": "U20 1. divisjon",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 10,
+      "borteMal": 3
     },
     {
       "dato": "2026-11-15",
@@ -988,8 +988,8 @@
       "borte": "Nidaros Ishockeyklubb",
       "arena": "Varner Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 2
     },
     {
       "dato": "2026-11-17",
