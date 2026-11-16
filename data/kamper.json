@@ -1,5 +1,5 @@
 {
-  "oppdatert": "16.11.2026, 08:00",
+  "oppdatert": "16.11.2026, 18:15",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -862,16 +862,6 @@
       "borteMal": 9
     },
     {
-      "dato": "2026-11-08",
-      "tid": "17:00",
-      "hjemme": "Hasle-Løren Elite",
-      "borte": "Tønsberg og Omegn Ishockeyklubb",
-      "arena": "Løren hallen",
-      "divisjon": "2. divisjon menn",
-      "hjemmeMal": null,
-      "borteMal": null
-    },
-    {
       "dato": "2026-11-10",
       "tid": "19:00",
       "hjemme": "Hasle-Løren",
@@ -1528,6 +1518,16 @@
       "borte": "Kongsberg",
       "arena": "Løren hallen",
       "divisjon": "U15C",
+      "hjemmeMal": null,
+      "borteMal": null
+    },
+    {
+      "dato": "2026-12-19",
+      "tid": "16:00",
+      "hjemme": "Hasle-Løren Elite",
+      "borte": "Tønsberg og Omegn Ishockeyklubb",
+      "arena": "Løren hallen",
+      "divisjon": "2. divisjon menn",
       "hjemmeMal": null,
       "borteMal": null
     },

@@ -1,5 +1,5 @@
 {
-  "oppdatert": "16.11.2026, 08:00",
+  "oppdatert": "16.11.2026, 18:15",
   "tabeller": [
     {
       "navn": "U14B",
@@ -125,16 +125,6 @@
         },
         {
           "plass": 2,
-          "lag": "Furuset",
-          "logo": "data/logoer/21388.png",
-          "gp": 3,
-          "pts": 8,
-          "gf": 19,
-          "ga": 8,
-          "diff": 11
-        },
-        {
-          "plass": 3,
           "lag": "Vålerenga",
           "logo": "data/logoer/21226.png",
           "gp": 4,
@@ -144,11 +134,21 @@
           "diff": 15
         },
         {
+          "plass": 3,
+          "lag": "Furuset",
+          "logo": "data/logoer/21388.png",
+          "gp": 3,
+          "pts": 8,
+          "gf": 19,
+          "ga": 8,
+          "diff": 11
+        },
+        {
           "plass": 4,
           "lag": "Frisk Asker",
           "logo": "data/logoer/20224.png",
           "gp": 4,
-          "pts": 7,
+          "pts": 8,
           "gf": 19,
           "ga": 18,
           "diff": 1
