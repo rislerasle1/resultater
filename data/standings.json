@@ -1,5 +1,5 @@
 {
-  "oppdatert": "18.11.2026, 18:44",
+  "oppdatert": "19.11.2026, 00:49",
   "tabeller": [
     {
       "navn": "U14B",
@@ -8,6 +8,16 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Ullensaker",
+          "logo": "data/logoer/860188.jpg",
+          "gp": 7,
+          "pts": 14,
+          "gf": 45,
+          "ga": 33,
+          "diff": 12
+        },
+        {
+          "plass": 2,
           "lag": "Ringerike",
           "logo": "data/logoer/22629.png",
           "gp": 5,
@@ -15,16 +25,6 @@
           "gf": 32,
           "ga": 11,
           "diff": 21
-        },
-        {
-          "plass": 2,
-          "lag": "Ullensaker",
-          "logo": "data/logoer/860188.jpg",
-          "gp": 6,
-          "pts": 12,
-          "gf": 36,
-          "ga": 31,
-          "diff": 5
         },
         {
           "plass": 3,
@@ -50,11 +50,11 @@
           "plass": 5,
           "lag": "Furuset/Lørenskog 2",
           "logo": "data/logoer/600615.png",
-          "gp": 5,
+          "gp": 6,
           "pts": 8,
-          "gf": 8,
-          "ga": 40,
-          "diff": -32
+          "gf": 10,
+          "ga": 49,
+          "diff": -39
         },
         {
           "plass": 6,
@@ -115,6 +115,16 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Frisk Asker",
+          "logo": "data/logoer/20224.png",
+          "gp": 5,
+          "pts": 10,
+          "gf": 24,
+          "ga": 21,
+          "diff": 3
+        },
+        {
+          "plass": 2,
           "lag": "Lillehammer",
           "logo": "data/logoer/1011052.png",
           "gp": 4,
@@ -122,16 +132,6 @@
           "gf": 38,
           "ga": 2,
           "diff": 36
-        },
-        {
-          "plass": 2,
-          "lag": "Vålerenga",
-          "logo": "data/logoer/21226.png",
-          "gp": 4,
-          "pts": 8,
-          "gf": 24,
-          "ga": 9,
-          "diff": 15
         },
         {
           "plass": 3,
@@ -145,13 +145,13 @@
         },
         {
           "plass": 4,
-          "lag": "Frisk Asker",
-          "logo": "data/logoer/20224.png",
+          "lag": "Vålerenga",
+          "logo": "data/logoer/21226.png",
           "gp": 4,
           "pts": 8,
-          "gf": 19,
-          "ga": 18,
-          "diff": 1
+          "gf": 24,
+          "ga": 9,
+          "diff": 15
         },
         {
           "plass": 5,
@@ -167,11 +167,11 @@
           "plass": 6,
           "lag": "Jutul/Jar",
           "logo": "",
-          "gp": 4,
+          "gp": 5,
           "pts": 6,
-          "gf": 14,
-          "ga": 18,
-          "diff": -4
+          "gf": 17,
+          "ga": 23,
+          "diff": -6
         },
         {
           "plass": 7,
@@ -368,11 +368,11 @@
           "plass": 1,
           "lag": "IHK Sparta Sarp",
           "logo": "data/logoer/19580.png",
-          "gp": 9,
-          "pts": 24,
-          "gf": 53,
-          "ga": 12,
-          "diff": 41
+          "gp": 10,
+          "pts": 27,
+          "gf": 56,
+          "ga": 14,
+          "diff": 42
         },
         {
           "plass": 2,
@@ -398,11 +398,11 @@
           "plass": 4,
           "lag": "Tønsberg",
           "logo": "data/logoer/708854.png",
-          "gp": 6,
+          "gp": 7,
           "pts": 9,
-          "gf": 17,
-          "ga": 16,
-          "diff": 1
+          "gf": 19,
+          "ga": 19,
+          "diff": 0
         },
         {
           "plass": 5,
