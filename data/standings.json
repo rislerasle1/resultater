@@ -1,5 +1,5 @@
 {
-  "oppdatert": "17.11.2026, 19:04",
+  "oppdatert": "18.11.2026, 02:07",
   "tabeller": [
     {
       "navn": "U14B",
@@ -214,11 +214,11 @@
           "plass": 1,
           "lag": "Kongsberg",
           "logo": "data/logoer/860187.png",
-          "gp": 8,
-          "pts": 13,
-          "gf": 56,
-          "ga": 19,
-          "diff": 37
+          "gp": 9,
+          "pts": 15,
+          "gf": 62,
+          "ga": 23,
+          "diff": 39
         },
         {
           "plass": 2,
@@ -254,11 +254,11 @@
           "plass": 5,
           "lag": "Frisk Asker/Jutul 2",
           "logo": "data/logoer/910033.png",
-          "gp": 6,
+          "gp": 7,
           "pts": 4,
-          "gf": 23,
-          "ga": 25,
-          "diff": -2
+          "gf": 27,
+          "ga": 31,
+          "diff": -4
         },
         {
           "plass": 6,
@@ -311,31 +311,31 @@
           "plass": 1,
           "lag": "Hasle-Løren",
           "logo": "data/logoer/982477.jpg",
-          "gp": 7,
-          "pts": 10,
-          "gf": 46,
-          "ga": 31,
-          "diff": 15
+          "gp": 8,
+          "pts": 12,
+          "gf": 51,
+          "ga": 32,
+          "diff": 19
         },
         {
           "plass": 2,
           "lag": "Furuset",
           "logo": "data/logoer/966263.png",
-          "gp": 7,
-          "pts": 8,
-          "gf": 41,
-          "ga": 25,
-          "diff": 16
+          "gp": 8,
+          "pts": 10,
+          "gf": 56,
+          "ga": 27,
+          "diff": 29
         },
         {
           "plass": 3,
           "lag": "Comet Halden",
           "logo": "data/logoer/619776.png",
-          "gp": 7,
+          "gp": 8,
           "pts": 8,
-          "gf": 27,
-          "ga": 35,
-          "diff": -8
+          "gf": 28,
+          "ga": 40,
+          "diff": -12
         },
         {
           "plass": 4,
@@ -351,11 +351,11 @@
           "plass": 5,
           "lag": "Skedsmo",
           "logo": "data/logoer/1010498.jpg",
-          "gp": 7,
+          "gp": 8,
           "pts": 5,
-          "gf": 26,
-          "ga": 34,
-          "diff": -8
+          "gf": 28,
+          "ga": 49,
+          "diff": -21
         }
       ]
     },
