@@ -1,5 +1,5 @@
 {
-  "oppdatert": "19.11.2026, 16:06",
+  "oppdatert": "19.11.2026, 23:43",
   "tabeller": [
     {
       "navn": "U14B",
@@ -48,6 +48,16 @@
         },
         {
           "plass": 5,
+          "lag": "Hasle Løren",
+          "logo": "data/logoer/600632.png",
+          "gp": 6,
+          "pts": 9,
+          "gf": 26,
+          "ga": 26,
+          "diff": 0
+        },
+        {
+          "plass": 6,
           "lag": "Furuset/Lørenskog 2",
           "logo": "data/logoer/600615.png",
           "gp": 6,
@@ -57,7 +67,7 @@
           "diff": -39
         },
         {
-          "plass": 6,
+          "plass": 7,
           "lag": "Comet",
           "logo": "data/logoer/619776.png",
           "gp": 5,
@@ -65,16 +75,6 @@
           "gf": 30,
           "ga": 14,
           "diff": 16
-        },
-        {
-          "plass": 7,
-          "lag": "Hasle Løren",
-          "logo": "data/logoer/600632.png",
-          "gp": 5,
-          "pts": 7,
-          "gf": 21,
-          "ga": 24,
-          "diff": -3
         },
         {
           "plass": 8,
@@ -90,11 +90,11 @@
           "plass": 9,
           "lag": "Ski",
           "logo": "data/logoer/92751.png",
-          "gp": 5,
+          "gp": 6,
           "pts": 5,
-          "gf": 11,
-          "ga": 31,
-          "diff": -20
+          "gf": 13,
+          "ga": 36,
+          "diff": -23
         },
         {
           "plass": 10,
