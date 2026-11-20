@@ -1,5 +1,5 @@
 {
-  "oppdatert": "20.11.2026, 13:26",
+  "oppdatert": "20.11.2026, 21:38",
   "tabeller": [
     {
       "navn": "U14B",
@@ -582,11 +582,11 @@
           "plass": 1,
           "lag": "Vålerenga Elite",
           "logo": "data/logoer/527810.jpg",
-          "gp": 14,
-          "pts": 35,
-          "gf": 61,
-          "ga": 24,
-          "diff": 37
+          "gp": 15,
+          "pts": 38,
+          "gf": 66,
+          "ga": 27,
+          "diff": 39
         },
         {
           "plass": 2,
@@ -600,6 +600,16 @@
         },
         {
           "plass": 3,
+          "lag": "Nidaros",
+          "logo": "data/logoer/770066.png",
+          "gp": 16,
+          "pts": 30,
+          "gf": 50,
+          "ga": 44,
+          "diff": 6
+        },
+        {
+          "plass": 4,
           "lag": "Storhamar Elite",
           "logo": "data/logoer/708311.png",
           "gp": 14,
@@ -607,16 +617,6 @@
           "gf": 58,
           "ga": 27,
           "diff": 31
-        },
-        {
-          "plass": 4,
-          "lag": "Nidaros",
-          "logo": "data/logoer/770066.png",
-          "gp": 15,
-          "pts": 27,
-          "gf": 42,
-          "ga": 38,
-          "diff": 4
         },
         {
           "plass": 5,
@@ -632,41 +632,41 @@
           "plass": 6,
           "lag": "Stjernen Elite",
           "logo": "data/logoer/695363.png",
-          "gp": 14,
+          "gp": 15,
           "pts": 16,
-          "gf": 38,
-          "ga": 42,
-          "diff": -4
+          "gf": 44,
+          "ga": 50,
+          "diff": -6
         },
         {
           "plass": 7,
           "lag": "Ringerike",
           "logo": "data/logoer/22629.png",
-          "gp": 15,
-          "pts": 12,
-          "gf": 24,
-          "ga": 60,
-          "diff": -36
+          "gp": 16,
+          "pts": 15,
+          "gf": 28,
+          "ga": 63,
+          "diff": -35
         },
         {
           "plass": 8,
           "lag": "Narvik",
           "logo": "data/logoer/27416.png",
-          "gp": 15,
+          "gp": 16,
           "pts": 11,
-          "gf": 29,
-          "ga": 55,
-          "diff": -26
+          "gf": 32,
+          "ga": 60,
+          "diff": -28
         },
         {
           "plass": 9,
           "lag": "Lillehammer Elite",
           "logo": "data/logoer/852911.png",
-          "gp": 14,
+          "gp": 15,
           "pts": 7,
-          "gf": 30,
-          "ga": 57,
-          "diff": -27
+          "gf": 33,
+          "ga": 61,
+          "diff": -28
         },
         {
           "plass": 10,
