@@ -1,5 +1,5 @@
 {
-  "oppdatert": "20.11.2026, 21:38",
+  "oppdatert": "21.11.2026, 02:56",
   "tabeller": [
     {
       "navn": "U14B",
@@ -590,16 +590,26 @@
         },
         {
           "plass": 2,
-          "lag": "Frisk Asker Elite",
-          "logo": "data/logoer/695546.png",
-          "gp": 14,
-          "pts": 30,
-          "gf": 49,
-          "ga": 30,
-          "diff": 19
+          "lag": "Storhamar Elite",
+          "logo": "data/logoer/708311.png",
+          "gp": 15,
+          "pts": 32,
+          "gf": 63,
+          "ga": 29,
+          "diff": 34
         },
         {
           "plass": 3,
+          "lag": "Frisk Asker Elite",
+          "logo": "data/logoer/695546.png",
+          "gp": 15,
+          "pts": 30,
+          "gf": 51,
+          "ga": 35,
+          "diff": 16
+        },
+        {
+          "plass": 4,
           "lag": "Nidaros",
           "logo": "data/logoer/770066.png",
           "gp": 16,
@@ -607,16 +617,6 @@
           "gf": 50,
           "ga": 44,
           "diff": 6
-        },
-        {
-          "plass": 4,
-          "lag": "Storhamar Elite",
-          "logo": "data/logoer/708311.png",
-          "gp": 14,
-          "pts": 29,
-          "gf": 58,
-          "ga": 27,
-          "diff": 31
         },
         {
           "plass": 5,
