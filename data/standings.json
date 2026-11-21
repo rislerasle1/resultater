@@ -1,5 +1,5 @@
 {
-  "oppdatert": "21.11.2026, 10:13",
+  "oppdatert": "21.11.2026, 17:53",
   "tabeller": [
     {
       "navn": "U14B",
@@ -18,6 +18,16 @@
         },
         {
           "plass": 2,
+          "lag": "Tønsberg",
+          "logo": "data/logoer/1011252.jpg",
+          "gp": 6,
+          "pts": 13,
+          "gf": 24,
+          "ga": 12,
+          "diff": 12
+        },
+        {
+          "plass": 3,
           "lag": "Ringerike",
           "logo": "data/logoer/22629.png",
           "gp": 5,
@@ -25,16 +35,6 @@
           "gf": 32,
           "ga": 11,
           "diff": 21
-        },
-        {
-          "plass": 3,
-          "lag": "Tønsberg",
-          "logo": "data/logoer/1011252.jpg",
-          "gp": 5,
-          "pts": 11,
-          "gf": 21,
-          "ga": 11,
-          "diff": 10
         },
         {
           "plass": 4,
@@ -48,6 +48,16 @@
         },
         {
           "plass": 5,
+          "lag": "Comet",
+          "logo": "data/logoer/619776.png",
+          "gp": 6,
+          "pts": 9,
+          "gf": 36,
+          "ga": 17,
+          "diff": 19
+        },
+        {
+          "plass": 6,
           "lag": "Hasle Løren",
           "logo": "data/logoer/600632.png",
           "gp": 6,
@@ -57,7 +67,7 @@
           "diff": 0
         },
         {
-          "plass": 6,
+          "plass": 7,
           "lag": "Furuset/Lørenskog 2",
           "logo": "data/logoer/600615.png",
           "gp": 6,
@@ -67,24 +77,14 @@
           "diff": -39
         },
         {
-          "plass": 7,
-          "lag": "Comet",
-          "logo": "data/logoer/619776.png",
-          "gp": 5,
-          "pts": 7,
-          "gf": 30,
-          "ga": 14,
-          "diff": 16
-        },
-        {
           "plass": 8,
           "lag": "Stjernen 2",
           "logo": "data/logoer/680196.png",
-          "gp": 6,
+          "gp": 7,
           "pts": 6,
-          "gf": 14,
-          "ga": 37,
-          "diff": -23
+          "gf": 17,
+          "ga": 43,
+          "diff": -26
         },
         {
           "plass": 9,
@@ -100,11 +100,11 @@
           "plass": 10,
           "lag": "Storhamar",
           "logo": "data/logoer/222143.png",
-          "gp": 4,
+          "gp": 5,
           "pts": 4,
-          "gf": 26,
-          "ga": 13,
-          "diff": 13
+          "gf": 27,
+          "ga": 16,
+          "diff": 11
         }
       ]
     },
@@ -117,41 +117,41 @@
           "plass": 1,
           "lag": "Frisk Asker",
           "logo": "data/logoer/20224.png",
-          "gp": 5,
-          "pts": 10,
-          "gf": 24,
-          "ga": 21,
-          "diff": 3
+          "gp": 6,
+          "pts": 12,
+          "gf": 27,
+          "ga": 22,
+          "diff": 5
         },
         {
           "plass": 2,
-          "lag": "Lillehammer",
-          "logo": "data/logoer/1011052.png",
+          "lag": "Furuset",
+          "logo": "data/logoer/21388.png",
           "gp": 4,
-          "pts": 9,
-          "gf": 38,
-          "ga": 2,
-          "diff": 36
+          "pts": 10,
+          "gf": 25,
+          "ga": 10,
+          "diff": 15
         },
         {
           "plass": 3,
-          "lag": "Furuset",
-          "logo": "data/logoer/21388.png",
-          "gp": 3,
-          "pts": 8,
-          "gf": 19,
-          "ga": 8,
-          "diff": 11
+          "lag": "Vålerenga",
+          "logo": "data/logoer/21226.png",
+          "gp": 5,
+          "pts": 10,
+          "gf": 28,
+          "ga": 9,
+          "diff": 19
         },
         {
           "plass": 4,
-          "lag": "Vålerenga",
-          "logo": "data/logoer/21226.png",
-          "gp": 4,
-          "pts": 8,
-          "gf": 24,
-          "ga": 9,
-          "diff": 15
+          "lag": "Lillehammer",
+          "logo": "data/logoer/1011052.png",
+          "gp": 5,
+          "pts": 9,
+          "gf": 38,
+          "ga": 6,
+          "diff": 32
         },
         {
           "plass": 5,
@@ -167,11 +167,11 @@
           "plass": 6,
           "lag": "Jutul/Jar",
           "logo": "",
-          "gp": 5,
+          "gp": 6,
           "pts": 6,
-          "gf": 17,
-          "ga": 23,
-          "diff": -6
+          "gf": 19,
+          "ga": 29,
+          "diff": -10
         },
         {
           "plass": 7,
@@ -197,11 +197,11 @@
           "plass": 9,
           "lag": "Kongsberg",
           "logo": "data/logoer/1010887.jpg",
-          "gp": 3,
+          "gp": 4,
           "pts": 2,
-          "gf": 7,
-          "ga": 25,
-          "diff": -18
+          "gf": 8,
+          "ga": 28,
+          "diff": -20
         }
       ]
     },
@@ -612,11 +612,11 @@
           "plass": 4,
           "lag": "Nidaros",
           "logo": "data/logoer/770066.png",
-          "gp": 16,
-          "pts": 30,
-          "gf": 50,
-          "ga": 44,
-          "diff": 6
+          "gp": 15,
+          "pts": 27,
+          "gf": 42,
+          "ga": 38,
+          "diff": 4
         },
         {
           "plass": 5,
@@ -632,11 +632,11 @@
           "plass": 6,
           "lag": "Stjernen Elite",
           "logo": "data/logoer/695363.png",
-          "gp": 15,
+          "gp": 14,
           "pts": 16,
-          "gf": 44,
-          "ga": 50,
-          "diff": -6
+          "gf": 38,
+          "ga": 42,
+          "diff": -4
         },
         {
           "plass": 7,
