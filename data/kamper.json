@@ -1,5 +1,5 @@
 {
-  "oppdatert": "22.11.2026, 11:02",
+  "oppdatert": "22.11.2026, 18:57",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -1048,8 +1048,8 @@
       "borte": "Hasle-Løren",
       "arena": "Furuset Forum",
       "divisjon": "JU14",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 7,
+      "borteMal": 1
     },
     {
       "dato": "2026-11-22",
@@ -1058,8 +1058,8 @@
       "borte": "Skien Ishockeyklubb",
       "arena": "Løren hallen",
       "divisjon": "U15C",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 7,
+      "borteMal": 6
     },
     {
       "dato": "2026-11-22",
@@ -1068,8 +1068,8 @@
       "borte": "Storhamar Ishockey",
       "arena": "Løren hallen",
       "divisjon": "U14B",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 6,
+      "borteMal": 7
     },
     {
       "dato": "2026-11-22",
