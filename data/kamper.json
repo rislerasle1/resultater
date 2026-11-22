@@ -1,5 +1,5 @@
 {
-  "oppdatert": "22.11.2026, 18:57",
+  "oppdatert": "23.11.2026, 00:17",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -1078,8 +1078,8 @@
       "borte": "Stjernen Hockey Fredrikstad Elite",
       "arena": "Jordal Amfi",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 6,
+      "borteMal": 2
     },
     {
       "dato": "2026-11-22",
@@ -1088,8 +1088,8 @@
       "borte": "IF Frisk Asker Hockey",
       "arena": "Nordkraft Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 0
     },
     {
       "dato": "2026-11-22",
@@ -1098,8 +1098,8 @@
       "borte": "Stavanger Ishockeyklubb",
       "arena": "Leangen Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 3
     },
     {
       "dato": "2026-11-22",
@@ -1108,8 +1108,8 @@
       "borte": "Lillehammer Ishockeyklubb Elite",
       "arena": "CC-Amfi",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 1
     },
     {
       "dato": "2026-11-22",
@@ -1118,8 +1118,8 @@
       "borte": "Skedsmo",
       "arena": "Løren hallen",
       "divisjon": "U20 1. divisjon",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 3,
+      "borteMal": 4
     },
     {
       "dato": "2026-11-24",
