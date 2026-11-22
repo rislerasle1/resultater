@@ -1,5 +1,5 @@
 {
-  "oppdatert": "22.11.2026, 03:00",
+  "oppdatert": "22.11.2026, 11:02",
   "tabeller": [
     {
       "navn": "U14B",
@@ -254,21 +254,21 @@
           "plass": 5,
           "lag": "Frisk Asker/Jutul 2",
           "logo": "data/logoer/910033.png",
-          "gp": 7,
-          "pts": 4,
-          "gf": 27,
-          "ga": 31,
-          "diff": -4
+          "gp": 8,
+          "pts": 6,
+          "gf": 30,
+          "ga": 32,
+          "diff": -2
         },
         {
           "plass": 6,
           "lag": "Kristiansand/Idda",
           "logo": "data/logoer/23868.png",
-          "gp": 4,
+          "gp": 5,
           "pts": 3,
-          "gf": 13,
-          "ga": 15,
-          "diff": -2
+          "gf": 14,
+          "ga": 18,
+          "diff": -4
         },
         {
           "plass": 7,
