@@ -1,5 +1,5 @@
 {
-  "oppdatert": "24.11.2026, 12:33",
+  "oppdatert": "24.11.2026, 22:51",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -1128,8 +1128,8 @@
       "borte": "Stjernen Hockey Fredrikstad Elite",
       "arena": "Eidsiva Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 4
     },
     {
       "dato": "2026-11-24",
@@ -1138,8 +1138,8 @@
       "borte": "Ringerike IHK",
       "arena": "Nordkraft Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 6,
+      "borteMal": 4
     },
     {
       "dato": "2026-11-24",
@@ -1148,8 +1148,8 @@
       "borte": "Storhamar IL Ishockeygruppen Elite",
       "arena": "DNB Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 1,
+      "borteMal": 2
     },
     {
       "dato": "2026-11-25",
