@@ -1,5 +1,5 @@
 {
-  "oppdatert": "25.11.2026, 16:14",
+  "oppdatert": "26.11.2026, 00:43",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -1158,8 +1158,8 @@
       "borte": "Bøler Ishockey Klubb",
       "arena": "Løren hallen",
       "divisjon": "5. divisjon menn",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 7,
+      "borteMal": 2
     },
     {
       "dato": "2026-11-26",

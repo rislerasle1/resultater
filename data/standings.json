@@ -1,5 +1,5 @@
 {
-  "oppdatert": "25.11.2026, 16:14",
+  "oppdatert": "26.11.2026, 00:43",
   "tabeller": [
     {
       "navn": "U14B",
@@ -443,13 +443,13 @@
       "lag": [
         {
           "plass": 1,
-          "lag": "Bøler",
-          "logo": "data/logoer/707568.png",
+          "lag": "Hasle/Løren 2",
+          "logo": "",
           "gp": 3,
           "pts": 6,
-          "gf": 21,
-          "ga": 9,
-          "diff": 12
+          "gf": 16,
+          "ga": 6,
+          "diff": 10
         },
         {
           "plass": 2,
@@ -463,6 +463,16 @@
         },
         {
           "plass": 3,
+          "lag": "Bøler",
+          "logo": "data/logoer/707568.png",
+          "gp": 4,
+          "pts": 6,
+          "gf": 23,
+          "ga": 16,
+          "diff": 7
+        },
+        {
+          "plass": 4,
           "lag": "Ringerike 2",
           "logo": "data/logoer/22629.png",
           "gp": 2,
@@ -470,16 +480,6 @@
           "gf": 11,
           "ga": 5,
           "diff": 6
-        },
-        {
-          "plass": 4,
-          "lag": "Hasle/Løren 2",
-          "logo": "",
-          "gp": 2,
-          "pts": 4,
-          "gf": 9,
-          "ga": 4,
-          "diff": 5
         },
         {
           "plass": 5,
@@ -513,6 +513,16 @@
         },
         {
           "plass": 8,
+          "lag": "Jordal",
+          "logo": "data/logoer/21269.png",
+          "gp": 3,
+          "pts": 2,
+          "gf": 11,
+          "ga": 10,
+          "diff": 1
+        },
+        {
+          "plass": 9,
           "lag": "Gamle Oslo",
           "logo": "data/logoer/21324.png",
           "gp": 2,
@@ -520,16 +530,6 @@
           "gf": 7,
           "ga": 5,
           "diff": 2
-        },
-        {
-          "plass": 9,
-          "lag": "Grüner 3",
-          "logo": "data/logoer/720861.jpg",
-          "gp": 3,
-          "pts": 2,
-          "gf": 14,
-          "ga": 14,
-          "diff": 0
         },
         {
           "plass": 10,
@@ -543,13 +543,13 @@
         },
         {
           "plass": 11,
-          "lag": "Jordal",
-          "logo": "data/logoer/21269.png",
-          "gp": 2,
-          "pts": 0,
-          "gf": 4,
-          "ga": 8,
-          "diff": -4
+          "lag": "Grüner 3",
+          "logo": "data/logoer/720861.jpg",
+          "gp": 4,
+          "pts": 2,
+          "gf": 16,
+          "ga": 21,
+          "diff": -5
         },
         {
           "plass": 12,
