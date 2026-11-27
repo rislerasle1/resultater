@@ -1,5 +1,5 @@
 {
-  "oppdatert": "26.11.2026, 18:29",
+  "oppdatert": "27.11.2026, 02:07",
   "tabeller": [
     {
       "navn": "U14B",
@@ -582,11 +582,11 @@
           "plass": 1,
           "lag": "Vålerenga Elite",
           "logo": "data/logoer/527810.jpg",
-          "gp": 16,
-          "pts": 41,
-          "gf": 72,
-          "ga": 29,
-          "diff": 43
+          "gp": 17,
+          "pts": 44,
+          "gf": 75,
+          "ga": 30,
+          "diff": 45
         },
         {
           "plass": 2,
@@ -602,11 +602,11 @@
           "plass": 3,
           "lag": "Frisk Asker Elite",
           "logo": "data/logoer/695546.png",
-          "gp": 16,
-          "pts": 30,
-          "gf": 51,
+          "gp": 17,
+          "pts": 33,
+          "gf": 58,
           "ga": 37,
-          "diff": 14
+          "diff": 21
         },
         {
           "plass": 4,
@@ -622,21 +622,21 @@
           "plass": 5,
           "lag": "Stavanger Oilers",
           "logo": "data/logoer/220882.png",
-          "gp": 17,
+          "gp": 18,
           "pts": 29,
           "gf": 49,
-          "ga": 47,
-          "diff": 2
+          "ga": 49,
+          "diff": 0
         },
         {
           "plass": 6,
           "lag": "Stjernen Elite",
           "logo": "data/logoer/695363.png",
-          "gp": 17,
-          "pts": 19,
-          "gf": 50,
+          "gp": 18,
+          "pts": 22,
+          "gf": 52,
           "ga": 58,
-          "diff": -8
+          "diff": -6
         },
         {
           "plass": 7,
@@ -652,21 +652,21 @@
           "plass": 8,
           "lag": "Ringerike",
           "logo": "data/logoer/22629.png",
-          "gp": 17,
+          "gp": 18,
           "pts": 15,
-          "gf": 32,
-          "ga": 69,
-          "diff": -37
+          "gf": 33,
+          "ga": 72,
+          "diff": -39
         },
         {
           "plass": 9,
           "lag": "Lillehammer Elite",
           "logo": "data/logoer/852911.png",
-          "gp": 17,
+          "gp": 18,
           "pts": 7,
           "gf": 36,
-          "ga": 68,
-          "diff": -32
+          "ga": 75,
+          "diff": -39
         },
         {
           "plass": 10,

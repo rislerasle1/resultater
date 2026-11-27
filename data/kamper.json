@@ -1,5 +1,5 @@
 {
-  "oppdatert": "26.11.2026, 18:29",
+  "oppdatert": "27.11.2026, 02:07",
   "kamper": [
     {
       "dato": "2026-09-16",
@@ -1168,8 +1168,8 @@
       "borte": "IF Frisk Asker Hockey",
       "arena": "Eidsiva Arena",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 0,
+      "borteMal": 7
     },
     {
       "dato": "2026-11-26",
@@ -1178,8 +1178,8 @@
       "borte": "Vålerenga Ishockey Elite",
       "arena": "Schjongshallen",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 1,
+      "borteMal": 3
     },
     {
       "dato": "2026-11-26",
@@ -1188,8 +1188,8 @@
       "borte": "Stavanger Ishockeyklubb",
       "arena": "Stjernehallen",
       "divisjon": "Elitehockeyligaen",
-      "hjemmeMal": null,
-      "borteMal": null
+      "hjemmeMal": 2,
+      "borteMal": 0
     },
     {
       "dato": "2026-11-28",
