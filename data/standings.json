@@ -1,5 +1,5 @@
 {
-  "oppdatert": "27.11.2026, 10:54",
+  "oppdatert": "27.11.2026, 20:18",
   "tabeller": [
     {
       "navn": "U14B",
@@ -11,7 +11,7 @@
           "lag": "Ullensaker",
           "logo": "data/logoer/860188.jpg",
           "gp": 7,
-          "pts": 14,
+          "pts": 15,
           "gf": 45,
           "ga": 33,
           "diff": 12
@@ -21,7 +21,7 @@
           "lag": "Tønsberg",
           "logo": "data/logoer/1011252.jpg",
           "gp": 6,
-          "pts": 13,
+          "pts": 14,
           "gf": 24,
           "ga": 12,
           "diff": 12
@@ -48,6 +48,16 @@
         },
         {
           "plass": 5,
+          "lag": "Hasle Løren",
+          "logo": "data/logoer/600632.png",
+          "gp": 7,
+          "pts": 11,
+          "gf": 32,
+          "ga": 33,
+          "diff": -1
+        },
+        {
+          "plass": 6,
           "lag": "Kongsvinger",
           "logo": "data/logoer/600681.png",
           "gp": 4,
@@ -57,27 +67,27 @@
           "diff": 13
         },
         {
-          "plass": 6,
-          "lag": "Hasle Løren",
-          "logo": "data/logoer/600632.png",
-          "gp": 7,
-          "pts": 9,
-          "gf": 32,
-          "ga": 33,
-          "diff": -1
-        },
-        {
           "plass": 7,
           "lag": "Furuset/Lørenskog 2",
           "logo": "data/logoer/600615.png",
           "gp": 6,
-          "pts": 8,
+          "pts": 9,
           "gf": 10,
           "ga": 49,
           "diff": -39
         },
         {
           "plass": 8,
+          "lag": "Ski",
+          "logo": "data/logoer/92751.png",
+          "gp": 7,
+          "pts": 7,
+          "gf": 15,
+          "ga": 46,
+          "diff": -31
+        },
+        {
+          "plass": 9,
           "lag": "Stjernen 2",
           "logo": "data/logoer/680196.png",
           "gp": 7,
@@ -87,7 +97,7 @@
           "diff": -26
         },
         {
-          "plass": 9,
+          "plass": 10,
           "lag": "Storhamar",
           "logo": "data/logoer/222143.png",
           "gp": 6,
@@ -95,16 +105,6 @@
           "gf": 34,
           "ga": 22,
           "diff": 12
-        },
-        {
-          "plass": 10,
-          "lag": "Ski",
-          "logo": "data/logoer/92751.png",
-          "gp": 7,
-          "pts": 5,
-          "gf": 15,
-          "ga": 46,
-          "diff": -31
         }
       ]
     },
