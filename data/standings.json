@@ -1,5 +1,5 @@
 {
-  "oppdatert": "27.11.2026, 02:07",
+  "oppdatert": "27.11.2026, 10:54",
   "tabeller": [
     {
       "navn": "U14B",
@@ -115,6 +115,26 @@
       "lag": [
         {
           "plass": 1,
+          "lag": "Furuset",
+          "logo": "data/logoer/21388.png",
+          "gp": 5,
+          "pts": 14,
+          "gf": 32,
+          "ga": 11,
+          "diff": 21
+        },
+        {
+          "plass": 2,
+          "lag": "Frisk Asker",
+          "logo": "data/logoer/20224.png",
+          "gp": 6,
+          "pts": 14,
+          "gf": 27,
+          "ga": 22,
+          "diff": 5
+        },
+        {
+          "plass": 3,
           "lag": "Vålerenga",
           "logo": "data/logoer/21226.png",
           "gp": 6,
@@ -124,31 +144,11 @@
           "diff": 42
         },
         {
-          "plass": 2,
-          "lag": "Furuset",
-          "logo": "data/logoer/21388.png",
-          "gp": 5,
-          "pts": 12,
-          "gf": 32,
-          "ga": 11,
-          "diff": 21
-        },
-        {
-          "plass": 3,
-          "lag": "Frisk Asker",
-          "logo": "data/logoer/20224.png",
-          "gp": 6,
-          "pts": 12,
-          "gf": 27,
-          "ga": 22,
-          "diff": 5
-        },
-        {
           "plass": 4,
           "lag": "Lillehammer",
           "logo": "data/logoer/1011052.png",
           "gp": 6,
-          "pts": 11,
+          "pts": 12,
           "gf": 40,
           "ga": 6,
           "diff": 34
@@ -178,7 +178,7 @@
           "lag": "Hasle-Løren",
           "logo": "data/logoer/1029140.png",
           "gp": 6,
-          "pts": 5,
+          "pts": 6,
           "gf": 19,
           "ga": 37,
           "diff": -18
